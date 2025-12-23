@@ -1,0 +1,25 @@
+<Configuration status="WARN">
+  <Properties>
+    <Property name="basepath">/home/virupaksha/eclipse-workspace/AppiumDemoProject/Logs</Property>
+    <Property name="timestamp">${date:yyyy-MM-dd_HH-mm-ss}</Property>
+  </Properties>
+
+  <Appenders>
+    <Console name="CONSOLE" target="SYSTEM_OUT">
+      <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+    </Console>
+
+    <File name="FileAppender"
+          fileName="${basepath}/Run_On_${timestamp}.log"
+          append="false">
+      <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} [%t] %-5level %c{1}.%M(%L) - %msg%n"/>
+    </File>
+  </Appenders>
+
+  <Loggers>
+    <Root level="info">
+      <AppenderRef ref="CONSOLE"/>
+      <AppenderRef ref="FileAppender"/>
+    </Root>
+  </Loggers>
+</Configuration>

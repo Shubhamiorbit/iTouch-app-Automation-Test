@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Command line suite]" verbose="0">
+  <test thread-count="5" name="Command line test(failed)" verbose="0">
+    <classes>
+      <class name="tests.DeviceConfigTest">
+        <methods>
+          <include name="initPage"/>
+          <include name="testdeviceconfig"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.DeviceConfigTest -->
+      <class name="tests.CreateShiftTest">
+        <methods>
+          <include name="testcreateshift"/>
+          <include name="initshiftpage"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.CreateShiftTest -->
+      <class name="tests.CreateBedTest">
+        <methods>
+          <include name="initPage"/>
+          <include name="testcreatebed"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.CreateBedTest -->
+      <class name="tests.AssignDeviceToBedTest">
+        <methods>
+          <include name="iniassigndocgtortoshiftpage"/>
+          <include name="testAssigndevicetobed"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.AssignDeviceToBedTest -->
+      <class name="tests.AssignDoctorToShiftTest">
+        <methods>
+          <include name="iniassigndocgtortoshiftpage"/>
+          <include name="testAssigndoctortoshift"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.AssignDoctorToShiftTest -->
+      <class name="tests.NewLoginTest">
+        <methods>
+          <include name="testValidLogin"/>
+          <include name="setup"/>
+          <include name="initPage"/>
+        </methods>
+      </class> <!-- tests.NewLoginTest -->
+      <class name="tests.CreateDeviceTest">
+        <methods>
+          <include name="initPage"/>
+          <include name="testcreatedevice"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.CreateDeviceTest -->
+      <class name="tests.OTP_Test">
+        <methods>
+          <include name="initTestReport"/>
+          <include name="enterOTPTest"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.OTP_Test -->
+      <class name="tests.CreateGatewayTest">
+        <methods>
+          <include name="initPage"/>
+          <include name="testcreategateway"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.CreateGatewayTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+<listener class-name="utilities.ExtentReportManager"/>
+        
+
+</listeners>
+  <test thread-count="5" name="Master.test">
+    <classes>
+    <class name="tests.NewLoginTest"/>
+      <class name="tests.OTP_Test"/>
+       <class name="tests.CreateDoctorTest"/>
+        <class name="tests.CreatePatientTest"/>
+        <class name="tests.CreateNurseTest"/>
+       <class name="tests.CreateDeviceTest"/>
+       
+       <class name="tests.CreateWardTest"/>
+       <class name="tests.CreateGatewayTest"/>
+       <class name="tests.CreateShiftTest"/>
+       <class name="tests.CreateBedTest"/>
+       
+       <class name="tests.AssignDoctorToShiftTest"/>
+       <class name="tests.AssignBedToNurse"/>
+       <class name="tests.AssignNurseToShift"/>
+        <class name="tests.DeviceConfigTest"/>
+       <class name="tests.AssignDeviceToBedTest"/>
+       <class name="tests.AdmitPatientTest"/>
+    
+    </classes>
+  </test> 
+</suite> 

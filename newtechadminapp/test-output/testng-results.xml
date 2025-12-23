@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="16" passed="16" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-12-23T11:08:33 IST" name="Suite" finished-at="2025-12-23T11:14:25 IST" duration-ms="352132">
+    <groups>
+      <group name="login">
+        <method signature="NewLoginTest.testValidLogin()[pri:0, instance:tests.NewLoginTest@4802796d]" name="testValidLogin" class="tests.NewLoginTest"/>
+      </group> <!-- login -->
+    </groups>
+    <test started-at="2025-12-23T11:08:33 IST" name="Master.test" finished-at="2025-12-23T11:14:25 IST" duration-ms="352132">
+      <class name="tests.AssignNurseToShift">
+        <test-method is-config="true" signature="iniassignnursetoshiftpage()[pri:0, instance:tests.AssignNurseToShift@6a6cb05c]" started-at="2025-12-23T11:13:16 IST" name="iniassignnursetoshiftpage" finished-at="2025-12-23T11:13:16 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- iniassignnursetoshiftpage -->
+        <test-method signature="testAssignnursetoshift()[pri:0, instance:tests.AssignNurseToShift@6a6cb05c]" started-at="2025-12-23T11:13:16 IST" name="testAssignnursetoshift" finished-at="2025-12-23T11:13:26 IST" depends-on-methods="tests.NewLoginTest.testValidLogin, tests.OTP_Test.enterOTPTest" duration-ms="10277" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAssignnursetoshift -->
+      </class> <!-- tests.AssignNurseToShift -->
+      <class name="tests.AssignDoctorToShiftTest">
+        <test-method is-config="true" signature="iniassigndocgtortoshiftpage()[pri:0, instance:tests.AssignDoctorToShiftTest@43bc63a3]" started-at="2025-12-23T11:12:52 IST" name="iniassigndocgtortoshiftpage" finished-at="2025-12-23T11:12:52 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- iniassigndocgtortoshiftpage -->
+        <test-method signature="testAssigndoctortoshift()[pri:0, instance:tests.AssignDoctorToShiftTest@43bc63a3]" started-at="2025-12-23T11:12:52 IST" name="testAssigndoctortoshift" finished-at="2025-12-23T11:13:04 IST" depends-on-methods="tests.NewLoginTest.testValidLogin, tests.OTP_Test.enterOTPTest" duration-ms="11073" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAssigndoctortoshift -->
+      </class> <!-- tests.AssignDoctorToShiftTest -->
+      <class name="tests.CreateShiftTest">
+        <test-method is-config="true" signature="initshiftpage()[pri:0, instance:tests.CreateShiftTest@54d9d12d]" started-at="2025-12-23T11:12:19 IST" name="initshiftpage" finished-at="2025-12-23T11:12:19 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initshiftpage -->
+        <test-method signature="testcreateshift()[pri:0, instance:tests.CreateShiftTest@54d9d12d]" started-at="2025-12-23T11:12:19 IST" name="testcreateshift" finished-at="2025-12-23T11:12:41 IST" depends-on-methods="tests.NewLoginTest.testValidLogin, tests.OTP_Test.enterOTPTest" duration-ms="21992" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcreateshift -->
+      </class> <!-- tests.CreateShiftTest -->
+      <class name="tests.OTP_Test">
+        <test-method is-config="true" signature="initTestReport()[pri:0, instance:tests.OTP_Test@408d971b]" started-at="2025-12-23T11:08:39 IST" name="initTestReport" finished-at="2025-12-23T11:08:39 IST" depends-on-methods="Pages.BaseClass.setup" duration-ms="25" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initTestReport -->
+        <test-method signature="enterOTPTest()[pri:0, instance:tests.OTP_Test@408d971b]" started-at="2025-12-23T11:08:50 IST" name="enterOTPTest" finished-at="2025-12-23T11:09:04 IST" depends-on-methods="tests.NewLoginTest.testValidLogin" duration-ms="13837" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterOTPTest -->
+      </class> <!-- tests.OTP_Test -->
+      <class name="tests.AssignBedToNurse">
+        <test-method is-config="true" signature="iniassignnursetobedpage()[pri:0, instance:tests.AssignBedToNurse@702657cc]" started-at="2025-12-23T11:13:04 IST" name="iniassignnursetobedpage" finished-at="2025-12-23T11:13:04 IST" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- iniassignnursetobedpage -->
+        <test-method signature="testAssignnursetobed()[pri:0, instance:tests.AssignBedToNurse@702657cc]" started-at="2025-12-23T11:13:04 IST" name="testAssignnursetobed" finished-at="2025-12-23T11:13:16 IST" depends-on-methods="tests.NewLoginTest.testValidLogin, tests.OTP_Test.enterOTPTest" duration-ms="12528" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAssignnursetobed -->
+      </class> <!-- tests.AssignBedToNurse -->
+      <class name="tests.DeviceConfigTest">
+        <test-method is-config="true" signature="initPage()[pri:0, instance:tests.DeviceConfigTest@40a4337a]" started-at="2025-12-23T11:13:26 IST" name="initPage" finished-at="2025-12-23T11:13:26 IST" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method signature="testdeviceconfig()[pri:0, instance:tests.DeviceConfigTest@40a4337a]" started-at="2025-12-23T11:13:26 IST" name="testdeviceconfig" finished-at="2025-12-23T11:13:43 IST" depends-on-methods="tests.NewLoginTest.testValidLogin, tests.OTP_Test.enterOTPTest" duration-ms="16646" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testdeviceconfig -->
+      </class> <!-- tests.DeviceConfigTest -->
+      <class name="tests.CreateBedTest">
+        <test-method is-config="true" signature="initPage(java.lang.reflect.Method)[pri:0, instance:tests.CreateBedTest@38425407]" started-at="2025-12-23T11:12:41 IST" name="initPage" finished-at="2025-12-23T11:12:41 IST" duration-ms="5" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.CreateBedTest.testcreatebed()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method signature="testcreatebed()[pri:0, instance:tests.CreateBedTest@38425407]" started-at="2025-12-23T11:12:41 IST" name="testcreatebed" finished-at="2025-12-23T11:12:52 IST" depends-on-methods="tests.NewLoginTest.testValidLogin, tests.OTP_Test.enterOTPTest" duration-ms="10957" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcreatebed -->
+      </class> <!-- tests.CreateBedTest -->
+      <class name="tests.CreateDoctorTest">
+        <test-method is-config="true" signature="initPage()[pri:0, instance:tests.CreateDoctorTest@292b08d6]" started-at="2025-12-23T11:09:04 IST" name="initPage" finished-at="2025-12-23T11:09:04 IST" duration-ms="19" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method signature="testcreatedoctor()[pri:0, instance:tests.CreateDoctorTest@292b08d6]" started-at="2025-12-23T11:09:04 IST" name="testcreatedoctor" finished-at="2025-12-23T11:09:45 IST" depends-on-methods="tests.NewLoginTest.testValidLogin, tests.OTP_Test.enterOTPTest" duration-ms="40591" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcreatedoctor -->
+      </class> <!-- tests.CreateDoctorTest -->
+      <class name="tests.AssignDeviceToBedTest">
+        <test-method is-config="true" signature="iniassigndocgtortoshiftpage()[pri:0, instance:tests.AssignDeviceToBedTest@6025e1b6]" started-at="2025-12-23T11:13:43 IST" name="iniassigndocgtortoshiftpage" finished-at="2025-12-23T11:13:43 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- iniassigndocgtortoshiftpage -->
+        <test-method signature="testAssigndevicetobed()[pri:0, instance:tests.AssignDeviceToBedTest@6025e1b6]" started-at="2025-12-23T11:13:43 IST" name="testAssigndevicetobed" finished-at="2025-12-23T11:13:59 IST" depends-on-methods="tests.NewLoginTest.testValidLogin, tests.OTP_Test.enterOTPTest" duration-ms="15792" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAssigndevicetobed -->
+      </class> <!-- tests.AssignDeviceToBedTest -->
+      <class name="tests.CreatePatientTest">
+        <test-method is-config="true" signature="initPage()[pri:0, instance:tests.CreatePatientTest@22555ebf]" started-at="2025-12-23T11:09:45 IST" name="initPage" finished-at="2025-12-23T11:09:45 IST" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method signature="testcreatepatient()[pri:0, instance:tests.CreatePatientTest@22555ebf]" started-at="2025-12-23T11:09:45 IST" name="testcreatepatient" finished-at="2025-12-23T11:10:47 IST" depends-on-methods="tests.NewLoginTest.testValidLogin, tests.OTP_Test.enterOTPTest" duration-ms="62209" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcreatepatient -->
+      </class> <!-- tests.CreatePatientTest -->
+      <class name="tests.CreateGatewayTest">
+        <test-method is-config="true" signature="initPage()[pri:0, instance:tests.CreateGatewayTest@3c41ed1d]" started-at="2025-12-23T11:12:09 IST" name="initPage" finished-at="2025-12-23T11:12:09 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method signature="testcreategateway()[pri:0, instance:tests.CreateGatewayTest@3c41ed1d]" started-at="2025-12-23T11:12:09 IST" name="testcreategateway" finished-at="2025-12-23T11:12:19 IST" depends-on-methods="tests.NewLoginTest.testValidLogin, tests.OTP_Test.enterOTPTest" duration-ms="10311" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcreategateway -->
+      </class> <!-- tests.CreateGatewayTest -->
+      <class name="tests.CreateWardTest">
+        <test-method is-config="true" signature="initwardpage()[pri:0, instance:tests.CreateWardTest@34e9fd99]" started-at="2025-12-23T11:11:54 IST" name="initwardpage" finished-at="2025-12-23T11:11:54 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initwardpage -->
+        <test-method signature="testcreateward()[pri:0, instance:tests.CreateWardTest@34e9fd99]" started-at="2025-12-23T11:11:54 IST" name="testcreateward" finished-at="2025-12-23T11:12:09 IST" depends-on-methods="tests.NewLoginTest.testValidLogin, tests.OTP_Test.enterOTPTest" duration-ms="15070" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcreateward -->
+      </class> <!-- tests.CreateWardTest -->
+      <class name="tests.CreateNurseTest">
+        <test-method is-config="true" signature="initPage()[pri:0, instance:tests.CreateNurseTest@36ebc363]" started-at="2025-12-23T11:10:47 IST" name="initPage" finished-at="2025-12-23T11:10:47 IST" duration-ms="14" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method signature="testcreatenurse()[pri:0, instance:tests.CreateNurseTest@36ebc363]" started-at="2025-12-23T11:10:47 IST" name="testcreatenurse" finished-at="2025-12-23T11:11:38 IST" depends-on-methods="tests.NewLoginTest.testValidLogin, tests.OTP_Test.enterOTPTest" duration-ms="51290" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcreatenurse -->
+      </class> <!-- tests.CreateNurseTest -->
+      <class name="tests.CreateDeviceTest">
+        <test-method is-config="true" signature="initPage()[pri:0, instance:tests.CreateDeviceTest@45752059]" started-at="2025-12-23T11:11:38 IST" name="initPage" finished-at="2025-12-23T11:11:38 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method signature="testcreatedevice()[pri:0, instance:tests.CreateDeviceTest@45752059]" started-at="2025-12-23T11:11:38 IST" name="testcreatedevice" finished-at="2025-12-23T11:11:54 IST" depends-on-methods="tests.NewLoginTest.testValidLogin, tests.OTP_Test.enterOTPTest" duration-ms="15693" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcreatedevice -->
+      </class> <!-- tests.CreateDeviceTest -->
+      <class name="tests.NewLoginTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.NewLoginTest@4802796d]" started-at="2025-12-23T11:08:33 IST" name="setup" finished-at="2025-12-23T11:08:39 IST" duration-ms="5726" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:tests.NewLoginTest@4802796d]" started-at="2025-12-23T11:08:39 IST" name="initPage" finished-at="2025-12-23T11:08:40 IST" duration-ms="883" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method signature="testValidLogin()[pri:0, instance:tests.NewLoginTest@4802796d]" started-at="2025-12-23T11:08:40 IST" name="testValidLogin" finished-at="2025-12-23T11:08:50 IST" duration-ms="10347" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidLogin -->
+      </class> <!-- tests.NewLoginTest -->
+      <class name="tests.AdmitPatientTest">
+        <test-method is-config="true" signature="initPage()[pri:0, instance:tests.AdmitPatientTest@22ff4249]" started-at="2025-12-23T11:13:59 IST" name="initPage" finished-at="2025-12-23T11:13:59 IST" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method signature="testadmitpatient()[pri:0, instance:tests.AdmitPatientTest@22ff4249]" started-at="2025-12-23T11:13:59 IST" name="testadmitpatient" finished-at="2025-12-23T11:14:25 IST" depends-on-methods="tests.NewLoginTest.testValidLogin, tests.OTP_Test.enterOTPTest" duration-ms="26324" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testadmitpatient -->
+      </class> <!-- tests.AdmitPatientTest -->
+    </test> <!-- Master.test -->
+  </suite> <!-- Suite -->
+</testng-results>
