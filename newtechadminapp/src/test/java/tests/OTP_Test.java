@@ -5,7 +5,9 @@ import Pages.OTP_Class;
 import io.appium.java_client.HidesKeyboard;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -16,6 +18,9 @@ import com.aventstack.extentreports.Status;
 
 import java.time.Duration;
 import java.util.List;
+import java.util.NoSuchElementException;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class OTP_Test extends BaseClass {
 
@@ -26,7 +31,8 @@ public class OTP_Test extends BaseClass {
 
     @Test(dependsOnMethods = "tests.NewLoginTest.testValidLogin")
     public void enterOTPTest() throws Exception {
-
+//    	OTP_Class otpclass = new OTP_Class();
+//    	otpclass.OTPfrommailinatorpublic();
         // Fetch OTP
         String otp = OTP_Class.fetchLatestOTP();
         Assert.assertNotNull(otp, "OTP should not be null.");
@@ -56,3 +62,5 @@ public class OTP_Test extends BaseClass {
         System.out.println("OTP submitted successfully.");
     }
 }
+
+

@@ -22,21 +22,18 @@ public class NewLoginTest extends BaseClass{
 	    @Test( groups = {"login"})
 	    public void testValidLogin() {
 	    	
-	        String username = "automation1@iorbitteam514658.testinator.email";
-	        String password = "494586143";
+	        String username = "ethix@mailinator.com";
+	        String password = "903134621";
 
 	        try {
-	            loginPage.login(username, password);
-
-	          
+	            loginPage.login(username, password);         
 	            System.out.println("Login successful for user: " + username);
 	        } catch (Exception e) {
 	        	 System.out.println("Login test failed: " + e.getMessage());
 	            Assert.fail("Exception occurred: " + e.getMessage());
 	        }
-	    }
-		
-		}
+	    }		
+}
 	
 
 

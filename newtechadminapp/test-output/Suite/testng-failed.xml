@@ -6,27 +6,27 @@
   </listeners>
   <test thread-count="5" name="Master.test(failed)">
     <classes>
-      <class name="tests.NewLoginTest">
+      <class name="tests.AssignBedToNurse">
         <methods>
-          <include name="testValidLogin"/>
+          <include name="testAssignnursetobed"/>
+          <include name="iniassignnursetobedpage"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.AssignBedToNurse -->
+      <class name="tests.AssignDeviceToBedTest">
+        <methods>
+          <include name="iniassigndocgtortoshiftpage"/>
+          <include name="testAssigndevicetobed"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.AssignDeviceToBedTest -->
+      <class name="tests.CreateDeviceTest">
+        <methods>
           <include name="initPage"/>
+          <include name="testcreatedevice"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- tests.NewLoginTest -->
-      <class name="tests.DeviceConfigTest">
-        <methods>
-          <include name="initPage"/>
-          <include name="testdeviceconfig"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- tests.DeviceConfigTest -->
-      <class name="tests.OTP_Test">
-        <methods>
-          <include name="initTestReport"/>
-          <include name="enterOTPTest"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- tests.OTP_Test -->
+      </class> <!-- tests.CreateDeviceTest -->
       <class name="tests.AssignNurseToShift">
         <methods>
           <include name="iniassignnursetoshiftpage"/>
@@ -34,6 +34,90 @@
           <include name="testAssignnursetoshift"/>
         </methods>
       </class> <!-- tests.AssignNurseToShift -->
+      <class name="tests.CreateBedTest">
+        <methods>
+          <include name="initPage"/>
+          <include name="testcreatebed"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.CreateBedTest -->
+      <class name="tests.AdmitPatientTest">
+        <methods>
+          <include name="initPage"/>
+          <include name="setup"/>
+          <include name="testadmitpatient"/>
+        </methods>
+      </class> <!-- tests.AdmitPatientTest -->
+      <class name="tests.DeviceConfigTest">
+        <methods>
+          <include name="initPage"/>
+          <include name="setup"/>
+          <include name="testdeviceconfig"/>
+        </methods>
+      </class> <!-- tests.DeviceConfigTest -->
+      <class name="tests.CreateWardTest">
+        <methods>
+          <include name="initwardpage"/>
+          <include name="testcreateward"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.CreateWardTest -->
+      <class name="tests.CreatePatientTest">
+        <methods>
+          <include name="testcreatepatient"/>
+          <include name="initPage"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.CreatePatientTest -->
+      <class name="tests.CreateDoctorTest">
+        <methods>
+          <include name="testcreatedoctor"/>
+          <include name="initPage"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.CreateDoctorTest -->
+      <class name="tests.AssignDoctorToShiftTest">
+        <methods>
+          <include name="iniassigndocgtortoshiftpage"/>
+          <include name="testAssigndoctortoshift"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.AssignDoctorToShiftTest -->
+      <class name="tests.CreateGatewayTest">
+        <methods>
+          <include name="initPage"/>
+          <include name="testcreategateway"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.CreateGatewayTest -->
+      <class name="tests.CreateShiftTest">
+        <methods>
+          <include name="testcreateshift"/>
+          <include name="initshiftpage"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.CreateShiftTest -->
+      <class name="tests.CreateNurseTest">
+        <methods>
+          <include name="testcreatenurse"/>
+          <include name="initPage"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.CreateNurseTest -->
+      <class name="tests.OTP_Test">
+        <methods>
+          <include name="initTestReport"/>
+          <include name="enterOTPTest"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.OTP_Test -->
+      <class name="tests.NewLoginTest">
+        <methods>
+          <include name="initPage"/>
+          <include name="testValidLogin"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.NewLoginTest -->
     </classes>
   </test> <!-- Master.test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

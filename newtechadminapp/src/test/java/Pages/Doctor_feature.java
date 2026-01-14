@@ -1,9 +1,13 @@
 package Pages;
 
 import java.time.Duration;
+import java.util.Collections;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Pause;
+import org.openqa.selenium.interactions.PointerInput;
+import org.openqa.selenium.interactions.Sequence;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -43,13 +47,11 @@ public class Doctor_feature extends BaseClass {
 	@FindBy(xpath = "//android.view.ViewGroup[@content-desc='Doctor Speciality*']")
 	public WebElement Speciality;
 
-
 	@FindBy(xpath="//android.widget.TextView[@text=\"General Physician\"]")
 	public  WebElement SelectSpeciality;
 
 	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"Gender*\"]")
 	public WebElement GenderDropDown;
-
 
 	@FindBy(xpath="//android.widget.TextView[@text=\"female\"]")
 	public WebElement SelectGender;
@@ -57,11 +59,8 @@ public class Doctor_feature extends BaseClass {
 	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"Doctor Type*\"]")
 	public WebElement DoctorType;
 
-
 	@FindBy(xpath="//android.widget.TextView[@text=\"SHIFT\"]")
 	public WebElement SelectDoctorType;
-
-
 
 	@FindBy(xpath = "//android.widget.EditText[@resource-id=\"input-experience\"]")
 	public WebElement Experience;
@@ -72,9 +71,6 @@ public class Doctor_feature extends BaseClass {
 
 	@FindBy(xpath="//android.widget.Button[@resource-id='android:id/button1']")
 	public WebElement SelectDate;
-
-
-
 
 	@FindBy(xpath = "//android.widget.EditText[@resource-id=\"input-contactName\"]")
 	public WebElement ContactName;
@@ -141,14 +137,53 @@ public class Doctor_feature extends BaseClass {
 			wait.until(ExpectedConditions.visibilityOf(Experience)).clear();
 			Experience.sendKeys(experience);
 
-
-
 			wait.until(ExpectedConditions.elementToBeClickable(DoctorType)).click();
 			wait.until(ExpectedConditions.elementToBeClickable(SelectDoctorType)).click();
 
-			wait.until(ExpectedConditions.visibilityOf(DOB)).click();
-			wait.until(ExpectedConditions.visibilityOf(SelectDate)).click();
+			driver.findElement(By.xpath("//android.view.ViewGroup[@content-desc=\"Birth Date*\"]/android.widget.EditText")).click();
 			
+			driver.findElement(By.xpath("//android.widget.TextView[@resource-id=\"android:id/date_picker_header_year\"]")).click();
+			Thread.sleep(5000);
+			By yearLocator = By.xpath("//android.widget.TextView[@text='1985']");
+
+		    for (int i = 0; i < 20; i++) {
+
+		        try {
+		            WebElement year = driver.findElement(yearLocator);
+		            if (year.isDisplayed()) {
+		                year.click();
+		                System.out.println(" Year 1985 selected");
+		                break;
+		            }
+		        } catch (Exception e) {
+		            System.out.println(" 1985 not visible yet, swiping...");
+		        }
+
+		        PointerInput finger = new PointerInput(PointerInput.Kind.TOUCH, "finger");
+		        Sequence swipe = new Sequence(finger, 1);
+
+		        swipe.addAction(finger.createPointerMove(
+		                Duration.ZERO,
+		                PointerInput.Origin.viewport(),
+		                540, 950   
+		        ));
+
+		        swipe.addAction(finger.createPointerDown(PointerInput.MouseButton.LEFT.asArg()));
+
+		        swipe.addAction(new Pause(finger, Duration.ofMillis(200)));
+
+		        swipe.addAction(finger.createPointerMove(
+		                Duration.ofMillis(600),
+		                PointerInput.Origin.viewport(),
+		                540, 1450    // End point (your screen center top)
+		        ));
+
+		        swipe.addAction(finger.createPointerUp(PointerInput.MouseButton.LEFT.asArg()));
+
+		        driver.perform(Collections.singletonList(swipe));
+
+		        Thread.sleep(300);
+		    }
 			wait.until(ExpectedConditions.elementToBeClickable(GenderDropDown)).click();
 			wait.until(ExpectedConditions.elementToBeClickable(SelectGender)).click();
 

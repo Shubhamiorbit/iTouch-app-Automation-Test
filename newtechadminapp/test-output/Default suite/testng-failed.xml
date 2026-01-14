@@ -3,25 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.CreateWardTest">
-        <methods>
-          <include name="initwardpage"/>
-          <include name="testcreateward"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- tests.CreateWardTest -->
-      <class name="tests.OTP_Test">
-        <methods>
-          <include name="initTestReport"/>
-          <include name="enterOTPTest"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- tests.OTP_Test -->
       <class name="tests.NewLoginTest">
         <methods>
           <include name="initPage"/>
-          <include name="setup"/>
           <include name="testValidLogin"/>
+          <include name="setup"/>
         </methods>
       </class> <!-- tests.NewLoginTest -->
     </classes>

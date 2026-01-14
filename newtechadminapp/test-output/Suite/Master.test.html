@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Master.test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>16/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/16</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Dec 23 11:08:33 IST 2025</td>
+<td>Started on:</td><td>Wed Jan 14 14:22:31 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>352 seconds (352132 ms)</td>
+<tr><td>Total time:</td><td>4 seconds (4054 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,85 +76,1327 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.CreateGatewayTest.testcreategateway()'><b>testcreategateway</b><br>Test class: tests.CreateGatewayTest</td>
-<td></td>
-<td>10</td>
-<td>tests.CreateGatewayTest@3c41ed1d</td></tr>
+<td title='tests.NewLoginTest.setup()'><b>setup</b><br>Test class: tests.NewLoginTest</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: The application at &apos;D:\home\virupaksha\eclipse-workspace\newtechadminapp\Apps\techadmin.apk&apos; does not exist or is not accessible 
+Host info: host: &apos;IORBIT_PC_31&apos;, ip: &apos;192.168.1.25&apos;
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:newCommandTimeout=600, appium:deviceName=emulator-5554, appium:adbExecTimeout=120000, appium:automationName=UiAutomator2, appium:waitForIdleTimeout=10000, appium:autoGrantPermissions=true, appium:noReset=true, appium:skipDeviceInitialization=false, appium:disableWindowAnimation=true, appium:appActivity=com.itouchtechadminapp.MainActivity, appium:ignoreHiddenApiPolicyError=true, appium:uiautomator2ServerLaunchTimeout=120000, appium:appPackage=com.itouchtechadminapp, appium:udid=emulator-5554, platformName=ANDROID, appium:skipServerInstallation=false, appium:uiautomator2ServerInstallTimeout=120000, appium:app=D:\home\virupaksha\eclipse-workspace\newtechadminapp\Apps\techadmin.apk}], desiredCapabilities=Capabilities {appium:adbExecTimeout: 120000, appium:app: D:\home\virupaksha\eclipse-..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:newCommandTimeout: 600, appium:noReset: true, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:waitForIdleTimeout: 10000, platformName: ANDROID}}]
+Capabilities {appium:adbExecTimeout: 120000, appium:app: D:\home\virupaksha\eclipse-..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:newCommandTimeout: 600, appium:noReset: true, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:waitForIdleTimeout: 10000, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:116)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:96)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:176)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:268)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:90)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:102)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:109)
+	at Pages.BaseClass.setup(BaseClass.java:65)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1581267786", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1581267786'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: The application at &apos;D:\home\virupaksha\eclipse-workspace\newtechadminapp\Apps\techadmin.apk&apos; does not exist or is not accessible 
+Host info: host: &apos;IORBIT_PC_31&apos;, ip: &apos;192.168.1.25&apos;
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:newCommandTimeout=600, appium:deviceName=emulator-5554, appium:adbExecTimeout=120000, appium:automationName=UiAutomator2, appium:waitForIdleTimeout=10000, appium:autoGrantPermissions=true, appium:noReset=true, appium:skipDeviceInitialization=false, appium:disableWindowAnimation=true, appium:appActivity=com.itouchtechadminapp.MainActivity, appium:ignoreHiddenApiPolicyError=true, appium:uiautomator2ServerLaunchTimeout=120000, appium:appPackage=com.itouchtechadminapp, appium:udid=emulator-5554, platformName=ANDROID, appium:skipServerInstallation=false, appium:uiautomator2ServerInstallTimeout=120000, appium:app=D:\home\virupaksha\eclipse-workspace\newtechadminapp\Apps\techadmin.apk}], desiredCapabilities=Capabilities {appium:adbExecTimeout: 120000, appium:app: D:\home\virupaksha\eclipse-..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:newCommandTimeout: 600, appium:noReset: true, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:waitForIdleTimeout: 10000, platformName: ANDROID}}]
+Capabilities {appium:adbExecTimeout: 120000, appium:app: D:\home\virupaksha\eclipse-..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:newCommandTimeout: 600, appium:noReset: true, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:waitForIdleTimeout: 10000, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:116)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:96)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:176)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:268)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:90)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:102)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:109)
+	at Pages.BaseClass.setup(BaseClass.java:65)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:646)
+	at org.testng.TestRunner.run(TestRunner.java:612)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>3</td>
+<td>tests.NewLoginTest@7ee8290b</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
 <tr>
-<td title='tests.AssignDeviceToBedTest.testAssigndevicetobed()'><b>testAssigndevicetobed</b><br>Test class: tests.AssignDeviceToBedTest</td>
+<td title='tests.CreateWardTest.initwardpage()'><b>initwardpage</b><br>Test class: tests.CreateWardTest</td>
 <td></td>
-<td>15</td>
-<td>tests.AssignDeviceToBedTest@6025e1b6</td></tr>
+<td>0</td>
+<td>tests.CreateWardTest@175b9425</td></tr>
 <tr>
-<td title='tests.CreateDoctorTest.testcreatedoctor()'><b>testcreatedoctor</b><br>Test class: tests.CreateDoctorTest</td>
+<td title='tests.DeviceConfigTest.initPage()'><b>initPage</b><br>Test class: tests.DeviceConfigTest</td>
 <td></td>
-<td>40</td>
-<td>tests.CreateDoctorTest@292b08d6</td></tr>
+<td>0</td>
+<td>tests.DeviceConfigTest@3e96bacf</td></tr>
 <tr>
-<td title='tests.NewLoginTest.testValidLogin()'><b>testValidLogin</b><br>Test class: tests.NewLoginTest</td>
+<td title='tests.AssignDeviceToBedTest.iniassigndocgtortoshiftpage()'><b>iniassigndocgtortoshiftpage</b><br>Test class: tests.AssignDeviceToBedTest</td>
 <td></td>
-<td>10</td>
-<td>tests.NewLoginTest@4802796d</td></tr>
+<td>0</td>
+<td>tests.AssignDeviceToBedTest@484970b0</td></tr>
+<tr>
+<td title='tests.CreateGatewayTest.initPage()'><b>initPage</b><br>Test class: tests.CreateGatewayTest</td>
+<td></td>
+<td>0</td>
+<td>tests.CreateGatewayTest@672872e1</td></tr>
+<tr>
+<td title='tests.AssignDoctorToShiftTest.iniassigndocgtortoshiftpage()'><b>iniassigndocgtortoshiftpage</b><br>Test class: tests.AssignDoctorToShiftTest</td>
+<td></td>
+<td>0</td>
+<td>tests.AssignDoctorToShiftTest@2b4bac49</td></tr>
+<tr>
+<td title='tests.AdmitPatientTest.initPage()'><b>initPage</b><br>Test class: tests.AdmitPatientTest</td>
+<td></td>
+<td>0</td>
+<td>tests.AdmitPatientTest@4470f8a6</td></tr>
+<tr>
+<td title='tests.OTP_Test.initTestReport()'><b>initTestReport</b><br>Test class: tests.OTP_Test</td>
+<td></td>
+<td>0</td>
+<td>tests.OTP_Test@7b02881e</td></tr>
+<tr>
+<td title='tests.CreateNurseTest.initPage()'><b>initPage</b><br>Test class: tests.CreateNurseTest</td>
+<td></td>
+<td>0</td>
+<td>tests.CreateNurseTest@623a8092</td></tr>
+<tr>
+<td title='tests.CreateShiftTest.initshiftpage()'><b>initshiftpage</b><br>Test class: tests.CreateShiftTest</td>
+<td></td>
+<td>0</td>
+<td>tests.CreateShiftTest@32910148</td></tr>
+<tr>
+<td title='tests.AssignBedToNurse.iniassignnursetobedpage()'><b>iniassignnursetobedpage</b><br>Test class: tests.AssignBedToNurse</td>
+<td></td>
+<td>0</td>
+<td>tests.AssignBedToNurse@fd07cbb</td></tr>
+<tr>
+<td title='tests.CreateDeviceTest.initPage()'><b>initPage</b><br>Test class: tests.CreateDeviceTest</td>
+<td></td>
+<td>0</td>
+<td>tests.CreateDeviceTest@a1cdc6d</td></tr>
+<tr>
+<td title='tests.CreateDoctorTest.initPage()'><b>initPage</b><br>Test class: tests.CreateDoctorTest</td>
+<td></td>
+<td>0</td>
+<td>tests.CreateDoctorTest@2f465398</td></tr>
+<tr>
+<td title='tests.CreatePatientTest.initPage()'><b>initPage</b><br>Test class: tests.CreatePatientTest</td>
+<td></td>
+<td>0</td>
+<td>tests.CreatePatientTest@548e6d58</td></tr>
+<tr>
+<td title='tests.AssignNurseToShift.iniassignnursetoshiftpage()'><b>iniassignnursetoshiftpage</b><br>Test class: tests.AssignNurseToShift</td>
+<td></td>
+<td>0</td>
+<td>tests.AssignNurseToShift@3571b748</td></tr>
+<tr>
+<td title='tests.NewLoginTest.initPage()'><b>initPage</b><br>Test class: tests.NewLoginTest</td>
+<td></td>
+<td>0</td>
+<td>tests.NewLoginTest@7ee8290b</td></tr>
+<tr>
+<td title='tests.CreateBedTest.initPage()'><b>initPage</b><br>Test class: tests.CreateBedTest</td>
+<td></td>
+<td>0</td>
+<td>tests.CreateBedTest@3f56875e</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
 <tr>
 <td title='tests.AdmitPatientTest.testadmitpatient()'><b>testadmitpatient</b><br>Test class: tests.AdmitPatientTest</td>
-<td></td>
-<td>26</td>
-<td>tests.AdmitPatientTest@22ff4249</td></tr>
-<tr>
-<td title='tests.CreatePatientTest.testcreatepatient()'><b>testcreatepatient</b><br>Test class: tests.CreatePatientTest</td>
-<td></td>
-<td>62</td>
-<td>tests.CreatePatientTest@22555ebf</td></tr>
-<tr>
-<td title='tests.AssignBedToNurse.testAssignnursetobed()'><b>testAssignnursetobed</b><br>Test class: tests.AssignBedToNurse</td>
-<td></td>
-<td>12</td>
-<td>tests.AssignBedToNurse@702657cc</td></tr>
-<tr>
-<td title='tests.CreateNurseTest.testcreatenurse()'><b>testcreatenurse</b><br>Test class: tests.CreateNurseTest</td>
-<td></td>
-<td>51</td>
-<td>tests.CreateNurseTest@36ebc363</td></tr>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: The application at &apos;D:\home\virupaksha\eclipse-workspace\newtechadminapp\Apps\techadmin.apk&apos; does not exist or is not accessible 
+Host info: host: &apos;IORBIT_PC_31&apos;, ip: &apos;192.168.1.25&apos;
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:newCommandTimeout=600, appium:deviceName=emulator-5554, appium:adbExecTimeout=120000, appium:automationName=UiAutomator2, appium:waitForIdleTimeout=10000, appium:autoGrantPermissions=true, appium:noReset=true, appium:skipDeviceInitialization=false, appium:disableWindowAnimation=true, appium:appActivity=com.itouchtechadminapp.MainActivity, appium:ignoreHiddenApiPolicyError=true, appium:uiautomator2ServerLaunchTimeout=120000, appium:appPackage=com.itouchtechadminapp, appium:udid=emulator-5554, platformName=ANDROID, appium:skipServerInstallation=false, appium:uiautomator2ServerInstallTimeout=120000, appium:app=D:\home\virupaksha\eclipse-workspace\newtechadminapp\Apps\techadmin.apk}], desiredCapabilities=Capabilities {appium:adbExecTimeout: 120000, appium:app: D:\home\virupaksha\eclipse-..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:newCommandTimeout: 600, appium:noReset: true, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:waitForIdleTimeout: 10000, platformName: ANDROID}}]
+Capabilities {appium:adbExecTimeout: 120000, appium:app: D:\home\virupaksha\eclipse-..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:newCommandTimeout: 600, appium:noReset: true, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:waitForIdleTimeout: 10000, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:116)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:96)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:176)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:268)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:90)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:102)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:109)
+	at Pages.BaseClass.setup(BaseClass.java:65)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace889422145", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace889422145'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: The application at &apos;D:\home\virupaksha\eclipse-workspace\newtechadminapp\Apps\techadmin.apk&apos; does not exist or is not accessible 
+Host info: host: &apos;IORBIT_PC_31&apos;, ip: &apos;192.168.1.25&apos;
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:newCommandTimeout=600, appium:deviceName=emulator-5554, appium:adbExecTimeout=120000, appium:automationName=UiAutomator2, appium:waitForIdleTimeout=10000, appium:autoGrantPermissions=true, appium:noReset=true, appium:skipDeviceInitialization=false, appium:disableWindowAnimation=true, appium:appActivity=com.itouchtechadminapp.MainActivity, appium:ignoreHiddenApiPolicyError=true, appium:uiautomator2ServerLaunchTimeout=120000, appium:appPackage=com.itouchtechadminapp, appium:udid=emulator-5554, platformName=ANDROID, appium:skipServerInstallation=false, appium:uiautomator2ServerInstallTimeout=120000, appium:app=D:\home\virupaksha\eclipse-workspace\newtechadminapp\Apps\techadmin.apk}], desiredCapabilities=Capabilities {appium:adbExecTimeout: 120000, appium:app: D:\home\virupaksha\eclipse-..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:newCommandTimeout: 600, appium:noReset: true, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:waitForIdleTimeout: 10000, platformName: ANDROID}}]
+Capabilities {appium:adbExecTimeout: 120000, appium:app: D:\home\virupaksha\eclipse-..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:newCommandTimeout: 600, appium:noReset: true, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:waitForIdleTimeout: 10000, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:116)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:96)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:176)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:268)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:90)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:102)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:109)
+	at Pages.BaseClass.setup(BaseClass.java:65)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:646)
+	at org.testng.TestRunner.run(TestRunner.java:612)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>tests.AdmitPatientTest@4470f8a6</td></tr>
 <tr>
 <td title='tests.AssignDoctorToShiftTest.testAssigndoctortoshift()'><b>testAssigndoctortoshift</b><br>Test class: tests.AssignDoctorToShiftTest</td>
-<td></td>
-<td>11</td>
-<td>tests.AssignDoctorToShiftTest@43bc63a3</td></tr>
-<tr>
-<td title='tests.CreateWardTest.testcreateward()'><b>testcreateward</b><br>Test class: tests.CreateWardTest</td>
-<td></td>
-<td>15</td>
-<td>tests.CreateWardTest@34e9fd99</td></tr>
-<tr>
-<td title='tests.CreateBedTest.testcreatebed()'><b>testcreatebed</b><br>Test class: tests.CreateBedTest</td>
-<td></td>
-<td>10</td>
-<td>tests.CreateBedTest@38425407</td></tr>
-<tr>
-<td title='tests.CreateDeviceTest.testcreatedevice()'><b>testcreatedevice</b><br>Test class: tests.CreateDeviceTest</td>
-<td></td>
-<td>15</td>
-<td>tests.CreateDeviceTest@45752059</td></tr>
-<tr>
-<td title='tests.AssignNurseToShift.testAssignnursetoshift()'><b>testAssignnursetoshift</b><br>Test class: tests.AssignNurseToShift</td>
-<td></td>
-<td>10</td>
-<td>tests.AssignNurseToShift@6a6cb05c</td></tr>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: The application at &apos;D:\home\virupaksha\eclipse-workspace\newtechadminapp\Apps\techadmin.apk&apos; does not exist or is not accessible 
+Host info: host: &apos;IORBIT_PC_31&apos;, ip: &apos;192.168.1.25&apos;
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:newCommandTimeout=600, appium:deviceName=emulator-5554, appium:adbExecTimeout=120000, appium:automationName=UiAutomator2, appium:waitForIdleTimeout=10000, appium:autoGrantPermissions=true, appium:noReset=true, appium:skipDeviceInitialization=false, appium:disableWindowAnimation=true, appium:appActivity=com.itouchtechadminapp.MainActivity, appium:ignoreHiddenApiPolicyError=true, appium:uiautomator2ServerLaunchTimeout=120000, appium:appPackage=com.itouchtechadminapp, appium:udid=emulator-5554, platformName=ANDROID, appium:skipServerInstallation=false, appium:uiautomator2ServerInstallTimeout=120000, appium:app=D:\home\virupaksha\eclipse-workspace\newtechadminapp\Apps\techadmin.apk}], desiredCapabilities=Capabilities {appium:adbExecTimeout: 120000, appium:app: D:\home\virupaksha\eclipse-..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:newCommandTimeout: 600, appium:noReset: true, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:waitForIdleTimeout: 10000, platformName: ANDROID}}]
+Capabilities {appium:adbExecTimeout: 120000, appium:app: D:\home\virupaksha\eclipse-..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:newCommandTimeout: 600, appium:noReset: true, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:waitForIdleTimeout: 10000, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:116)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:96)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:176)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:268)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:90)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:102)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:109)
+	at Pages.BaseClass.setup(BaseClass.java:65)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace649630909", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace649630909'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: The application at &apos;D:\home\virupaksha\eclipse-workspace\newtechadminapp\Apps\techadmin.apk&apos; does not exist or is not accessible 
+Host info: host: &apos;IORBIT_PC_31&apos;, ip: &apos;192.168.1.25&apos;
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:newCommandTimeout=600, appium:deviceName=emulator-5554, appium:adbExecTimeout=120000, appium:automationName=UiAutomator2, appium:waitForIdleTimeout=10000, appium:autoGrantPermissions=true, appium:noReset=true, appium:skipDeviceInitialization=false, appium:disableWindowAnimation=true, appium:appActivity=com.itouchtechadminapp.MainActivity, appium:ignoreHiddenApiPolicyError=true, appium:uiautomator2ServerLaunchTimeout=120000, appium:appPackage=com.itouchtechadminapp, appium:udid=emulator-5554, platformName=ANDROID, appium:skipServerInstallation=false, appium:uiautomator2ServerInstallTimeout=120000, appium:app=D:\home\virupaksha\eclipse-workspace\newtechadminapp\Apps\techadmin.apk}], desiredCapabilities=Capabilities {appium:adbExecTimeout: 120000, appium:app: D:\home\virupaksha\eclipse-..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:newCommandTimeout: 600, appium:noReset: true, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:waitForIdleTimeout: 10000, platformName: ANDROID}}]
+Capabilities {appium:adbExecTimeout: 120000, appium:app: D:\home\virupaksha\eclipse-..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:newCommandTimeout: 600, appium:noReset: true, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:waitForIdleTimeout: 10000, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:116)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:96)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:176)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:268)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:90)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:102)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:109)
+	at Pages.BaseClass.setup(BaseClass.java:65)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:646)
+	at org.testng.TestRunner.run(TestRunner.java:612)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>tests.AssignDoctorToShiftTest@2b4bac49</td></tr>
 <tr>
 <td title='tests.CreateShiftTest.testcreateshift()'><b>testcreateshift</b><br>Test class: tests.CreateShiftTest</td>
-<td></td>
-<td>21</td>
-<td>tests.CreateShiftTest@54d9d12d</td></tr>
-<tr>
-<td title='tests.OTP_Test.enterOTPTest()'><b>enterOTPTest</b><br>Test class: tests.OTP_Test</td>
-<td></td>
-<td>13</td>
-<td>tests.OTP_Test@408d971b</td></tr>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: The application at &apos;D:\home\virupaksha\eclipse-workspace\newtechadminapp\Apps\techadmin.apk&apos; does not exist or is not accessible 
+Host info: host: &apos;IORBIT_PC_31&apos;, ip: &apos;192.168.1.25&apos;
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:newCommandTimeout=600, appium:deviceName=emulator-5554, appium:adbExecTimeout=120000, appium:automationName=UiAutomator2, appium:waitForIdleTimeout=10000, appium:autoGrantPermissions=true, appium:noReset=true, appium:skipDeviceInitialization=false, appium:disableWindowAnimation=true, appium:appActivity=com.itouchtechadminapp.MainActivity, appium:ignoreHiddenApiPolicyError=true, appium:uiautomator2ServerLaunchTimeout=120000, appium:appPackage=com.itouchtechadminapp, appium:udid=emulator-5554, platformName=ANDROID, appium:skipServerInstallation=false, appium:uiautomator2ServerInstallTimeout=120000, appium:app=D:\home\virupaksha\eclipse-workspace\newtechadminapp\Apps\techadmin.apk}], desiredCapabilities=Capabilities {appium:adbExecTimeout: 120000, appium:app: D:\home\virupaksha\eclipse-..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:newCommandTimeout: 600, appium:noReset: true, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:waitForIdleTimeout: 10000, platformName: ANDROID}}]
+Capabilities {appium:adbExecTimeout: 120000, appium:app: D:\home\virupaksha\eclipse-..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:newCommandTimeout: 600, appium:noReset: true, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:waitForIdleTimeout: 10000, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:116)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:96)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:176)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:268)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:90)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:102)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:109)
+	at Pages.BaseClass.setup(BaseClass.java:65)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace220165304", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace220165304'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: The application at &apos;D:\home\virupaksha\eclipse-workspace\newtechadminapp\Apps\techadmin.apk&apos; does not exist or is not accessible 
+Host info: host: &apos;IORBIT_PC_31&apos;, ip: &apos;192.168.1.25&apos;
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:newCommandTimeout=600, appium:deviceName=emulator-5554, appium:adbExecTimeout=120000, appium:automationName=UiAutomator2, appium:waitForIdleTimeout=10000, appium:autoGrantPermissions=true, appium:noReset=true, appium:skipDeviceInitialization=false, appium:disableWindowAnimation=true, appium:appActivity=com.itouchtechadminapp.MainActivity, appium:ignoreHiddenApiPolicyError=true, appium:uiautomator2ServerLaunchTimeout=120000, appium:appPackage=com.itouchtechadminapp, appium:udid=emulator-5554, platformName=ANDROID, appium:skipServerInstallation=false, appium:uiautomator2ServerInstallTimeout=120000, appium:app=D:\home\virupaksha\eclipse-workspace\newtechadminapp\Apps\techadmin.apk}], desiredCapabilities=Capabilities {appium:adbExecTimeout: 120000, appium:app: D:\home\virupaksha\eclipse-..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:newCommandTimeout: 600, appium:noReset: true, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:waitForIdleTimeout: 10000, platformName: ANDROID}}]
+Capabilities {appium:adbExecTimeout: 120000, appium:app: D:\home\virupaksha\eclipse-..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:newCommandTimeout: 600, appium:noReset: true, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:waitForIdleTimeout: 10000, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:116)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:96)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:176)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:268)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:90)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:102)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:109)
+	at Pages.BaseClass.setup(BaseClass.java:65)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:646)
+	at org.testng.TestRunner.run(TestRunner.java:612)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>tests.CreateShiftTest@32910148</td></tr>
 <tr>
 <td title='tests.DeviceConfigTest.testdeviceconfig()'><b>testdeviceconfig</b><br>Test class: tests.DeviceConfigTest</td>
-<td></td>
-<td>16</td>
-<td>tests.DeviceConfigTest@40a4337a</td></tr>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: The application at &apos;D:\home\virupaksha\eclipse-workspace\newtechadminapp\Apps\techadmin.apk&apos; does not exist or is not accessible 
+Host info: host: &apos;IORBIT_PC_31&apos;, ip: &apos;192.168.1.25&apos;
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:newCommandTimeout=600, appium:deviceName=emulator-5554, appium:adbExecTimeout=120000, appium:automationName=UiAutomator2, appium:waitForIdleTimeout=10000, appium:autoGrantPermissions=true, appium:noReset=true, appium:skipDeviceInitialization=false, appium:disableWindowAnimation=true, appium:appActivity=com.itouchtechadminapp.MainActivity, appium:ignoreHiddenApiPolicyError=true, appium:uiautomator2ServerLaunchTimeout=120000, appium:appPackage=com.itouchtechadminapp, appium:udid=emulator-5554, platformName=ANDROID, appium:skipServerInstallation=false, appium:uiautomator2ServerInstallTimeout=120000, appium:app=D:\home\virupaksha\eclipse-workspace\newtechadminapp\Apps\techadmin.apk}], desiredCapabilities=Capabilities {appium:adbExecTimeout: 120000, appium:app: D:\home\virupaksha\eclipse-..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:newCommandTimeout: 600, appium:noReset: true, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:waitForIdleTimeout: 10000, platformName: ANDROID}}]
+Capabilities {appium:adbExecTimeout: 120000, appium:app: D:\home\virupaksha\eclipse-..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:newCommandTimeout: 600, appium:noReset: true, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:waitForIdleTimeout: 10000, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:116)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:96)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:176)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:268)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:90)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:102)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:109)
+	at Pages.BaseClass.setup(BaseClass.java:65)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1886567481", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1886567481'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: The application at &apos;D:\home\virupaksha\eclipse-workspace\newtechadminapp\Apps\techadmin.apk&apos; does not exist or is not accessible 
+Host info: host: &apos;IORBIT_PC_31&apos;, ip: &apos;192.168.1.25&apos;
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:newCommandTimeout=600, appium:deviceName=emulator-5554, appium:adbExecTimeout=120000, appium:automationName=UiAutomator2, appium:waitForIdleTimeout=10000, appium:autoGrantPermissions=true, appium:noReset=true, appium:skipDeviceInitialization=false, appium:disableWindowAnimation=true, appium:appActivity=com.itouchtechadminapp.MainActivity, appium:ignoreHiddenApiPolicyError=true, appium:uiautomator2ServerLaunchTimeout=120000, appium:appPackage=com.itouchtechadminapp, appium:udid=emulator-5554, platformName=ANDROID, appium:skipServerInstallation=false, appium:uiautomator2ServerInstallTimeout=120000, appium:app=D:\home\virupaksha\eclipse-workspace\newtechadminapp\Apps\techadmin.apk}], desiredCapabilities=Capabilities {appium:adbExecTimeout: 120000, appium:app: D:\home\virupaksha\eclipse-..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:newCommandTimeout: 600, appium:noReset: true, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:waitForIdleTimeout: 10000, platformName: ANDROID}}]
+Capabilities {appium:adbExecTimeout: 120000, appium:app: D:\home\virupaksha\eclipse-..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:newCommandTimeout: 600, appium:noReset: true, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:waitForIdleTimeout: 10000, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:116)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:96)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:176)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:268)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:90)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:102)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:109)
+	at Pages.BaseClass.setup(BaseClass.java:65)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:646)
+	at org.testng.TestRunner.run(TestRunner.java:612)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>tests.DeviceConfigTest@3e96bacf</td></tr>
+<tr>
+<td title='tests.OTP_Test.enterOTPTest()'><b>enterOTPTest</b><br>Test class: tests.OTP_Test</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: The application at &apos;D:\home\virupaksha\eclipse-workspace\newtechadminapp\Apps\techadmin.apk&apos; does not exist or is not accessible 
+Host info: host: &apos;IORBIT_PC_31&apos;, ip: &apos;192.168.1.25&apos;
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:newCommandTimeout=600, appium:deviceName=emulator-5554, appium:adbExecTimeout=120000, appium:automationName=UiAutomator2, appium:waitForIdleTimeout=10000, appium:autoGrantPermissions=true, appium:noReset=true, appium:skipDeviceInitialization=false, appium:disableWindowAnimation=true, appium:appActivity=com.itouchtechadminapp.MainActivity, appium:ignoreHiddenApiPolicyError=true, appium:uiautomator2ServerLaunchTimeout=120000, appium:appPackage=com.itouchtechadminapp, appium:udid=emulator-5554, platformName=ANDROID, appium:skipServerInstallation=false, appium:uiautomator2ServerInstallTimeout=120000, appium:app=D:\home\virupaksha\eclipse-workspace\newtechadminapp\Apps\techadmin.apk}], desiredCapabilities=Capabilities {appium:adbExecTimeout: 120000, appium:app: D:\home\virupaksha\eclipse-..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:newCommandTimeout: 600, appium:noReset: true, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:waitForIdleTimeout: 10000, platformName: ANDROID}}]
+Capabilities {appium:adbExecTimeout: 120000, appium:app: D:\home\virupaksha\eclipse-..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:newCommandTimeout: 600, appium:noReset: true, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:waitForIdleTimeout: 10000, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:116)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:96)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:176)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:268)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:90)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:102)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:109)
+	at Pages.BaseClass.setup(BaseClass.java:65)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1103017075", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1103017075'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: The application at &apos;D:\home\virupaksha\eclipse-workspace\newtechadminapp\Apps\techadmin.apk&apos; does not exist or is not accessible 
+Host info: host: &apos;IORBIT_PC_31&apos;, ip: &apos;192.168.1.25&apos;
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:newCommandTimeout=600, appium:deviceName=emulator-5554, appium:adbExecTimeout=120000, appium:automationName=UiAutomator2, appium:waitForIdleTimeout=10000, appium:autoGrantPermissions=true, appium:noReset=true, appium:skipDeviceInitialization=false, appium:disableWindowAnimation=true, appium:appActivity=com.itouchtechadminapp.MainActivity, appium:ignoreHiddenApiPolicyError=true, appium:uiautomator2ServerLaunchTimeout=120000, appium:appPackage=com.itouchtechadminapp, appium:udid=emulator-5554, platformName=ANDROID, appium:skipServerInstallation=false, appium:uiautomator2ServerInstallTimeout=120000, appium:app=D:\home\virupaksha\eclipse-workspace\newtechadminapp\Apps\techadmin.apk}], desiredCapabilities=Capabilities {appium:adbExecTimeout: 120000, appium:app: D:\home\virupaksha\eclipse-..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:newCommandTimeout: 600, appium:noReset: true, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:waitForIdleTimeout: 10000, platformName: ANDROID}}]
+Capabilities {appium:adbExecTimeout: 120000, appium:app: D:\home\virupaksha\eclipse-..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:newCommandTimeout: 600, appium:noReset: true, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:waitForIdleTimeout: 10000, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:116)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:96)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:176)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:268)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:90)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:102)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:109)
+	at Pages.BaseClass.setup(BaseClass.java:65)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:646)
+	at org.testng.TestRunner.run(TestRunner.java:612)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>tests.OTP_Test@7b02881e</td></tr>
+<tr>
+<td title='tests.CreateNurseTest.testcreatenurse()'><b>testcreatenurse</b><br>Test class: tests.CreateNurseTest</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: The application at &apos;D:\home\virupaksha\eclipse-workspace\newtechadminapp\Apps\techadmin.apk&apos; does not exist or is not accessible 
+Host info: host: &apos;IORBIT_PC_31&apos;, ip: &apos;192.168.1.25&apos;
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:newCommandTimeout=600, appium:deviceName=emulator-5554, appium:adbExecTimeout=120000, appium:automationName=UiAutomator2, appium:waitForIdleTimeout=10000, appium:autoGrantPermissions=true, appium:noReset=true, appium:skipDeviceInitialization=false, appium:disableWindowAnimation=true, appium:appActivity=com.itouchtechadminapp.MainActivity, appium:ignoreHiddenApiPolicyError=true, appium:uiautomator2ServerLaunchTimeout=120000, appium:appPackage=com.itouchtechadminapp, appium:udid=emulator-5554, platformName=ANDROID, appium:skipServerInstallation=false, appium:uiautomator2ServerInstallTimeout=120000, appium:app=D:\home\virupaksha\eclipse-workspace\newtechadminapp\Apps\techadmin.apk}], desiredCapabilities=Capabilities {appium:adbExecTimeout: 120000, appium:app: D:\home\virupaksha\eclipse-..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:newCommandTimeout: 600, appium:noReset: true, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:waitForIdleTimeout: 10000, platformName: ANDROID}}]
+Capabilities {appium:adbExecTimeout: 120000, appium:app: D:\home\virupaksha\eclipse-..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:newCommandTimeout: 600, appium:noReset: true, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:waitForIdleTimeout: 10000, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:116)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:96)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:176)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:268)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:90)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:102)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:109)
+	at Pages.BaseClass.setup(BaseClass.java:65)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace268379633", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace268379633'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: The application at &apos;D:\home\virupaksha\eclipse-workspace\newtechadminapp\Apps\techadmin.apk&apos; does not exist or is not accessible 
+Host info: host: &apos;IORBIT_PC_31&apos;, ip: &apos;192.168.1.25&apos;
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:newCommandTimeout=600, appium:deviceName=emulator-5554, appium:adbExecTimeout=120000, appium:automationName=UiAutomator2, appium:waitForIdleTimeout=10000, appium:autoGrantPermissions=true, appium:noReset=true, appium:skipDeviceInitialization=false, appium:disableWindowAnimation=true, appium:appActivity=com.itouchtechadminapp.MainActivity, appium:ignoreHiddenApiPolicyError=true, appium:uiautomator2ServerLaunchTimeout=120000, appium:appPackage=com.itouchtechadminapp, appium:udid=emulator-5554, platformName=ANDROID, appium:skipServerInstallation=false, appium:uiautomator2ServerInstallTimeout=120000, appium:app=D:\home\virupaksha\eclipse-workspace\newtechadminapp\Apps\techadmin.apk}], desiredCapabilities=Capabilities {appium:adbExecTimeout: 120000, appium:app: D:\home\virupaksha\eclipse-..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:newCommandTimeout: 600, appium:noReset: true, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:waitForIdleTimeout: 10000, platformName: ANDROID}}]
+Capabilities {appium:adbExecTimeout: 120000, appium:app: D:\home\virupaksha\eclipse-..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:newCommandTimeout: 600, appium:noReset: true, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:waitForIdleTimeout: 10000, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:116)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:96)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:176)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:268)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:90)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:102)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:109)
+	at Pages.BaseClass.setup(BaseClass.java:65)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:646)
+	at org.testng.TestRunner.run(TestRunner.java:612)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>tests.CreateNurseTest@623a8092</td></tr>
+<tr>
+<td title='tests.NewLoginTest.testValidLogin()'><b>testValidLogin</b><br>Test class: tests.NewLoginTest</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: The application at &apos;D:\home\virupaksha\eclipse-workspace\newtechadminapp\Apps\techadmin.apk&apos; does not exist or is not accessible 
+Host info: host: &apos;IORBIT_PC_31&apos;, ip: &apos;192.168.1.25&apos;
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:newCommandTimeout=600, appium:deviceName=emulator-5554, appium:adbExecTimeout=120000, appium:automationName=UiAutomator2, appium:waitForIdleTimeout=10000, appium:autoGrantPermissions=true, appium:noReset=true, appium:skipDeviceInitialization=false, appium:disableWindowAnimation=true, appium:appActivity=com.itouchtechadminapp.MainActivity, appium:ignoreHiddenApiPolicyError=true, appium:uiautomator2ServerLaunchTimeout=120000, appium:appPackage=com.itouchtechadminapp, appium:udid=emulator-5554, platformName=ANDROID, appium:skipServerInstallation=false, appium:uiautomator2ServerInstallTimeout=120000, appium:app=D:\home\virupaksha\eclipse-workspace\newtechadminapp\Apps\techadmin.apk}], desiredCapabilities=Capabilities {appium:adbExecTimeout: 120000, appium:app: D:\home\virupaksha\eclipse-..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:newCommandTimeout: 600, appium:noReset: true, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:waitForIdleTimeout: 10000, platformName: ANDROID}}]
+Capabilities {appium:adbExecTimeout: 120000, appium:app: D:\home\virupaksha\eclipse-..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:newCommandTimeout: 600, appium:noReset: true, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:waitForIdleTimeout: 10000, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:116)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:96)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:176)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:268)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:90)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:102)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:109)
+	at Pages.BaseClass.setup(BaseClass.java:65)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace502891368", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace502891368'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: The application at &apos;D:\home\virupaksha\eclipse-workspace\newtechadminapp\Apps\techadmin.apk&apos; does not exist or is not accessible 
+Host info: host: &apos;IORBIT_PC_31&apos;, ip: &apos;192.168.1.25&apos;
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:newCommandTimeout=600, appium:deviceName=emulator-5554, appium:adbExecTimeout=120000, appium:automationName=UiAutomator2, appium:waitForIdleTimeout=10000, appium:autoGrantPermissions=true, appium:noReset=true, appium:skipDeviceInitialization=false, appium:disableWindowAnimation=true, appium:appActivity=com.itouchtechadminapp.MainActivity, appium:ignoreHiddenApiPolicyError=true, appium:uiautomator2ServerLaunchTimeout=120000, appium:appPackage=com.itouchtechadminapp, appium:udid=emulator-5554, platformName=ANDROID, appium:skipServerInstallation=false, appium:uiautomator2ServerInstallTimeout=120000, appium:app=D:\home\virupaksha\eclipse-workspace\newtechadminapp\Apps\techadmin.apk}], desiredCapabilities=Capabilities {appium:adbExecTimeout: 120000, appium:app: D:\home\virupaksha\eclipse-..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:newCommandTimeout: 600, appium:noReset: true, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:waitForIdleTimeout: 10000, platformName: ANDROID}}]
+Capabilities {appium:adbExecTimeout: 120000, appium:app: D:\home\virupaksha\eclipse-..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:newCommandTimeout: 600, appium:noReset: true, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:waitForIdleTimeout: 10000, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:116)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:96)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:176)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:268)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:90)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:102)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:109)
+	at Pages.BaseClass.setup(BaseClass.java:65)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:646)
+	at org.testng.TestRunner.run(TestRunner.java:612)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>tests.NewLoginTest@7ee8290b</td></tr>
+<tr>
+<td title='tests.CreateDoctorTest.testcreatedoctor()'><b>testcreatedoctor</b><br>Test class: tests.CreateDoctorTest</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: The application at &apos;D:\home\virupaksha\eclipse-workspace\newtechadminapp\Apps\techadmin.apk&apos; does not exist or is not accessible 
+Host info: host: &apos;IORBIT_PC_31&apos;, ip: &apos;192.168.1.25&apos;
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:newCommandTimeout=600, appium:deviceName=emulator-5554, appium:adbExecTimeout=120000, appium:automationName=UiAutomator2, appium:waitForIdleTimeout=10000, appium:autoGrantPermissions=true, appium:noReset=true, appium:skipDeviceInitialization=false, appium:disableWindowAnimation=true, appium:appActivity=com.itouchtechadminapp.MainActivity, appium:ignoreHiddenApiPolicyError=true, appium:uiautomator2ServerLaunchTimeout=120000, appium:appPackage=com.itouchtechadminapp, appium:udid=emulator-5554, platformName=ANDROID, appium:skipServerInstallation=false, appium:uiautomator2ServerInstallTimeout=120000, appium:app=D:\home\virupaksha\eclipse-workspace\newtechadminapp\Apps\techadmin.apk}], desiredCapabilities=Capabilities {appium:adbExecTimeout: 120000, appium:app: D:\home\virupaksha\eclipse-..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:newCommandTimeout: 600, appium:noReset: true, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:waitForIdleTimeout: 10000, platformName: ANDROID}}]
+Capabilities {appium:adbExecTimeout: 120000, appium:app: D:\home\virupaksha\eclipse-..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:newCommandTimeout: 600, appium:noReset: true, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:waitForIdleTimeout: 10000, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:116)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:96)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:176)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:268)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:90)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:102)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:109)
+	at Pages.BaseClass.setup(BaseClass.java:65)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace939254952", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace939254952'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: The application at &apos;D:\home\virupaksha\eclipse-workspace\newtechadminapp\Apps\techadmin.apk&apos; does not exist or is not accessible 
+Host info: host: &apos;IORBIT_PC_31&apos;, ip: &apos;192.168.1.25&apos;
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:newCommandTimeout=600, appium:deviceName=emulator-5554, appium:adbExecTimeout=120000, appium:automationName=UiAutomator2, appium:waitForIdleTimeout=10000, appium:autoGrantPermissions=true, appium:noReset=true, appium:skipDeviceInitialization=false, appium:disableWindowAnimation=true, appium:appActivity=com.itouchtechadminapp.MainActivity, appium:ignoreHiddenApiPolicyError=true, appium:uiautomator2ServerLaunchTimeout=120000, appium:appPackage=com.itouchtechadminapp, appium:udid=emulator-5554, platformName=ANDROID, appium:skipServerInstallation=false, appium:uiautomator2ServerInstallTimeout=120000, appium:app=D:\home\virupaksha\eclipse-workspace\newtechadminapp\Apps\techadmin.apk}], desiredCapabilities=Capabilities {appium:adbExecTimeout: 120000, appium:app: D:\home\virupaksha\eclipse-..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:newCommandTimeout: 600, appium:noReset: true, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:waitForIdleTimeout: 10000, platformName: ANDROID}}]
+Capabilities {appium:adbExecTimeout: 120000, appium:app: D:\home\virupaksha\eclipse-..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:newCommandTimeout: 600, appium:noReset: true, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:waitForIdleTimeout: 10000, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:116)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:96)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:176)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:268)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:90)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:102)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:109)
+	at Pages.BaseClass.setup(BaseClass.java:65)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:646)
+	at org.testng.TestRunner.run(TestRunner.java:612)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>tests.CreateDoctorTest@2f465398</td></tr>
+<tr>
+<td title='tests.CreatePatientTest.testcreatepatient()'><b>testcreatepatient</b><br>Test class: tests.CreatePatientTest</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: The application at &apos;D:\home\virupaksha\eclipse-workspace\newtechadminapp\Apps\techadmin.apk&apos; does not exist or is not accessible 
+Host info: host: &apos;IORBIT_PC_31&apos;, ip: &apos;192.168.1.25&apos;
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:newCommandTimeout=600, appium:deviceName=emulator-5554, appium:adbExecTimeout=120000, appium:automationName=UiAutomator2, appium:waitForIdleTimeout=10000, appium:autoGrantPermissions=true, appium:noReset=true, appium:skipDeviceInitialization=false, appium:disableWindowAnimation=true, appium:appActivity=com.itouchtechadminapp.MainActivity, appium:ignoreHiddenApiPolicyError=true, appium:uiautomator2ServerLaunchTimeout=120000, appium:appPackage=com.itouchtechadminapp, appium:udid=emulator-5554, platformName=ANDROID, appium:skipServerInstallation=false, appium:uiautomator2ServerInstallTimeout=120000, appium:app=D:\home\virupaksha\eclipse-workspace\newtechadminapp\Apps\techadmin.apk}], desiredCapabilities=Capabilities {appium:adbExecTimeout: 120000, appium:app: D:\home\virupaksha\eclipse-..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:newCommandTimeout: 600, appium:noReset: true, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:waitForIdleTimeout: 10000, platformName: ANDROID}}]
+Capabilities {appium:adbExecTimeout: 120000, appium:app: D:\home\virupaksha\eclipse-..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:newCommandTimeout: 600, appium:noReset: true, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:waitForIdleTimeout: 10000, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:116)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:96)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:176)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:268)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:90)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:102)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:109)
+	at Pages.BaseClass.setup(BaseClass.java:65)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1835778392", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1835778392'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: The application at &apos;D:\home\virupaksha\eclipse-workspace\newtechadminapp\Apps\techadmin.apk&apos; does not exist or is not accessible 
+Host info: host: &apos;IORBIT_PC_31&apos;, ip: &apos;192.168.1.25&apos;
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:newCommandTimeout=600, appium:deviceName=emulator-5554, appium:adbExecTimeout=120000, appium:automationName=UiAutomator2, appium:waitForIdleTimeout=10000, appium:autoGrantPermissions=true, appium:noReset=true, appium:skipDeviceInitialization=false, appium:disableWindowAnimation=true, appium:appActivity=com.itouchtechadminapp.MainActivity, appium:ignoreHiddenApiPolicyError=true, appium:uiautomator2ServerLaunchTimeout=120000, appium:appPackage=com.itouchtechadminapp, appium:udid=emulator-5554, platformName=ANDROID, appium:skipServerInstallation=false, appium:uiautomator2ServerInstallTimeout=120000, appium:app=D:\home\virupaksha\eclipse-workspace\newtechadminapp\Apps\techadmin.apk}], desiredCapabilities=Capabilities {appium:adbExecTimeout: 120000, appium:app: D:\home\virupaksha\eclipse-..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:newCommandTimeout: 600, appium:noReset: true, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:waitForIdleTimeout: 10000, platformName: ANDROID}}]
+Capabilities {appium:adbExecTimeout: 120000, appium:app: D:\home\virupaksha\eclipse-..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:newCommandTimeout: 600, appium:noReset: true, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:waitForIdleTimeout: 10000, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:116)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:96)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:176)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:268)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:90)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:102)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:109)
+	at Pages.BaseClass.setup(BaseClass.java:65)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:646)
+	at org.testng.TestRunner.run(TestRunner.java:612)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>tests.CreatePatientTest@548e6d58</td></tr>
+<tr>
+<td title='tests.CreateBedTest.testcreatebed()'><b>testcreatebed</b><br>Test class: tests.CreateBedTest</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: The application at &apos;D:\home\virupaksha\eclipse-workspace\newtechadminapp\Apps\techadmin.apk&apos; does not exist or is not accessible 
+Host info: host: &apos;IORBIT_PC_31&apos;, ip: &apos;192.168.1.25&apos;
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:newCommandTimeout=600, appium:deviceName=emulator-5554, appium:adbExecTimeout=120000, appium:automationName=UiAutomator2, appium:waitForIdleTimeout=10000, appium:autoGrantPermissions=true, appium:noReset=true, appium:skipDeviceInitialization=false, appium:disableWindowAnimation=true, appium:appActivity=com.itouchtechadminapp.MainActivity, appium:ignoreHiddenApiPolicyError=true, appium:uiautomator2ServerLaunchTimeout=120000, appium:appPackage=com.itouchtechadminapp, appium:udid=emulator-5554, platformName=ANDROID, appium:skipServerInstallation=false, appium:uiautomator2ServerInstallTimeout=120000, appium:app=D:\home\virupaksha\eclipse-workspace\newtechadminapp\Apps\techadmin.apk}], desiredCapabilities=Capabilities {appium:adbExecTimeout: 120000, appium:app: D:\home\virupaksha\eclipse-..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:newCommandTimeout: 600, appium:noReset: true, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:waitForIdleTimeout: 10000, platformName: ANDROID}}]
+Capabilities {appium:adbExecTimeout: 120000, appium:app: D:\home\virupaksha\eclipse-..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:newCommandTimeout: 600, appium:noReset: true, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:waitForIdleTimeout: 10000, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:116)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:96)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:176)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:268)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:90)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:102)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:109)
+	at Pages.BaseClass.setup(BaseClass.java:65)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace564526486", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace564526486'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: The application at &apos;D:\home\virupaksha\eclipse-workspace\newtechadminapp\Apps\techadmin.apk&apos; does not exist or is not accessible 
+Host info: host: &apos;IORBIT_PC_31&apos;, ip: &apos;192.168.1.25&apos;
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:newCommandTimeout=600, appium:deviceName=emulator-5554, appium:adbExecTimeout=120000, appium:automationName=UiAutomator2, appium:waitForIdleTimeout=10000, appium:autoGrantPermissions=true, appium:noReset=true, appium:skipDeviceInitialization=false, appium:disableWindowAnimation=true, appium:appActivity=com.itouchtechadminapp.MainActivity, appium:ignoreHiddenApiPolicyError=true, appium:uiautomator2ServerLaunchTimeout=120000, appium:appPackage=com.itouchtechadminapp, appium:udid=emulator-5554, platformName=ANDROID, appium:skipServerInstallation=false, appium:uiautomator2ServerInstallTimeout=120000, appium:app=D:\home\virupaksha\eclipse-workspace\newtechadminapp\Apps\techadmin.apk}], desiredCapabilities=Capabilities {appium:adbExecTimeout: 120000, appium:app: D:\home\virupaksha\eclipse-..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:newCommandTimeout: 600, appium:noReset: true, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:waitForIdleTimeout: 10000, platformName: ANDROID}}]
+Capabilities {appium:adbExecTimeout: 120000, appium:app: D:\home\virupaksha\eclipse-..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:newCommandTimeout: 600, appium:noReset: true, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:waitForIdleTimeout: 10000, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:116)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:96)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:176)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:268)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:90)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:102)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:109)
+	at Pages.BaseClass.setup(BaseClass.java:65)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:646)
+	at org.testng.TestRunner.run(TestRunner.java:612)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>tests.CreateBedTest@3f56875e</td></tr>
+<tr>
+<td title='tests.AssignNurseToShift.testAssignnursetoshift()'><b>testAssignnursetoshift</b><br>Test class: tests.AssignNurseToShift</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: The application at &apos;D:\home\virupaksha\eclipse-workspace\newtechadminapp\Apps\techadmin.apk&apos; does not exist or is not accessible 
+Host info: host: &apos;IORBIT_PC_31&apos;, ip: &apos;192.168.1.25&apos;
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:newCommandTimeout=600, appium:deviceName=emulator-5554, appium:adbExecTimeout=120000, appium:automationName=UiAutomator2, appium:waitForIdleTimeout=10000, appium:autoGrantPermissions=true, appium:noReset=true, appium:skipDeviceInitialization=false, appium:disableWindowAnimation=true, appium:appActivity=com.itouchtechadminapp.MainActivity, appium:ignoreHiddenApiPolicyError=true, appium:uiautomator2ServerLaunchTimeout=120000, appium:appPackage=com.itouchtechadminapp, appium:udid=emulator-5554, platformName=ANDROID, appium:skipServerInstallation=false, appium:uiautomator2ServerInstallTimeout=120000, appium:app=D:\home\virupaksha\eclipse-workspace\newtechadminapp\Apps\techadmin.apk}], desiredCapabilities=Capabilities {appium:adbExecTimeout: 120000, appium:app: D:\home\virupaksha\eclipse-..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:newCommandTimeout: 600, appium:noReset: true, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:waitForIdleTimeout: 10000, platformName: ANDROID}}]
+Capabilities {appium:adbExecTimeout: 120000, appium:app: D:\home\virupaksha\eclipse-..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:newCommandTimeout: 600, appium:noReset: true, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:waitForIdleTimeout: 10000, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:116)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:96)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:176)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:268)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:90)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:102)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:109)
+	at Pages.BaseClass.setup(BaseClass.java:65)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1224064486", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1224064486'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: The application at &apos;D:\home\virupaksha\eclipse-workspace\newtechadminapp\Apps\techadmin.apk&apos; does not exist or is not accessible 
+Host info: host: &apos;IORBIT_PC_31&apos;, ip: &apos;192.168.1.25&apos;
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:newCommandTimeout=600, appium:deviceName=emulator-5554, appium:adbExecTimeout=120000, appium:automationName=UiAutomator2, appium:waitForIdleTimeout=10000, appium:autoGrantPermissions=true, appium:noReset=true, appium:skipDeviceInitialization=false, appium:disableWindowAnimation=true, appium:appActivity=com.itouchtechadminapp.MainActivity, appium:ignoreHiddenApiPolicyError=true, appium:uiautomator2ServerLaunchTimeout=120000, appium:appPackage=com.itouchtechadminapp, appium:udid=emulator-5554, platformName=ANDROID, appium:skipServerInstallation=false, appium:uiautomator2ServerInstallTimeout=120000, appium:app=D:\home\virupaksha\eclipse-workspace\newtechadminapp\Apps\techadmin.apk}], desiredCapabilities=Capabilities {appium:adbExecTimeout: 120000, appium:app: D:\home\virupaksha\eclipse-..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:newCommandTimeout: 600, appium:noReset: true, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:waitForIdleTimeout: 10000, platformName: ANDROID}}]
+Capabilities {appium:adbExecTimeout: 120000, appium:app: D:\home\virupaksha\eclipse-..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:newCommandTimeout: 600, appium:noReset: true, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:waitForIdleTimeout: 10000, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:116)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:96)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:176)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:268)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:90)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:102)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:109)
+	at Pages.BaseClass.setup(BaseClass.java:65)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:646)
+	at org.testng.TestRunner.run(TestRunner.java:612)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>tests.AssignNurseToShift@3571b748</td></tr>
+<tr>
+<td title='tests.CreateDeviceTest.testcreatedevice()'><b>testcreatedevice</b><br>Test class: tests.CreateDeviceTest</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: The application at &apos;D:\home\virupaksha\eclipse-workspace\newtechadminapp\Apps\techadmin.apk&apos; does not exist or is not accessible 
+Host info: host: &apos;IORBIT_PC_31&apos;, ip: &apos;192.168.1.25&apos;
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:newCommandTimeout=600, appium:deviceName=emulator-5554, appium:adbExecTimeout=120000, appium:automationName=UiAutomator2, appium:waitForIdleTimeout=10000, appium:autoGrantPermissions=true, appium:noReset=true, appium:skipDeviceInitialization=false, appium:disableWindowAnimation=true, appium:appActivity=com.itouchtechadminapp.MainActivity, appium:ignoreHiddenApiPolicyError=true, appium:uiautomator2ServerLaunchTimeout=120000, appium:appPackage=com.itouchtechadminapp, appium:udid=emulator-5554, platformName=ANDROID, appium:skipServerInstallation=false, appium:uiautomator2ServerInstallTimeout=120000, appium:app=D:\home\virupaksha\eclipse-workspace\newtechadminapp\Apps\techadmin.apk}], desiredCapabilities=Capabilities {appium:adbExecTimeout: 120000, appium:app: D:\home\virupaksha\eclipse-..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:newCommandTimeout: 600, appium:noReset: true, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:waitForIdleTimeout: 10000, platformName: ANDROID}}]
+Capabilities {appium:adbExecTimeout: 120000, appium:app: D:\home\virupaksha\eclipse-..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:newCommandTimeout: 600, appium:noReset: true, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:waitForIdleTimeout: 10000, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:116)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:96)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:176)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:268)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:90)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:102)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:109)
+	at Pages.BaseClass.setup(BaseClass.java:65)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace748975217", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace748975217'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: The application at &apos;D:\home\virupaksha\eclipse-workspace\newtechadminapp\Apps\techadmin.apk&apos; does not exist or is not accessible 
+Host info: host: &apos;IORBIT_PC_31&apos;, ip: &apos;192.168.1.25&apos;
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:newCommandTimeout=600, appium:deviceName=emulator-5554, appium:adbExecTimeout=120000, appium:automationName=UiAutomator2, appium:waitForIdleTimeout=10000, appium:autoGrantPermissions=true, appium:noReset=true, appium:skipDeviceInitialization=false, appium:disableWindowAnimation=true, appium:appActivity=com.itouchtechadminapp.MainActivity, appium:ignoreHiddenApiPolicyError=true, appium:uiautomator2ServerLaunchTimeout=120000, appium:appPackage=com.itouchtechadminapp, appium:udid=emulator-5554, platformName=ANDROID, appium:skipServerInstallation=false, appium:uiautomator2ServerInstallTimeout=120000, appium:app=D:\home\virupaksha\eclipse-workspace\newtechadminapp\Apps\techadmin.apk}], desiredCapabilities=Capabilities {appium:adbExecTimeout: 120000, appium:app: D:\home\virupaksha\eclipse-..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:newCommandTimeout: 600, appium:noReset: true, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:waitForIdleTimeout: 10000, platformName: ANDROID}}]
+Capabilities {appium:adbExecTimeout: 120000, appium:app: D:\home\virupaksha\eclipse-..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:newCommandTimeout: 600, appium:noReset: true, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:waitForIdleTimeout: 10000, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:116)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:96)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:176)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:268)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:90)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:102)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:109)
+	at Pages.BaseClass.setup(BaseClass.java:65)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:646)
+	at org.testng.TestRunner.run(TestRunner.java:612)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>tests.CreateDeviceTest@a1cdc6d</td></tr>
+<tr>
+<td title='tests.CreateWardTest.testcreateward()'><b>testcreateward</b><br>Test class: tests.CreateWardTest</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: The application at &apos;D:\home\virupaksha\eclipse-workspace\newtechadminapp\Apps\techadmin.apk&apos; does not exist or is not accessible 
+Host info: host: &apos;IORBIT_PC_31&apos;, ip: &apos;192.168.1.25&apos;
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:newCommandTimeout=600, appium:deviceName=emulator-5554, appium:adbExecTimeout=120000, appium:automationName=UiAutomator2, appium:waitForIdleTimeout=10000, appium:autoGrantPermissions=true, appium:noReset=true, appium:skipDeviceInitialization=false, appium:disableWindowAnimation=true, appium:appActivity=com.itouchtechadminapp.MainActivity, appium:ignoreHiddenApiPolicyError=true, appium:uiautomator2ServerLaunchTimeout=120000, appium:appPackage=com.itouchtechadminapp, appium:udid=emulator-5554, platformName=ANDROID, appium:skipServerInstallation=false, appium:uiautomator2ServerInstallTimeout=120000, appium:app=D:\home\virupaksha\eclipse-workspace\newtechadminapp\Apps\techadmin.apk}], desiredCapabilities=Capabilities {appium:adbExecTimeout: 120000, appium:app: D:\home\virupaksha\eclipse-..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:newCommandTimeout: 600, appium:noReset: true, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:waitForIdleTimeout: 10000, platformName: ANDROID}}]
+Capabilities {appium:adbExecTimeout: 120000, appium:app: D:\home\virupaksha\eclipse-..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:newCommandTimeout: 600, appium:noReset: true, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:waitForIdleTimeout: 10000, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:116)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:96)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:176)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:268)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:90)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:102)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:109)
+	at Pages.BaseClass.setup(BaseClass.java:65)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace254918854", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace254918854'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: The application at &apos;D:\home\virupaksha\eclipse-workspace\newtechadminapp\Apps\techadmin.apk&apos; does not exist or is not accessible 
+Host info: host: &apos;IORBIT_PC_31&apos;, ip: &apos;192.168.1.25&apos;
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:newCommandTimeout=600, appium:deviceName=emulator-5554, appium:adbExecTimeout=120000, appium:automationName=UiAutomator2, appium:waitForIdleTimeout=10000, appium:autoGrantPermissions=true, appium:noReset=true, appium:skipDeviceInitialization=false, appium:disableWindowAnimation=true, appium:appActivity=com.itouchtechadminapp.MainActivity, appium:ignoreHiddenApiPolicyError=true, appium:uiautomator2ServerLaunchTimeout=120000, appium:appPackage=com.itouchtechadminapp, appium:udid=emulator-5554, platformName=ANDROID, appium:skipServerInstallation=false, appium:uiautomator2ServerInstallTimeout=120000, appium:app=D:\home\virupaksha\eclipse-workspace\newtechadminapp\Apps\techadmin.apk}], desiredCapabilities=Capabilities {appium:adbExecTimeout: 120000, appium:app: D:\home\virupaksha\eclipse-..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:newCommandTimeout: 600, appium:noReset: true, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:waitForIdleTimeout: 10000, platformName: ANDROID}}]
+Capabilities {appium:adbExecTimeout: 120000, appium:app: D:\home\virupaksha\eclipse-..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:newCommandTimeout: 600, appium:noReset: true, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:waitForIdleTimeout: 10000, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:116)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:96)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:176)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:268)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:90)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:102)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:109)
+	at Pages.BaseClass.setup(BaseClass.java:65)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:646)
+	at org.testng.TestRunner.run(TestRunner.java:612)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>tests.CreateWardTest@175b9425</td></tr>
+<tr>
+<td title='tests.CreateGatewayTest.testcreategateway()'><b>testcreategateway</b><br>Test class: tests.CreateGatewayTest</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: The application at &apos;D:\home\virupaksha\eclipse-workspace\newtechadminapp\Apps\techadmin.apk&apos; does not exist or is not accessible 
+Host info: host: &apos;IORBIT_PC_31&apos;, ip: &apos;192.168.1.25&apos;
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:newCommandTimeout=600, appium:deviceName=emulator-5554, appium:adbExecTimeout=120000, appium:automationName=UiAutomator2, appium:waitForIdleTimeout=10000, appium:autoGrantPermissions=true, appium:noReset=true, appium:skipDeviceInitialization=false, appium:disableWindowAnimation=true, appium:appActivity=com.itouchtechadminapp.MainActivity, appium:ignoreHiddenApiPolicyError=true, appium:uiautomator2ServerLaunchTimeout=120000, appium:appPackage=com.itouchtechadminapp, appium:udid=emulator-5554, platformName=ANDROID, appium:skipServerInstallation=false, appium:uiautomator2ServerInstallTimeout=120000, appium:app=D:\home\virupaksha\eclipse-workspace\newtechadminapp\Apps\techadmin.apk}], desiredCapabilities=Capabilities {appium:adbExecTimeout: 120000, appium:app: D:\home\virupaksha\eclipse-..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:newCommandTimeout: 600, appium:noReset: true, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:waitForIdleTimeout: 10000, platformName: ANDROID}}]
+Capabilities {appium:adbExecTimeout: 120000, appium:app: D:\home\virupaksha\eclipse-..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:newCommandTimeout: 600, appium:noReset: true, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:waitForIdleTimeout: 10000, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:116)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:96)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:176)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:268)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:90)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:102)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:109)
+	at Pages.BaseClass.setup(BaseClass.java:65)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace792488644", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace792488644'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: The application at &apos;D:\home\virupaksha\eclipse-workspace\newtechadminapp\Apps\techadmin.apk&apos; does not exist or is not accessible 
+Host info: host: &apos;IORBIT_PC_31&apos;, ip: &apos;192.168.1.25&apos;
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:newCommandTimeout=600, appium:deviceName=emulator-5554, appium:adbExecTimeout=120000, appium:automationName=UiAutomator2, appium:waitForIdleTimeout=10000, appium:autoGrantPermissions=true, appium:noReset=true, appium:skipDeviceInitialization=false, appium:disableWindowAnimation=true, appium:appActivity=com.itouchtechadminapp.MainActivity, appium:ignoreHiddenApiPolicyError=true, appium:uiautomator2ServerLaunchTimeout=120000, appium:appPackage=com.itouchtechadminapp, appium:udid=emulator-5554, platformName=ANDROID, appium:skipServerInstallation=false, appium:uiautomator2ServerInstallTimeout=120000, appium:app=D:\home\virupaksha\eclipse-workspace\newtechadminapp\Apps\techadmin.apk}], desiredCapabilities=Capabilities {appium:adbExecTimeout: 120000, appium:app: D:\home\virupaksha\eclipse-..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:newCommandTimeout: 600, appium:noReset: true, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:waitForIdleTimeout: 10000, platformName: ANDROID}}]
+Capabilities {appium:adbExecTimeout: 120000, appium:app: D:\home\virupaksha\eclipse-..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:newCommandTimeout: 600, appium:noReset: true, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:waitForIdleTimeout: 10000, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:116)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:96)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:176)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:268)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:90)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:102)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:109)
+	at Pages.BaseClass.setup(BaseClass.java:65)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:646)
+	at org.testng.TestRunner.run(TestRunner.java:612)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>tests.CreateGatewayTest@672872e1</td></tr>
+<tr>
+<td title='tests.AssignDeviceToBedTest.testAssigndevicetobed()'><b>testAssigndevicetobed</b><br>Test class: tests.AssignDeviceToBedTest</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: The application at &apos;D:\home\virupaksha\eclipse-workspace\newtechadminapp\Apps\techadmin.apk&apos; does not exist or is not accessible 
+Host info: host: &apos;IORBIT_PC_31&apos;, ip: &apos;192.168.1.25&apos;
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:newCommandTimeout=600, appium:deviceName=emulator-5554, appium:adbExecTimeout=120000, appium:automationName=UiAutomator2, appium:waitForIdleTimeout=10000, appium:autoGrantPermissions=true, appium:noReset=true, appium:skipDeviceInitialization=false, appium:disableWindowAnimation=true, appium:appActivity=com.itouchtechadminapp.MainActivity, appium:ignoreHiddenApiPolicyError=true, appium:uiautomator2ServerLaunchTimeout=120000, appium:appPackage=com.itouchtechadminapp, appium:udid=emulator-5554, platformName=ANDROID, appium:skipServerInstallation=false, appium:uiautomator2ServerInstallTimeout=120000, appium:app=D:\home\virupaksha\eclipse-workspace\newtechadminapp\Apps\techadmin.apk}], desiredCapabilities=Capabilities {appium:adbExecTimeout: 120000, appium:app: D:\home\virupaksha\eclipse-..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:newCommandTimeout: 600, appium:noReset: true, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:waitForIdleTimeout: 10000, platformName: ANDROID}}]
+Capabilities {appium:adbExecTimeout: 120000, appium:app: D:\home\virupaksha\eclipse-..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:newCommandTimeout: 600, appium:noReset: true, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:waitForIdleTimeout: 10000, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:116)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:96)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:176)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:268)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:90)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:102)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:109)
+	at Pages.BaseClass.setup(BaseClass.java:65)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace846274760", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace846274760'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: The application at &apos;D:\home\virupaksha\eclipse-workspace\newtechadminapp\Apps\techadmin.apk&apos; does not exist or is not accessible 
+Host info: host: &apos;IORBIT_PC_31&apos;, ip: &apos;192.168.1.25&apos;
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:newCommandTimeout=600, appium:deviceName=emulator-5554, appium:adbExecTimeout=120000, appium:automationName=UiAutomator2, appium:waitForIdleTimeout=10000, appium:autoGrantPermissions=true, appium:noReset=true, appium:skipDeviceInitialization=false, appium:disableWindowAnimation=true, appium:appActivity=com.itouchtechadminapp.MainActivity, appium:ignoreHiddenApiPolicyError=true, appium:uiautomator2ServerLaunchTimeout=120000, appium:appPackage=com.itouchtechadminapp, appium:udid=emulator-5554, platformName=ANDROID, appium:skipServerInstallation=false, appium:uiautomator2ServerInstallTimeout=120000, appium:app=D:\home\virupaksha\eclipse-workspace\newtechadminapp\Apps\techadmin.apk}], desiredCapabilities=Capabilities {appium:adbExecTimeout: 120000, appium:app: D:\home\virupaksha\eclipse-..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:newCommandTimeout: 600, appium:noReset: true, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:waitForIdleTimeout: 10000, platformName: ANDROID}}]
+Capabilities {appium:adbExecTimeout: 120000, appium:app: D:\home\virupaksha\eclipse-..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:newCommandTimeout: 600, appium:noReset: true, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:waitForIdleTimeout: 10000, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:116)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:96)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:176)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:268)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:90)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:102)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:109)
+	at Pages.BaseClass.setup(BaseClass.java:65)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:646)
+	at org.testng.TestRunner.run(TestRunner.java:612)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>tests.AssignDeviceToBedTest@484970b0</td></tr>
+<tr>
+<td title='tests.AssignBedToNurse.testAssignnursetobed()'><b>testAssignnursetobed</b><br>Test class: tests.AssignBedToNurse</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: The application at &apos;D:\home\virupaksha\eclipse-workspace\newtechadminapp\Apps\techadmin.apk&apos; does not exist or is not accessible 
+Host info: host: &apos;IORBIT_PC_31&apos;, ip: &apos;192.168.1.25&apos;
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:newCommandTimeout=600, appium:deviceName=emulator-5554, appium:adbExecTimeout=120000, appium:automationName=UiAutomator2, appium:waitForIdleTimeout=10000, appium:autoGrantPermissions=true, appium:noReset=true, appium:skipDeviceInitialization=false, appium:disableWindowAnimation=true, appium:appActivity=com.itouchtechadminapp.MainActivity, appium:ignoreHiddenApiPolicyError=true, appium:uiautomator2ServerLaunchTimeout=120000, appium:appPackage=com.itouchtechadminapp, appium:udid=emulator-5554, platformName=ANDROID, appium:skipServerInstallation=false, appium:uiautomator2ServerInstallTimeout=120000, appium:app=D:\home\virupaksha\eclipse-workspace\newtechadminapp\Apps\techadmin.apk}], desiredCapabilities=Capabilities {appium:adbExecTimeout: 120000, appium:app: D:\home\virupaksha\eclipse-..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:newCommandTimeout: 600, appium:noReset: true, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:waitForIdleTimeout: 10000, platformName: ANDROID}}]
+Capabilities {appium:adbExecTimeout: 120000, appium:app: D:\home\virupaksha\eclipse-..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:newCommandTimeout: 600, appium:noReset: true, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:waitForIdleTimeout: 10000, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:116)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:96)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:176)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:268)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:90)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:102)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:109)
+	at Pages.BaseClass.setup(BaseClass.java:65)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1418315639", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1418315639'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: The application at &apos;D:\home\virupaksha\eclipse-workspace\newtechadminapp\Apps\techadmin.apk&apos; does not exist or is not accessible 
+Host info: host: &apos;IORBIT_PC_31&apos;, ip: &apos;192.168.1.25&apos;
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:newCommandTimeout=600, appium:deviceName=emulator-5554, appium:adbExecTimeout=120000, appium:automationName=UiAutomator2, appium:waitForIdleTimeout=10000, appium:autoGrantPermissions=true, appium:noReset=true, appium:skipDeviceInitialization=false, appium:disableWindowAnimation=true, appium:appActivity=com.itouchtechadminapp.MainActivity, appium:ignoreHiddenApiPolicyError=true, appium:uiautomator2ServerLaunchTimeout=120000, appium:appPackage=com.itouchtechadminapp, appium:udid=emulator-5554, platformName=ANDROID, appium:skipServerInstallation=false, appium:uiautomator2ServerInstallTimeout=120000, appium:app=D:\home\virupaksha\eclipse-workspace\newtechadminapp\Apps\techadmin.apk}], desiredCapabilities=Capabilities {appium:adbExecTimeout: 120000, appium:app: D:\home\virupaksha\eclipse-..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:newCommandTimeout: 600, appium:noReset: true, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:waitForIdleTimeout: 10000, platformName: ANDROID}}]
+Capabilities {appium:adbExecTimeout: 120000, appium:app: D:\home\virupaksha\eclipse-..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:deviceName: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:newCommandTimeout: 600, appium:noReset: true, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:waitForIdleTimeout: 10000, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:116)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:96)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:176)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:268)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:90)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:102)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:109)
+	at Pages.BaseClass.setup(BaseClass.java:65)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:646)
+	at org.testng.TestRunner.run(TestRunner.java:612)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>tests.AssignBedToNurse@fd07cbb</td></tr>
 </table><p>
 </body>
 </html>
