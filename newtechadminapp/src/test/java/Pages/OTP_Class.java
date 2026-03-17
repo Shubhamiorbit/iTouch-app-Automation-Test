@@ -69,13 +69,13 @@ public class OTP_Class {
 //		driver2.findElement(By.xpath("//android.view.ViewGroup[@content-desc=\"Submit\"]")).click();
 //}
 
-    private static final String API_TOKEN = "3160d94b60c0474f8db4ffb88beedbf4";
+    private static final String API_TOKEN = "7d51e00aa4de43ebb373c10b50d33994";
     private static final String DOMAIN = "private";
     private static final OkHttpClient client = new OkHttpClient();
 
     //it will wait 20 seconds for getting the latest OTP
     public static String fetchLatestOTP() throws Exception {
-        String inboxName = "automation1";
+        String inboxName = "autoqa";
         long latestSeenTime = 0;
         String otp = null;
 

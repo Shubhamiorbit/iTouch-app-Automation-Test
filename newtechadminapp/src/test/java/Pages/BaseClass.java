@@ -29,7 +29,7 @@ public class BaseClass {
         extent = new ExtentReports();
         extent.attachReporter(spark);
 
-        File app = new File("D:\\itouch-qa\\newtechadminapp\\Apps\\iTouchTechAdminAppNew22.apk");
+        File app = new File("D:\\itouch-qa\\newtechadminapp\\Apps\\iTouch-AdminApp-release.apk");
 
 
         UiAutomator2Options options = new UiAutomator2Options();

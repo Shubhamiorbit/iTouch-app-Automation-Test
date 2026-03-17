@@ -23,21 +23,24 @@ public class LoginPage extends BaseClass {
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         PageFactory.initElements(new AppiumFieldDecorator(driver, Duration.ofSeconds(10)), this);
     }
+    @FindBy(xpath="//android.widget.TextView[@text=\"Log in with E-mail Address\"]")
+    public WebElement loginwithemailaddress;
 
-    @FindBy(xpath = "//android.widget.EditText[@text='Enter Username']")
+    @FindBy(xpath = "//android.widget.EditText[@text=\"Email Address\"]")
     public WebElement username;
 
-    @FindBy(xpath = "//android.widget.EditText[@text='Password']")
+    @FindBy(xpath = "//android.widget.EditText[@text=\"Password\"]")
     public WebElement password;
 
-
-
-
-    @FindBy(xpath = "//android.view.ViewGroup[@content-desc='Log in']")
+    @FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"Get OTP\"]")
     public WebElement loginButton;
 
     public void login(String user, String pass) throws Exception {
-        try {
+       
+        	wait.until(ExpectedConditions.visibilityOf(loginwithemailaddress));
+        	loginwithemailaddress.click();
+        
+    	try {
             wait.until(ExpectedConditions.visibilityOf(username));
             username.click();
             username.clear();
@@ -60,9 +63,11 @@ public class LoginPage extends BaseClass {
             System.out.println("Login failed: " + e.getMessage());
             throw e;
         }
-    }
-
+    
+    
 
     
-            
+
+    
+        }         
 }

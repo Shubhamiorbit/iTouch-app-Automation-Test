@@ -68,7 +68,6 @@ public class Doctor_feature extends BaseClass {
 	@FindBy(xpath="//android.view.ViewGroup[@content-desc=\"Birth Date*\"]")
 	public WebElement DOB;
 
-
 	@FindBy(xpath="//android.widget.Button[@resource-id='android:id/button1']")
 	public WebElement SelectDate;
 
@@ -84,8 +83,8 @@ public class Doctor_feature extends BaseClass {
 	@FindBy(xpath = "//android.widget.EditText[@resource-id=\"input-street1\"]")
 	public WebElement Street;
 
-	//    @FindBy(xpath = "(//android.widget.EditText)[22]")
-	//    public WebElement Street;
+	//@FindBy(xpath = "(//android.widget.EditText)[22]")
+	//public WebElement Street;
 
 	@FindBy(xpath = "//android.widget.EditText[@resource-id=\"input-city\"]")
 	public WebElement City;
@@ -139,6 +138,7 @@ public class Doctor_feature extends BaseClass {
 
 			wait.until(ExpectedConditions.elementToBeClickable(DoctorType)).click();
 			wait.until(ExpectedConditions.elementToBeClickable(SelectDoctorType)).click();
+			Thread.sleep(3000);
 
 			driver.findElement(By.xpath("//android.view.ViewGroup[@content-desc=\"Birth Date*\"]/android.widget.EditText")).click();
 			
@@ -228,5 +228,13 @@ public class Doctor_feature extends BaseClass {
 
 	public boolean isDoctorCreated(String doctorcode2) {
 		return true;
+	}
+
+
+	public void createDoctormethod(String doctorcode2, String firstname2, String lastname2, String speciality2,
+			String experince, String street2, String city2, String pincode2, String state2, String country2,
+			String contactname2, String contactphone2, String contactemail2) {
+		// TODO Auto-generated method stub
+		
 	}
 }

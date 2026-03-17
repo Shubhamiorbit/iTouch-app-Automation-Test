@@ -45,7 +45,7 @@ public class CreateDoctorTest extends BaseClass {
         String lastname = "gowda";
         String speciality = "General";
         String experince = "5";
-        String birthdate = "1990-12-12";
+     String birthdate = "1990-12-12";
         String street = "karve";
         String city = "pune";
         String pincode = "585221";
@@ -53,25 +53,24 @@ public class CreateDoctorTest extends BaseClass {
         String country = "IN";
         String contactname = "sahana";
 		String contactphone = "+9190" + String.format("%08d", random.nextInt(100000000));
-        String contactemail = firstname+doctorcode+"@mailinator.com";
+        String contactemail = firstname+doctorcode+"@iorbitteam398185.testinator.email";
 
         try {
 
-            doctor_feature.createDoctoremethod(
+            doctor_feature.createDoctormethod(
                     doctorcode,
                     firstname,
                     lastname,
                     speciality,
                     experince,
-                    birthdate,
+                   birthdate,
                     street,
                     city,
                     pincode,
                     state,
                     country,
                     contactname,
-                    contactphone,
-                    contactemail
+                    contactphone
             );
 
 

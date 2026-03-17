@@ -22,8 +22,8 @@ public class NewLoginTest extends BaseClass{
 	    @Test( groups = {"login"})
 	    public void testValidLogin() {
 	    	
-	        String username = "ethix@mailinator.com";
-	        String password = "903134621";
+	        String username = "autoqa@iorbitteam813038.testinator.email";
+	        String password = "464819967";
 
 	        try {
 	            loginPage.login(username, password);         

@@ -47,7 +47,7 @@ public class CreateNurseTest extends BaseClass{
 			String contactphone = "+9190" + String.format("%08d", random.nextInt(100000000));
 
 			
-		 String contactemail=nursecode+"@mailinator.com";
+		 String contactemail=nursecode+"@iorbitteam398185.testinator.email";
 		 String street="karve";
 		 String city="pune";
 		 String pincode="585221";

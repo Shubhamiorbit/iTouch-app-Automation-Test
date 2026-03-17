@@ -56,7 +56,7 @@ public class OTP_Test extends BaseClass {
         try { ((HidesKeyboard) driver).hideKeyboard(); } catch (Exception e) {}
 
         WebElement submitBtn = wait.until(
-                ExpectedConditions.elementToBeClickable(By.xpath("//android.view.ViewGroup[@content-desc='Submit']"))
+                ExpectedConditions.elementToBeClickable(By.xpath("//android.view.ViewGroup[@content-desc=\"Verify OTP\"]"))
         );
         submitBtn.click();
         System.out.println("OTP submitted successfully.");

@@ -5,11 +5,25 @@
     <classes>
       <class name="tests.NewLoginTest">
         <methods>
+          <include name="setup"/>
           <include name="initPage"/>
           <include name="testValidLogin"/>
-          <include name="setup"/>
         </methods>
       </class> <!-- tests.NewLoginTest -->
+      <class name="tests.OTP_Test">
+        <methods>
+          <include name="initTestReport"/>
+          <include name="enterOTPTest"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.OTP_Test -->
+      <class name="tests.CreateDoctorTest">
+        <methods>
+          <include name="testcreatedoctor"/>
+          <include name="initPage"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.CreateDoctorTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
