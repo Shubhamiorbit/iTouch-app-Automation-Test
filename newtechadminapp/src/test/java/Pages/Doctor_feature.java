@@ -105,7 +105,7 @@ public class Doctor_feature extends BaseClass {
 	public WebElement OkButton;
 
 
-	public void createDoctoremethod(
+	public void createDoctormethod(
 			String doctorcode,
 			String firstname,
 			String lastname,
@@ -231,10 +231,10 @@ public class Doctor_feature extends BaseClass {
 	}
 
 
-	public void createDoctormethod(String doctorcode2, String firstname2, String lastname2, String speciality2,
-			String experince, String street2, String city2, String pincode2, String state2, String country2,
-			String contactname2, String contactphone2, String contactemail2) {
+	//public void createDoctormethod2(String doctorcode2, String firstname2, String lastname2, String speciality2,
+//			String experince, String street2, String city2, String pincode2, String state2, String country2,
+//			String contactname2, String contactphone2, String contactemail2) 
 		// TODO Auto-generated method stub
 		
-	}
+	
 }
