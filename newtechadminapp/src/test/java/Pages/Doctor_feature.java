@@ -2,6 +2,7 @@ package Pages;
 
 import java.time.Duration;
 import java.util.Collections;
+import java.util.Random;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -105,7 +106,7 @@ public class Doctor_feature extends BaseClass {
 	public WebElement OkButton;
 
 
-	public void createDoctoremethod(
+	public void createDoctormethod(
 			String doctorcode,
 			String firstname,
 			String lastname,
@@ -184,6 +185,11 @@ public class Doctor_feature extends BaseClass {
 
 		        Thread.sleep(300);
 		    }
+		    Random random = new Random();
+		    int day = random.nextInt(25) + 1;
+		    String dayxpath = "//android.view.View[@content-desc=\"" + day + " March 1985\"]";
+		    driver.findElement(By.xpath(dayxpath)).click();
+		    driver.findElement(By.id("android:id/button1")).click();
 			wait.until(ExpectedConditions.elementToBeClickable(GenderDropDown)).click();
 			wait.until(ExpectedConditions.elementToBeClickable(SelectGender)).click();
 
@@ -228,13 +234,5 @@ public class Doctor_feature extends BaseClass {
 
 	public boolean isDoctorCreated(String doctorcode2) {
 		return true;
-	}
-
-
-	public void createDoctormethod(String doctorcode2, String firstname2, String lastname2, String speciality2,
-			String experince, String street2, String city2, String pincode2, String state2, String country2,
-			String contactname2, String contactphone2, String contactemail2) {
-		// TODO Auto-generated method stub
-		
 	}
 }

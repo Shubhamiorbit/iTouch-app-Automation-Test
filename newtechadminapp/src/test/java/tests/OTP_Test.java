@@ -38,7 +38,7 @@ public class OTP_Test extends BaseClass {
         Assert.assertNotNull(otp, "OTP should not be null.");
         test.log(Status.INFO, "Latest OTP fetched: " + otp);
 
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
         test.log(Status.INFO, "Waiting for OTP input fields...");
 
         List<WebElement> otpFields = wait.until(
@@ -48,7 +48,7 @@ public class OTP_Test extends BaseClass {
         test.log(Status.PASS, "OTP input fields loaded successfully.");
 
         for (int i = 0; i < otp.length(); i++) {
-            otpFields.get(i).click();
+            //otpFields.get(i).click();
             otpFields.get(i).sendKeys(String.valueOf(otp.charAt(i)));
         }
 

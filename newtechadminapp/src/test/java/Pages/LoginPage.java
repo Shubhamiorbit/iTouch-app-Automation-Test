@@ -20,8 +20,8 @@ public class LoginPage extends BaseClass {
 
     public LoginPage(AppiumDriver driver) {
         this.driver = driver;
-        this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        PageFactory.initElements(new AppiumFieldDecorator(driver, Duration.ofSeconds(10)), this);
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+        PageFactory.initElements(new AppiumFieldDecorator(driver, Duration.ofSeconds(5)), this);
     }
     @FindBy(xpath="//android.widget.TextView[@text=\"Log in with E-mail Address\"]")
     public WebElement loginwithemailaddress;
@@ -42,8 +42,8 @@ public class LoginPage extends BaseClass {
         
     	try {
             wait.until(ExpectedConditions.visibilityOf(username));
-            username.click();
-            username.clear();
+//            username.click();
+//            username.clear();
             username.sendKeys(user);
 
             try { ((HidesKeyboard) driver).hideKeyboard(); } catch (Exception e) {}
@@ -51,8 +51,8 @@ public class LoginPage extends BaseClass {
             
             wait.until(ExpectedConditions.visibilityOf(password));
 
-            password.click();
-            Thread.sleep(1000);
+            //password.click();
+            //Thread.sleep(1000);
             try { ((HidesKeyboard) driver).hideKeyboard(); } catch (Exception e) {}
 
             password.sendKeys(pass);

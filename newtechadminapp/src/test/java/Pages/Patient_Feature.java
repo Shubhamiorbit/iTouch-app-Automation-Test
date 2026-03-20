@@ -2,11 +2,13 @@ package Pages;
 import java.time.Duration;
 import java.util.Collections;
 import java.util.NoSuchElementException;
+import java.util.Random;
 
 import javax.sound.midi.Sequence;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Pause;
 import org.openqa.selenium.interactions.PointerInput;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -147,7 +149,56 @@ public WebElement SelectBloodGroup;
 
 			
 
-			wait.until(ExpectedConditions.visibilityOf(SelectDate)).click();
+			
+			driver.findElement(By.xpath("//android.view.ViewGroup[@content-desc=\"Birth Date*\"]/android.widget.EditText")).click();
+			
+			driver.findElement(By.xpath("//android.widget.TextView[@resource-id=\"android:id/date_picker_header_year\"]")).click();
+			Thread.sleep(5000);
+			By yearLocator = By.xpath("//android.widget.TextView[@text='1995']");
+
+		    for (int i = 0; i < 20; i++) {
+
+		        try {
+		            WebElement year = driver.findElement(yearLocator);
+		            if (year.isDisplayed()) {
+		                year.click();
+		                System.out.println(" Year 1985 selected");
+		                break;
+		            }
+		        } catch (Exception e) {
+		            System.out.println(" 1985 not visible yet, swiping...");
+		        }
+
+		        PointerInput finger = new PointerInput(PointerInput.Kind.TOUCH, "finger");
+		        Sequence swipe = new Sequence(finger, 1);
+
+		        swipe.addAction(finger.createPointerMove(
+		                Duration.ZERO,
+		                PointerInput.Origin.viewport(),
+		                540, 950   
+		        ));
+
+		        swipe.addAction(finger.createPointerDown(PointerInput.MouseButton.LEFT.asArg()));
+
+		        swipe.addAction(new Pause(finger, Duration.ofMillis(200)));
+
+		        swipe.addAction(finger.createPointerMove(
+		                Duration.ofMillis(600),
+		                PointerInput.Origin.viewport(),
+		                540, 1450    // End point (your screen center top)
+		        ));
+
+		        swipe.addAction(finger.createPointerUp(PointerInput.MouseButton.LEFT.asArg()));
+
+		        driver.perform(Collections.singletonList(swipe));
+
+		        Thread.sleep(300);
+		    }
+		    Random random = new Random();
+		    int day = random.nextInt(25) + 1;
+		    String dayxpath = "//android.view.View[@content-desc=\"" + day + " March 1985\"]";
+		    driver.findElement(By.xpath(dayxpath)).click();
+		    driver.findElement(By.id("android:id/button1")).click();
 			wait.until(ExpectedConditions.elementToBeClickable(GenderDropDown)).click();
 			wait.until(ExpectedConditions.elementToBeClickable(SelectGender)).click();
 			wait.until(ExpectedConditions.elementToBeClickable(BloodGroup)).click();

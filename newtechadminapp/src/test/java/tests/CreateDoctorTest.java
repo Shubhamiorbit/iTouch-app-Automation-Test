@@ -70,7 +70,8 @@ public class CreateDoctorTest extends BaseClass {
                     state,
                     country,
                     contactname,
-                    contactphone
+                    contactphone,
+                    contactemail
             );
 
 
