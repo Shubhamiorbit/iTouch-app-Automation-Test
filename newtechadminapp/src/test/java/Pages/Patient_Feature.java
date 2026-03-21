@@ -4,12 +4,11 @@ import java.util.Collections;
 import java.util.NoSuchElementException;
 import java.util.Random;
 
-import javax.sound.midi.Sequence;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Pause;
 import org.openqa.selenium.interactions.PointerInput;
+import org.openqa.selenium.interactions.Sequence;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -146,15 +145,13 @@ public WebElement SelectBloodGroup;
 
 			wait.until(ExpectedConditions.visibilityOf(DOB)).click();
 			
-
-			
-
-			
 			driver.findElement(By.xpath("//android.view.ViewGroup[@content-desc=\"Birth Date*\"]/android.widget.EditText")).click();
 			
 			driver.findElement(By.xpath("//android.widget.TextView[@resource-id=\"android:id/date_picker_header_year\"]")).click();
 			Thread.sleep(5000);
-			By yearLocator = By.xpath("//android.widget.TextView[@text='1995']");
+			Random randomyear = new Random();
+			int dobyear = randomyear.nextInt(13) + 1992;
+			By yearLocator = By.xpath("//android.widget.TextView[@text='"+dobyear+"']");
 
 		    for (int i = 0; i < 20; i++) {
 
@@ -162,11 +159,11 @@ public WebElement SelectBloodGroup;
 		            WebElement year = driver.findElement(yearLocator);
 		            if (year.isDisplayed()) {
 		                year.click();
-		                System.out.println(" Year 1985 selected");
+		                System.out.println(" Year "+dobyear+" selected");
 		                break;
 		            }
 		        } catch (Exception e) {
-		            System.out.println(" 1985 not visible yet, swiping...");
+		            System.out.println(" "+dobyear+" not visible yet, swiping...");
 		        }
 
 		        PointerInput finger = new PointerInput(PointerInput.Kind.TOUCH, "finger");
@@ -196,9 +193,10 @@ public WebElement SelectBloodGroup;
 		    }
 		    Random random = new Random();
 		    int day = random.nextInt(25) + 1;
-		    String dayxpath = "//android.view.View[@content-desc=\"" + day + " March 1985\"]";
+		    String dayxpath = "//android.view.View[@content-desc=\"" + day + " March "+dobyear+"\"]";
 		    driver.findElement(By.xpath(dayxpath)).click();
 		    driver.findElement(By.id("android:id/button1")).click();
+		    
 			wait.until(ExpectedConditions.elementToBeClickable(GenderDropDown)).click();
 			wait.until(ExpectedConditions.elementToBeClickable(SelectGender)).click();
 			wait.until(ExpectedConditions.elementToBeClickable(BloodGroup)).click();
