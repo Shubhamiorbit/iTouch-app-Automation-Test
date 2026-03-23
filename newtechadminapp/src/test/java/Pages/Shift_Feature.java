@@ -8,7 +8,9 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import io.appium.java_client.AppiumBy;
 import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 
 public class Shift_Feature {
@@ -53,8 +55,10 @@ public class Shift_Feature {
 
 	@FindBy(xpath = "//android.widget.ImageButton[@content-desc=\"Next month\"]")
 	public WebElement NextMonth;
-	@FindBy(xpath = "//android.view.View[@content-desc=\"01 January 2026\"]")
+	
+	@AndroidFindBy(uiAutomator = "new UiSelector().text(\"30\")")
 	public WebElement SelectDate;
+	
 	@FindBy(xpath = "//android.widget.Button[@resource-id=\"android:id/button1\"]")
 	public WebElement OkButtonforCalendarInEndTime;
 

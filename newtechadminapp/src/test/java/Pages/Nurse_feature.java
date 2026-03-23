@@ -1,6 +1,7 @@
 package Pages;
 import java.time.Duration;
 import java.util.Collections;
+import java.util.Random;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -129,11 +130,16 @@ public class Nurse_feature extends BaseClass{
 
 	        wait.until(ExpectedConditions.visibilityOf(NurseType)).click();
 	        wait.until(ExpectedConditions.elementToBeClickable(SelectNurseType)).click();
+	        Thread.sleep(5000);
 
 
-	        wait.until(ExpectedConditions.visibilityOf(DOB)).click();
-	        wait.until(ExpectedConditions.visibilityOf(DatePicker)).click();
-			By yearLocator = By.xpath("//android.widget.TextView[@text='1983']");
+	        driver.findElement(By.xpath("//android.view.ViewGroup[@content-desc=\"Birth Date*\"]/android.widget.EditText")).click();
+	        Thread.sleep(5000);
+			driver.findElement(By.xpath("//android.widget.TextView[@resource-id=\"android:id/date_picker_header_year\"]")).click();
+			Thread.sleep(5000);
+			Random random = new Random();
+			int nursedobyear = random.nextInt(11)+ 1975;
+			By yearLocator = By.xpath("//android.widget.TextView[@text='"+nursedobyear+"']");
 
 		    for (int i = 0; i < 20; i++) {
 
@@ -141,11 +147,11 @@ public class Nurse_feature extends BaseClass{
 		            WebElement year = driver.findElement(yearLocator);
 		            if (year.isDisplayed()) {
 		                year.click();
-		                System.out.println(" Year 1983 selected");
+		                System.out.println(" Year "+nursedobyear+" selected");
 		                break;
 		            }
 		        } catch (Exception e) {
-		            System.out.println(" 1983 not visible yet, swiping...");
+		            System.out.println(" "+nursedobyear+" not visible yet, swiping...");
 		        }
 
 		        PointerInput finger = new PointerInput(PointerInput.Kind.TOUCH, "finger");
@@ -173,41 +179,41 @@ public class Nurse_feature extends BaseClass{
 
 		        Thread.sleep(300);
 		    }
-
-		    By okBtn = By.id("android:id/button1");
-		    driver.findElement(okBtn).click();
+		 
+		    Random random1 = new Random();
+		    int day = random1.nextInt(25) + 1;
+		    String nursedaytext = String.valueOf(day);
+		    String nursedayxpath = "new UiSelector().text(\""+nursedaytext+"\")";
+		    driver.findElement(AppiumBy.androidUIAutomator(nursedayxpath)).click();
+		    driver.findElement(By.id("android:id/button1")).click();
 
 		    System.out.println("Date Selection Completed Successfully");
 	        //wait.until(ExpectedConditions.visibilityOf(SelectDate)).click();
 	        
 	        wait.until(ExpectedConditions.visibilityOf(Gender)).click();
 	        wait.until(ExpectedConditions.visibilityOf(SelectGender)).click();
-	        wait.until(ExpectedConditions.visibilityOf(SharedPhoneNumber)).clear();
+	        wait.until(ExpectedConditions.visibilityOf(SharedPhoneNumber));
 	        SharedPhoneNumber.sendKeys(sharedphonenumber);
 	        
+	      
+	        wait.until(ExpectedConditions.visibilityOf(Street));
+	        Street.sendKeys(street);	
 	        driver.findElement(AppiumBy.androidUIAutomator(
 				    "new UiScrollable(new UiSelector().scrollable(true))" +
-				    ".scrollIntoView(new UiSelector().textContains(\"Pincode\"));"
+				    ".scrollIntoView(new UiSelector().textContains(\"Save Nurse\"));"
 				));
-	        wait.until(ExpectedConditions.visibilityOf(Street)).clear();
-	        Street.sendKeys(street);	
 
-	        wait.until(ExpectedConditions.visibilityOf(City)).clear();
+	        wait.until(ExpectedConditions.visibilityOf(City));
 	        City.sendKeys(city);
 
-	        wait.until(ExpectedConditions.visibilityOf(PinCode)).clear();
+	        wait.until(ExpectedConditions.visibilityOf(PinCode));
 	        PinCode.sendKeys(pincode);
 
-	        wait.until(ExpectedConditions.visibilityOf(State)).clear();
+	        wait.until(ExpectedConditions.visibilityOf(State));
 	        State.sendKeys(state);
 
-	        wait.until(ExpectedConditions.visibilityOf(Country)).clear();
+	        wait.until(ExpectedConditions.visibilityOf(Country));
 	        Country.sendKeys(country);
-	        
-	        driver.findElement(AppiumBy.androidUIAutomator(
-					"new UiScrollable(new UiSelector().scrollable(true))" +
-							".scrollIntoView(new UiSelector().description(\"Save Nurse\"));"
-					));
 
 	        wait.until(ExpectedConditions.visibilityOf(ContactName)).clear();
 	        ContactName.sendKeys(contactname);

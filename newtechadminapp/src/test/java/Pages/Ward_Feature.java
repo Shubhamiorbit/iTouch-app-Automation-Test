@@ -22,7 +22,7 @@ public class Ward_Feature {
 	@FindBy(xpath = "//android.view.ViewGroup[@content-desc='Asset Center']")
     public WebElement AssetCenter;
 
-    @FindBy(xpath = "//android.view.ViewGroup[@content-desc='Add Ward']")
+    @FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"Add Ward\"]")
     public WebElement ManageWard;
 
     @FindBy(xpath = "//android.view.ViewGroup[@content-desc='Add Ward']")

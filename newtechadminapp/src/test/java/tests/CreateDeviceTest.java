@@ -31,13 +31,11 @@ public class CreateDeviceTest extends BaseClass{
 	        String secStr = String.format("%04d", seconds);
 	        Random random = new Random();
 		
-	        String verifywith ="SERIALNO";
-		 String usagetype="Fixed";
 		 String devicetype="Contec";
 		 String devicecode= devicetype+ secStr;
-		 String protocol ="HL7";
 		 
-			 device_feature.createDevicemethod(devicecode,  devicetype,  usagetype, verifywith, protocol);
+		 
+			 device_feature.createDevicemethod(devicecode,  devicetype);
 		 
 			 boolean isDeviceCreated = device_feature.isDeviceCreated(devicecode);
 		        Assert.assertTrue(isDeviceCreated, "Device creation FAILED for code: " + devicecode);

@@ -143,15 +143,16 @@ public WebElement SelectBloodGroup;
 			wait.until(ExpectedConditions.visibilityOf(MRNumber)).clear();
 			MRNumber.sendKeys(mrnumber);
 
-			wait.until(ExpectedConditions.visibilityOf(DOB)).click();
+			//wait.until(ExpectedConditions.visibilityOf(DOB)).click();
 			
-			driver.findElement(By.xpath("//android.view.ViewGroup[@content-desc=\"Birth Date*\"]/android.widget.EditText")).click();
+			driver.findElement(By.xpath("//android.widget.EditText[@content-desc=\"birthDateInput\"]")).click();
 			
+			Thread.sleep(5000);
 			driver.findElement(By.xpath("//android.widget.TextView[@resource-id=\"android:id/date_picker_header_year\"]")).click();
 			Thread.sleep(5000);
 			Random randomyear = new Random();
-			int dobyear = randomyear.nextInt(13) + 1992;
-			By yearLocator = By.xpath("//android.widget.TextView[@text='"+dobyear+"']");
+			int patdobyear = randomyear.nextInt(13) + 1992;
+			By yearLocator = By.xpath("//android.widget.TextView[@text='"+patdobyear+"']");
 
 		    for (int i = 0; i < 20; i++) {
 
@@ -159,11 +160,11 @@ public WebElement SelectBloodGroup;
 		            WebElement year = driver.findElement(yearLocator);
 		            if (year.isDisplayed()) {
 		                year.click();
-		                System.out.println(" Year "+dobyear+" selected");
+		                System.out.println(" Year "+patdobyear+" selected");
 		                break;
 		            }
 		        } catch (Exception e) {
-		            System.out.println(" "+dobyear+" not visible yet, swiping...");
+		            System.out.println(" "+patdobyear+" not visible yet, swiping...");
 		        }
 
 		        PointerInput finger = new PointerInput(PointerInput.Kind.TOUCH, "finger");
@@ -191,10 +192,11 @@ public WebElement SelectBloodGroup;
 
 		        Thread.sleep(300);
 		    }
-		    Random random = new Random();
-		    int day = random.nextInt(25) + 1;
-		    String dayxpath = "//android.view.View[@content-desc=\"" + day + " March "+dobyear+"\"]";
-		    driver.findElement(By.xpath(dayxpath)).click();
+		    Random random1 = new Random();
+		    int patday = random1.nextInt(25) + 1;
+		    String patdaytext = String.valueOf(patday);
+		    String patdayxpath = "new UiSelector().text(\""+patdaytext+"\")";
+		    driver.findElement(AppiumBy.androidUIAutomator(patdayxpath)).click();
 		    driver.findElement(By.id("android:id/button1")).click();
 		    
 			wait.until(ExpectedConditions.elementToBeClickable(GenderDropDown)).click();
@@ -207,56 +209,51 @@ public WebElement SelectBloodGroup;
 
 			wait.until(ExpectedConditions.visibilityOf(ContactPhone)).clear();
 			ContactPhone.sendKeys(contactphone);
-			driver.findElement(AppiumBy.androidUIAutomator(
-				    "new UiScrollable(new UiSelector().scrollable(true))" +
-				    ".scrollIntoView(new UiSelector().textContains(\"Pincode\"));"
-				));
 		Thread.sleep(3000);
-			wait.until(ExpectedConditions.visibilityOf(ContactEmail)).clear();
+			wait.until(ExpectedConditions.visibilityOf(ContactEmail));
 			ContactEmail.sendKeys(contactemail);
-			Thread.sleep(2000);
-			
-			Thread.sleep(2000);
+			Thread.sleep(3000);
+			driver.findElement(AppiumBy.androidUIAutomator(
+					"new UiScrollable(new UiSelector().scrollable(true))" +
+							".scrollIntoView(new UiSelector().textContains(\"Country\"));"
+					));
 
-			
-			// Address details
-			wait.until(ExpectedConditions.visibilityOf(Street)).clear();
+			wait.until(ExpectedConditions.visibilityOf(Street));
 			Street.sendKeys(street);
 
-			wait.until(ExpectedConditions.visibilityOf(City)).clear();
+			wait.until(ExpectedConditions.visibilityOf(City));
 			City.sendKeys(city);
 			Thread.sleep(2000);
 
-			wait.until(ExpectedConditions.visibilityOf(PinCode)).clear();
+			wait.until(ExpectedConditions.visibilityOf(PinCode));
 			PinCode.sendKeys(pincode);
 
-			wait.until(ExpectedConditions.visibilityOf(State)).clear();
+			wait.until(ExpectedConditions.visibilityOf(State));
 			State.sendKeys(state);
 
-			wait.until(ExpectedConditions.visibilityOf(Country)).clear();
+			wait.until(ExpectedConditions.visibilityOf(Country));
 			Country.sendKeys(country);
 
 			// Patient attributes
-			wait.until(ExpectedConditions.visibilityOf(Height)).clear();
+			wait.until(ExpectedConditions.visibilityOf(Height));
 			Height.sendKeys(height);
-			 driver.findElement(AppiumBy.androidUIAutomator(
-	            	    "new UiScrollable(new UiSelector().scrollable(true))" +
-	            	    ".scrollToEnd(10)"
-	            	));
 
-			wait.until(ExpectedConditions.visibilityOf(Weight)).clear();
+			wait.until(ExpectedConditions.visibilityOf(Weight));
 			Weight.sendKeys(weight);
-			Thread.sleep(2000);
+			Thread.sleep(5000);
 			
-			
-				Thread.sleep(2000);
+			driver.findElement(AppiumBy.androidUIAutomator(
+				    "new UiScrollable(new UiSelector().scrollable(true).instance(0))" +
+				    ".setAsVerticalList()" +
+				    ".scrollIntoView(new UiSelector().text(\"Add Patient\"));"
+				));
 
 			wait.until(ExpectedConditions.visibilityOf(AnyAllergies)).clear();
 			AnyAllergies.sendKeys(anyallergies);
 			
 
 
-			Thread.sleep(2000);
+			Thread.sleep(5000);
 			wait.until(ExpectedConditions.visibilityOf(PastComplications)).clear();
 			PastComplications.sendKeys(pastcomplications);
 			
@@ -273,10 +270,6 @@ public WebElement SelectBloodGroup;
 		}
 
 	}
-
-
-
-
 
 	public boolean isPatientCreated(String patientcode2) {
 		return true;

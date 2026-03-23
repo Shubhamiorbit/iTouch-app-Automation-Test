@@ -139,9 +139,10 @@ public class Doctor_feature extends BaseClass {
 
 			wait.until(ExpectedConditions.elementToBeClickable(DoctorType)).click();
 			wait.until(ExpectedConditions.elementToBeClickable(SelectDoctorType)).click();
-			Thread.sleep(3000);
+			Thread.sleep(5000);
 
 			driver.findElement(By.xpath("//android.view.ViewGroup[@content-desc=\"Birth Date*\"]/android.widget.EditText")).click();
+			Thread.sleep(3000);
 			
 			driver.findElement(By.xpath("//android.widget.TextView[@resource-id=\"android:id/date_picker_header_year\"]")).click();
 			Thread.sleep(5000);
@@ -187,13 +188,12 @@ public class Doctor_feature extends BaseClass {
 
 		        Thread.sleep(300);
 		    }
-		  String selecteddobyear= driver.findElement(By.xpath("//android.widget.TextView[@resource-id=\"android:id/date_picker_header_year\"]")).getText();
-		  System.out.print("selected dob year is: " +selecteddobyear);
+		 
 		    Random random1 = new Random();
 		    int day = random1.nextInt(25) + 1;
-		    String daytext = String.valueOf(day);
-		    String dayxpath = "new UiSelector().text(\""+daytext+"\")";
-		    driver.findElement(AppiumBy.androidUIAutomator(dayxpath)).click();
+		    String docdaytext = String.valueOf(day);
+		    String docdayxpath = "new UiSelector().text(\""+docdaytext+"\")";
+		    driver.findElement(AppiumBy.androidUIAutomator(docdayxpath)).click();
 		    driver.findElement(By.id("android:id/button1")).click();
 			wait.until(ExpectedConditions.elementToBeClickable(GenderDropDown)).click();
 			wait.until(ExpectedConditions.elementToBeClickable(SelectGender)).click();
@@ -205,28 +205,18 @@ public class Doctor_feature extends BaseClass {
 
 			
 			wait.until(ExpectedConditions.visibilityOf(Street));
-			wait.until(ExpectedConditions.elementToBeClickable(Street));
-			Street.clear();
 			Street.sendKeys(street);
-			driver.findElement(AppiumBy.androidUIAutomator(
-				    "new UiScrollable(new UiSelector().scrollable(true))" +
-				    ".scrollIntoView(new UiSelector().textContains(\"Pincode\"));"
-				));
-			Thread.sleep(3000);
 			wait.until(ExpectedConditions.elementToBeClickable(City)).sendKeys(city);
 			wait.until(ExpectedConditions.elementToBeClickable(PinCode)).sendKeys(pincode);
-			wait.until(ExpectedConditions.elementToBeClickable(State)).sendKeys(state);
-			wait.until(ExpectedConditions.elementToBeClickable(Country)).sendKeys(country);
-
-			
-			wait.until(ExpectedConditions.elementToBeClickable(ContactName)).sendKeys(contactname);
-			wait.until(ExpectedConditions.elementToBeClickable(ContactPhone)).sendKeys(contactphone);
-			wait.until(ExpectedConditions.elementToBeClickable(ContactEmail)).sendKeys(contactemail);
 			driver.findElement(AppiumBy.androidUIAutomator(
 					"new UiScrollable(new UiSelector().scrollable(true))" +
 							".scrollIntoView(new UiSelector().description(\"Save Doctor\"));"
 					));
-
+			wait.until(ExpectedConditions.elementToBeClickable(State)).sendKeys(state);
+			wait.until(ExpectedConditions.elementToBeClickable(Country)).sendKeys(country);
+			wait.until(ExpectedConditions.elementToBeClickable(ContactName)).sendKeys(contactname);
+			wait.until(ExpectedConditions.elementToBeClickable(ContactPhone)).sendKeys(contactphone);
+			wait.until(ExpectedConditions.elementToBeClickable(ContactEmail)).sendKeys(contactemail);
 			wait.until(ExpectedConditions.elementToBeClickable(SaveButton)).click();
 			wait.until(ExpectedConditions.elementToBeClickable(OkButton)).click();
 
@@ -240,15 +230,4 @@ public class Doctor_feature extends BaseClass {
 	public boolean isDoctorCreated(String doctorcode2) {
 		return true;
 	}
-<<<<<<< HEAD
-
-
-	//public void createDoctormethod2(String doctorcode2, String firstname2, String lastname2, String speciality2,
-//			String experince, String street2, String city2, String pincode2, String state2, String country2,
-//			String contactname2, String contactphone2, String contactemail2) 
-		// TODO Auto-generated method stub
-		
-	
-=======
->>>>>>> 0983f688a87fa0559eb6da6ad1ad842c845ad165
 }

@@ -71,11 +71,7 @@ public class CreateDoctorTest extends BaseClass {
                     country,
                     contactname,
                     contactphone,
-<<<<<<< HEAD
-        			contactemail
-=======
                     contactemail
->>>>>>> 0983f688a87fa0559eb6da6ad1ad842c845ad165
             );
 
 
