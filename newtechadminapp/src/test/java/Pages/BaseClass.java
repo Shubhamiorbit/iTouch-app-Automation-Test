@@ -28,23 +28,25 @@ public class BaseClass {
         ExtentSparkReporter spark = new ExtentSparkReporter("target/ExtentReport.html");
         extent = new ExtentReports();
         extent.attachReporter(spark);
+        File file = new File("D:\\tech-admin-app\\iTouch-app-Automation-Test\\newtechadminapp\\Apps\\iTouch-AdminApp-release.apk");
+        System.out.println(file.exists());
 
-        File app = new File("D:\\itouch-qa\\newtechadminapp\\Apps\\iTouch-AdminApp-release.apk");
+        File app = new File("D:\\tech-admin-app\\iTouch-app-Automation-Test\\newtechadminapp\\Apps\\iTouch-AdminApp-release.apk");
 
 
         UiAutomator2Options options = new UiAutomator2Options();
 
         options.setPlatformName("Android");
         options.setAutomationName("UiAutomator2");
-        options.setDeviceName("emulator-5554");
-        options.setUdid("emulator-5554");
-
+        options.setDeviceName("MyPhone");
+        options.setUdid("3d5be672");
         options.setApp(app.getAbsolutePath());
-        options.setAppPackage("com.itouchtechadminapp");
-        options.setAppActivity("com.itouchtechadminapp.MainActivity");
-
+       // options.setAppPackage("com.itouchtechadminapp");
+       // options.setAppActivity("com.itouchtechadminapp.MainActivity");
+       
+        
         options.setAutoGrantPermissions(true);
-        options.setNoReset(true); 
+        options.setNoReset(false); 
         options.setDisableWindowAnimation(true);
 
         options.setNewCommandTimeout(Duration.ofSeconds(600));

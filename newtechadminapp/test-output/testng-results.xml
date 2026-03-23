@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-03-21T10:17:27 IST" name="Suite" finished-at="2026-03-21T10:19:25 IST" duration-ms="117871">
+    <groups>
+      <group name="login">
+        <method signature="NewLoginTest.testValidLogin()[pri:0, instance:tests.NewLoginTest@17f7cd29]" name="testValidLogin" class="tests.NewLoginTest"/>
+      </group> <!-- login -->
+    </groups>
+    <test started-at="2026-03-21T10:17:27 IST" name="Test" finished-at="2026-03-21T10:19:25 IST" duration-ms="117871">
+      <class name="tests.OTP_Test">
+        <test-method is-config="true" signature="initTestReport()[pri:0, instance:tests.OTP_Test@49e5f737]" started-at="2026-03-21T10:17:36 IST" name="initTestReport" finished-at="2026-03-21T10:17:36 IST" depends-on-methods="Pages.BaseClass.setup" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initTestReport -->
+        <test-method signature="enterOTPTest()[pri:0, instance:tests.OTP_Test@49e5f737]" started-at="2026-03-21T10:17:42 IST" name="enterOTPTest" finished-at="2026-03-21T10:18:04 IST" depends-on-methods="tests.NewLoginTest.testValidLogin" duration-ms="21356" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterOTPTest -->
+      </class> <!-- tests.OTP_Test -->
+      <class name="tests.CreateDoctorTest">
+        <test-method is-config="true" signature="initPage()[pri:0, instance:tests.CreateDoctorTest@6f45df59]" started-at="2026-03-21T10:18:04 IST" name="initPage" finished-at="2026-03-21T10:18:04 IST" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method signature="testcreatedoctor()[pri:0, instance:tests.CreateDoctorTest@6f45df59]" started-at="2026-03-21T10:18:04 IST" name="testcreatedoctor" finished-at="2026-03-21T10:19:25 IST" depends-on-methods="tests.NewLoginTest.testValidLogin, tests.OTP_Test.enterOTPTest" duration-ms="81009" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcreatedoctor -->
+      </class> <!-- tests.CreateDoctorTest -->
+      <class name="tests.NewLoginTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.NewLoginTest@17f7cd29]" started-at="2026-03-21T10:17:27 IST" name="setup" finished-at="2026-03-21T10:17:36 IST" duration-ms="8976" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:tests.NewLoginTest@17f7cd29]" started-at="2026-03-21T10:17:36 IST" name="initPage" finished-at="2026-03-21T10:17:36 IST" duration-ms="507" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method signature="testValidLogin()[pri:0, instance:tests.NewLoginTest@17f7cd29]" started-at="2026-03-21T10:17:36 IST" name="testValidLogin" finished-at="2026-03-21T10:17:42 IST" duration-ms="5948" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidLogin -->
+      </class> <!-- tests.NewLoginTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

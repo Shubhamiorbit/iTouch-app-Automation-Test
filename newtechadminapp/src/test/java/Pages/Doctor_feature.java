@@ -2,6 +2,7 @@ package Pages;
 
 import java.time.Duration;
 import java.util.Collections;
+import java.util.Random;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -144,7 +145,9 @@ public class Doctor_feature extends BaseClass {
 			
 			driver.findElement(By.xpath("//android.widget.TextView[@resource-id=\"android:id/date_picker_header_year\"]")).click();
 			Thread.sleep(5000);
-			By yearLocator = By.xpath("//android.widget.TextView[@text='1985']");
+			Random random = new Random();
+			int docdobyear = random.nextInt(11)+ 1975;
+			By yearLocator = By.xpath("//android.widget.TextView[@text='"+docdobyear+"']");
 
 		    for (int i = 0; i < 20; i++) {
 
@@ -152,11 +155,11 @@ public class Doctor_feature extends BaseClass {
 		            WebElement year = driver.findElement(yearLocator);
 		            if (year.isDisplayed()) {
 		                year.click();
-		                System.out.println(" Year 1985 selected");
+		                System.out.println(" Year "+docdobyear+" selected");
 		                break;
 		            }
 		        } catch (Exception e) {
-		            System.out.println(" 1985 not visible yet, swiping...");
+		            System.out.println(" "+docdobyear+" not visible yet, swiping...");
 		        }
 
 		        PointerInput finger = new PointerInput(PointerInput.Kind.TOUCH, "finger");
@@ -184,6 +187,14 @@ public class Doctor_feature extends BaseClass {
 
 		        Thread.sleep(300);
 		    }
+		  String selecteddobyear= driver.findElement(By.xpath("//android.widget.TextView[@resource-id=\"android:id/date_picker_header_year\"]")).getText();
+		  System.out.print("selected dob year is: " +selecteddobyear);
+		    Random random1 = new Random();
+		    int day = random1.nextInt(25) + 1;
+		    String daytext = String.valueOf(day);
+		    String dayxpath = "new UiSelector().text(\""+daytext+"\")";
+		    driver.findElement(AppiumBy.androidUIAutomator(dayxpath)).click();
+		    driver.findElement(By.id("android:id/button1")).click();
 			wait.until(ExpectedConditions.elementToBeClickable(GenderDropDown)).click();
 			wait.until(ExpectedConditions.elementToBeClickable(SelectGender)).click();
 
@@ -229,6 +240,7 @@ public class Doctor_feature extends BaseClass {
 	public boolean isDoctorCreated(String doctorcode2) {
 		return true;
 	}
+<<<<<<< HEAD
 
 
 	//public void createDoctormethod2(String doctorcode2, String firstname2, String lastname2, String speciality2,
@@ -237,4 +249,6 @@ public class Doctor_feature extends BaseClass {
 		// TODO Auto-generated method stub
 		
 	
+=======
+>>>>>>> 0983f688a87fa0559eb6da6ad1ad842c845ad165
 }
