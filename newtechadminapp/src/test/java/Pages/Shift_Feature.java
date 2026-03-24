@@ -71,7 +71,7 @@ public class Shift_Feature {
 	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"Create Shift\"]")
 	public WebElement CreateShift;
 	
-	@FindBy(xpath="//android.widget.Button[@resource-id=\"android:id/button1\"]")
+	@FindBy(xpath="//android.view.ViewGroup[@content-desc=\"Ok\"]")
 	public WebElement Okbutton;
 
 	public void createshift(String shiftname, String shiftcode, String wardcode) {

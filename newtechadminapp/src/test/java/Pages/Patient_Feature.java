@@ -131,16 +131,16 @@ public WebElement SelectBloodGroup;
 			wait.until(ExpectedConditions.elementToBeClickable(AddPatientinDashboard)).click();
 			wait.until(ExpectedConditions.elementToBeClickable(AddPatient)).click();
 			Thread.sleep(2000);
-			wait.until(ExpectedConditions.visibilityOf(PatientCode)).clear();
+			wait.until(ExpectedConditions.visibilityOf(PatientCode));
 			PatientCode.sendKeys(patientcode);
 
-			wait.until(ExpectedConditions.visibilityOf(FirstName)).clear();
+			wait.until(ExpectedConditions.visibilityOf(FirstName));
 			FirstName.sendKeys(firstname);
 
-			wait.until(ExpectedConditions.visibilityOf(LastName)).clear();
+			wait.until(ExpectedConditions.visibilityOf(LastName));
 			LastName.sendKeys(lastname);
 
-			wait.until(ExpectedConditions.visibilityOf(MRNumber)).clear();
+			wait.until(ExpectedConditions.visibilityOf(MRNumber));
 			MRNumber.sendKeys(mrnumber);
 
 			//wait.until(ExpectedConditions.visibilityOf(DOB)).click();
@@ -204,10 +204,10 @@ public WebElement SelectBloodGroup;
 			wait.until(ExpectedConditions.elementToBeClickable(BloodGroup)).click();
 			wait.until(ExpectedConditions.elementToBeClickable(SelectBloodGroup)).click();
 
-			wait.until(ExpectedConditions.visibilityOf(ContactName)).clear();
+			wait.until(ExpectedConditions.visibilityOf(ContactName));
 			ContactName.sendKeys(contactname);
 
-			wait.until(ExpectedConditions.visibilityOf(ContactPhone)).clear();
+			wait.until(ExpectedConditions.visibilityOf(ContactPhone));
 			ContactPhone.sendKeys(contactphone);
 		Thread.sleep(3000);
 			wait.until(ExpectedConditions.visibilityOf(ContactEmail));
@@ -243,10 +243,9 @@ public WebElement SelectBloodGroup;
 			Thread.sleep(5000);
 			
 			driver.findElement(AppiumBy.androidUIAutomator(
-				    "new UiScrollable(new UiSelector().scrollable(true).instance(0))" +
-				    ".setAsVerticalList()" +
-				    ".scrollIntoView(new UiSelector().text(\"Add Patient\"));"
-				));
+					"new UiScrollable(new UiSelector().scrollable(true))" +
+							".scrollIntoView(new UiSelector().textContains(\"Assign Doctor Code*\"));"
+					));
 
 			wait.until(ExpectedConditions.visibilityOf(AnyAllergies)).clear();
 			AnyAllergies.sendKeys(anyallergies);
@@ -254,10 +253,10 @@ public WebElement SelectBloodGroup;
 
 
 			Thread.sleep(5000);
-			wait.until(ExpectedConditions.visibilityOf(PastComplications)).clear();
+			wait.until(ExpectedConditions.visibilityOf(PastComplications));
 			PastComplications.sendKeys(pastcomplications);
 			
-			wait.until(ExpectedConditions.visibilityOf(DoctorCode)).clear();
+			wait.until(ExpectedConditions.visibilityOf(DoctorCode));
 			DoctorCode.sendKeys(doctorcodeforpatient);
 
 			

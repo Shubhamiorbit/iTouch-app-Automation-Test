@@ -44,15 +44,8 @@ public class NurseAssignToBed_Feature extends  BaseClass{
 	    @FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"Assign\"]")
 	    public WebElement AssignButton;
 
-	   
 
-	   
-
-	   
-
-	  
-
-	    @FindBy(xpath="//android.widget.Button[@resource-id=\"android:id/button1\"]")
+	    @FindBy(xpath="//android.view.ViewGroup[@content-desc=\"OK\"]")
 	   public  WebElement OkButton;
 	    
 	   
@@ -65,7 +58,7 @@ public class NurseAssignToBed_Feature extends  BaseClass{
 	            String bedcode
 
 	           
-	    ) {
+	    ) throws Exception {
 	        try {
 	            wait.until(ExpectedConditions.elementToBeClickable(AssetCenter)).click();
 	            wait.until(ExpectedConditions.elementToBeClickable(AssignDoctorToBed)).click();
@@ -78,15 +71,9 @@ public class NurseAssignToBed_Feature extends  BaseClass{
 	            WardCode.sendKeys(wardcode);
 	            wait.until(ExpectedConditions.visibilityOf(BedCode)).clear();
 	            BedCode.sendKeys(bedcode);
-	           
-	            
-	            
-	            
-	           
-
-	            
 	            
 	            wait.until(ExpectedConditions.elementToBeClickable(AssignButton)).click();
+	            Thread.sleep(2000);
 	            wait.until(ExpectedConditions.elementToBeClickable(OkButton)).click();
 
 	            System.out.println("Assigned the Nurse to Bed successfully");

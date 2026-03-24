@@ -43,12 +43,12 @@ public class Ward_Feature {
 	@FindBy(xpath = "//android.view.ViewGroup[@content-desc='Add Ward']")
 	public WebElement AddWardButton;
 	
-	@FindBy(xpath="//android.widget.Button[@resource-id=\"android:id/button1\"]")
+	@FindBy(xpath="//android.view.ViewGroup[@content-desc=\"Ok\"]")
 	   public  WebElement OkButton;
 	@FindBy(xpath="//android.widget.ImageView")
 	public WebElement BackNavigation;
 	
-	@FindBy(xpath = "//android.widget.TextView[@resource-id=\"android:id/message\"]")
+	@FindBy(xpath = "//android.widget.Button[@resource-id=\"android:id/button1\"]")
 	private WebElement successMessage;
 	public void createward(String wardcode, String wardname, String wardtype) {
 		try {
@@ -62,7 +62,7 @@ public class Ward_Feature {
 			wait.until(ExpectedConditions.visibilityOf(WardType)).click();
 			wait.until(ExpectedConditions.elementToBeClickable(SelectWardType)).click();
 			wait.until(ExpectedConditions.elementToBeClickable(AddWardButton)).click();
-            wait.until(ExpectedConditions.elementToBeClickable(OkButton)).click();
+            wait.until(ExpectedConditions.elementToBeClickable(successMessage)).click();
             
             wait.until(ExpectedConditions.elementToBeClickable(BackNavigation)).click();
 

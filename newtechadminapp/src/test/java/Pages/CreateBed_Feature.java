@@ -46,7 +46,7 @@ public class CreateBed_Feature extends BaseClass {
     public WebElement CreateBedButton;
     
     
-    @FindBy(xpath="//android.widget.Button[@resource-id=\"android:id/button1\"]")
+    @FindBy(xpath="//android.view.ViewGroup[@content-desc=\"Ok\"]")
 	   public  WebElement OkButton;
 
   

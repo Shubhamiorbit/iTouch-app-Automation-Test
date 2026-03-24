@@ -53,7 +53,7 @@ public class Device_Config_feature extends  BaseClass{
 		    @FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"Assign Device\"]")
 		    public WebElement AssignDevice;
 
-		    @FindBy(xpath="//android.widget.Button[@resource-id=\"android:id/button1\"]")
+		    @FindBy(xpath="//android.view.ViewGroup[@content-desc=\"Ok\"]")
 		    public  WebElement OkButton;
 		    
 		    @FindBy(xpath="//android.view.ViewGroup[@content-desc=\"Cancel\"]")

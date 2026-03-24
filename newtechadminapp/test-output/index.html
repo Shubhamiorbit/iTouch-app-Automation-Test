@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 9 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">13 methods, 5 failed,   8 passed</span>
+                    <span class="method-stats">16 methods, 9 failed,   7 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -103,7 +103,17 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.OTP_Test" class="method navigator-link" hash-for-method="enterOTPTest">enterOTPTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="tests.AssignDeviceToBedTest" class="method navigator-link" hash-for-method="testAssigndevicetobed">testAssigndevicetobed</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.AssignDoctorToShiftTest" class="method navigator-link" hash-for-method="testAssigndoctortoshift">testAssigndoctortoshift</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -123,6 +133,16 @@
                       <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.CreateDeviceTest" class="method navigator-link" hash-for-method="testcreatedevice">testcreatedevice</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.CreateGatewayTest" class="method navigator-link" hash-for-method="testcreategateway">testcreategateway</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="tests.DeviceConfigTest" class="method navigator-link" hash-for-method="testdeviceconfig">testdeviceconfig</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -137,16 +157,6 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.OTP_Test" class="method navigator-link" hash-for-method="enterOTPTest">enterOTPTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.AssignDoctorToShiftTest" class="method navigator-link" hash-for-method="testAssigndoctortoshift">testAssigndoctortoshift</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="tests.NewLoginTest" class="method navigator-link" hash-for-method="testValidLogin">testValidLogin</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -157,12 +167,17 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.CreateDeviceTest" class="method navigator-link" hash-for-method="testcreatedevice">testcreatedevice</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="tests.CreateDoctorTest" class="method navigator-link" hash-for-method="testcreatedoctor">testcreatedoctor</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.CreateGatewayTest" class="method navigator-link" hash-for-method="testcreategateway">testcreategateway</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="tests.CreateNurseTest" class="method navigator-link" hash-for-method="testcreatenurse">testcreatenurse</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.CreatePatientTest" class="method navigator-link" hash-for-method="testcreatepatient">testcreatepatient</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -190,64 +205,6 @@
           <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">tests.AssignNurseToShift</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testAssignnursetoshift">
-                  </a> <!-- testAssignnursetoshift -->
-                  <span class="method-name">testAssignnursetoshift</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable, but the element was not found: org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.xpath: //android.widget.Button[@resource-id=&quot;android:id/button1&quot;].
-(tried for 10 seconds with 500 milliseconds interval)
-Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {appium:adbExecTimeout: 120000, appium:app: D:\itouch-qa\newtechadminap..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {adbExecTimeout: 120000, app: D:\itouch-qa\newtechadminap..., autoGrantPermissions: true, automationName: UiAutomator2, deviceName: emulator-5554, disableWindowAnimation: true, ignoreHiddenApiPolicyError: true, newCommandTimeout: 600, noReset: false, platformName: ANDROID, skipDeviceInitialization: false, skipServerInstallation: false, udid: emulator-5554, uiautomator2ServerInstallTimeout: 120000, uiautomator2ServerLaunchTimeout: 120000, waitForIdleTimeout: 10000}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 600, appium:noReset: false, appium:pixelRatio: 2.625, appium:platformVersion: 13, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:viewportRect: {height: 2337, left: 0, top: 63, width: 1080}, appium:waitForIdleTimeout: 10000, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: e8bf98fe-59f2-47a1-b776-537f42451509
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:233)
-	at Pages.NurseAssignToShift.AssignNurseToShiftmethod(NurseAssignToShift.java:80)
-	at tests.AssignNurseToShift.testAssignnursetoshift(AssignNurseToShift.java:47)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 25 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">tests.AssignDeviceToBedTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testAssigndevicetobed">
-                  </a> <!-- testAssigndevicetobed -->
-                  <span class="method-name">testAssigndevicetobed</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable, but the element was not found: org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.xpath: //android.widget.Button[@resource-id=&quot;android:id/button1&quot;].
-(tried for 10 seconds with 500 milliseconds interval)
-Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {appium:adbExecTimeout: 120000, appium:app: D:\itouch-qa\newtechadminap..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {adbExecTimeout: 120000, app: D:\itouch-qa\newtechadminap..., autoGrantPermissions: true, automationName: UiAutomator2, deviceName: emulator-5554, disableWindowAnimation: true, ignoreHiddenApiPolicyError: true, newCommandTimeout: 600, noReset: false, platformName: ANDROID, skipDeviceInitialization: false, skipServerInstallation: false, udid: emulator-5554, uiautomator2ServerInstallTimeout: 120000, uiautomator2ServerLaunchTimeout: 120000, waitForIdleTimeout: 10000}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 600, appium:noReset: false, appium:pixelRatio: 2.625, appium:platformVersion: 13, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:viewportRect: {height: 2337, left: 0, top: 63, width: 1080}, appium:waitForIdleTimeout: 10000, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: e8bf98fe-59f2-47a1-b776-537f42451509
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:233)
-	at Pages.DeviceAssignToBed_Feature.AssignDeviceToBedmethod(DeviceAssignToBed_Feature.java:106)
-	at tests.AssignDeviceToBedTest.testAssigndevicetobed(AssignDeviceToBedTest.java:45)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 25 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
               <span class="class-name">tests.DeviceConfigTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -256,48 +213,44 @@ Session ID: e8bf98fe-59f2-47a1-b776-537f42451509
                   <a name="testdeviceconfig">
                   </a> <!-- testdeviceconfig -->
                   <span class="method-name">testdeviceconfig</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable, but the element was not found: org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.xpath: //android.widget.Button[@resource-id=&quot;android:id/button1&quot;].
-(tried for 10 seconds with 500 milliseconds interval)
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: &apos;POST /element&apos; cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
 Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
+Command: [f63ec01c-b4a2-404b-8ea8-2678f5f2a2d3, findElement {value=//android.view.ViewGroup[@content-desc=&quot;Asset Center&quot;], using=xpath}]
 Capabilities {appium:adbExecTimeout: 120000, appium:app: D:\itouch-qa\newtechadminap..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {adbExecTimeout: 120000, app: D:\itouch-qa\newtechadminap..., autoGrantPermissions: true, automationName: UiAutomator2, deviceName: emulator-5554, disableWindowAnimation: true, ignoreHiddenApiPolicyError: true, newCommandTimeout: 600, noReset: false, platformName: ANDROID, skipDeviceInitialization: false, skipServerInstallation: false, udid: emulator-5554, uiautomator2ServerInstallTimeout: 120000, uiautomator2ServerLaunchTimeout: 120000, waitForIdleTimeout: 10000}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 600, appium:noReset: false, appium:pixelRatio: 2.625, appium:platformVersion: 13, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:viewportRect: {height: 2337, left: 0, top: 63, width: 1080}, appium:waitForIdleTimeout: 10000, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: e8bf98fe-59f2-47a1-b776-537f42451509
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:233)
-	at Pages.Device_Config_feature.Deviceconfigmethod(Device_Config_feature.java:104)
+Session ID: f63ec01c-b4a2-404b-8ea8-2678f5f2a2d3
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:53)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$findElement$1(AppiumElementLocator.java:160)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:217)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:210)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:135)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:160)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.call(InterceptorOfASingleElement.java:75)
+	at io.appium.java_client.proxy.Interceptor.intercept(Interceptor.java:78)
+	at org.openqa.selenium.remote.RemoteWebElement$ByteBuddy$Grl4RKBH.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:793)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:786)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	at Pages.Device_Config_feature.Deviceconfigmethod(Device_Config_feature.java:76)
 	at tests.DeviceConfigTest.testdeviceconfig(DeviceConfigTest.java:44)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 25 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">tests.AssignBedToNurse</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testAssignnursetobed">
-                  </a> <!-- testAssignnursetobed -->
-                  <span class="method-name">testAssignnursetobed</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable, but the element was not found: org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.xpath: //android.widget.Button[@resource-id=&quot;android:id/button1&quot;].
-(tried for 10 seconds with 500 milliseconds interval)
-Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {appium:adbExecTimeout: 120000, appium:app: D:\itouch-qa\newtechadminap..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {adbExecTimeout: 120000, app: D:\itouch-qa\newtechadminap..., autoGrantPermissions: true, automationName: UiAutomator2, deviceName: emulator-5554, disableWindowAnimation: true, ignoreHiddenApiPolicyError: true, newCommandTimeout: 600, noReset: false, platformName: ANDROID, skipDeviceInitialization: false, skipServerInstallation: false, udid: emulator-5554, uiautomator2ServerInstallTimeout: 120000, uiautomator2ServerLaunchTimeout: 120000, waitForIdleTimeout: 10000}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 600, appium:noReset: false, appium:pixelRatio: 2.625, appium:platformVersion: 13, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:viewportRect: {height: 2337, left: 0, top: 63, width: 1080}, appium:waitForIdleTimeout: 10000, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: e8bf98fe-59f2-47a1-b776-537f42451509
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:233)
-	at Pages.NurseAssignToBed_Feature.AssignNurseToBedmethod(NurseAssignToBed_Feature.java:90)
-	at tests.AssignBedToNurse.testAssignnursetobed(AssignBedToNurse.java:46)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 25 stack frames
+... Removed 28 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -318,26 +271,267 @@ Session ID: e8bf98fe-59f2-47a1-b776-537f42451509
 	at Pages.CreateBed_Feature.createBedMethod(CreateBed_Feature.java:80)
 	at tests.CreateBedTest.testcreatebed(CreateBedTest.java:46)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable, but the element was not found: org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.xpath: //android.widget.Button[@resource-id=&quot;android:id/button1&quot;].
-(tried for 15 seconds with 500 milliseconds interval)
+Caused by: org.openqa.selenium.WebDriverException: &apos;POST /element&apos; cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
 Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
+Command: [f63ec01c-b4a2-404b-8ea8-2678f5f2a2d3, findElement {value=//android.view.ViewGroup[@content-desc=&apos;Asset Center&apos;], using=xpath}]
 Capabilities {appium:adbExecTimeout: 120000, appium:app: D:\itouch-qa\newtechadminap..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {adbExecTimeout: 120000, app: D:\itouch-qa\newtechadminap..., autoGrantPermissions: true, automationName: UiAutomator2, deviceName: emulator-5554, disableWindowAnimation: true, ignoreHiddenApiPolicyError: true, newCommandTimeout: 600, noReset: false, platformName: ANDROID, skipDeviceInitialization: false, skipServerInstallation: false, udid: emulator-5554, uiautomator2ServerInstallTimeout: 120000, uiautomator2ServerLaunchTimeout: 120000, waitForIdleTimeout: 10000}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 600, appium:noReset: false, appium:pixelRatio: 2.625, appium:platformVersion: 13, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:viewportRect: {height: 2337, left: 0, top: 63, width: 1080}, appium:waitForIdleTimeout: 10000, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: e8bf98fe-59f2-47a1-b776-537f42451509
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:233)
-	at Pages.CreateBed_Feature.createBedMethod(CreateBed_Feature.java:76)
+Session ID: f63ec01c-b4a2-404b-8ea8-2678f5f2a2d3
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:53)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$findElement$1(AppiumElementLocator.java:160)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:217)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:210)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:135)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:160)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.call(InterceptorOfASingleElement.java:75)
+	at io.appium.java_client.proxy.Interceptor.intercept(Interceptor.java:78)
+	at org.openqa.selenium.remote.RemoteWebElement$ByteBuddy$Grl4RKBH.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:793)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:786)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	at Pages.CreateBed_Feature.createBedMethod(CreateBed_Feature.java:57)
 	... 27 more
-... Removed 25 stack frames
+... Removed 28 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
+              <span class="class-name">tests.CreateGatewayTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testcreategateway">
+                  </a> <!-- testcreategateway -->
+                  <span class="method-name">testcreategateway</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: &apos;POST /element&apos; cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [f63ec01c-b4a2-404b-8ea8-2678f5f2a2d3, findElement {value=//android.view.ViewGroup[@content-desc=&quot;Asset Center&quot;], using=xpath}]
+Capabilities {appium:adbExecTimeout: 120000, appium:app: D:\itouch-qa\newtechadminap..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {adbExecTimeout: 120000, app: D:\itouch-qa\newtechadminap..., autoGrantPermissions: true, automationName: UiAutomator2, deviceName: emulator-5554, disableWindowAnimation: true, ignoreHiddenApiPolicyError: true, newCommandTimeout: 600, noReset: false, platformName: ANDROID, skipDeviceInitialization: false, skipServerInstallation: false, udid: emulator-5554, uiautomator2ServerInstallTimeout: 120000, uiautomator2ServerLaunchTimeout: 120000, waitForIdleTimeout: 10000}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 600, appium:noReset: false, appium:pixelRatio: 2.625, appium:platformVersion: 13, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:viewportRect: {height: 2337, left: 0, top: 63, width: 1080}, appium:waitForIdleTimeout: 10000, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: f63ec01c-b4a2-404b-8ea8-2678f5f2a2d3
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:53)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$findElement$1(AppiumElementLocator.java:160)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:217)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:210)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:135)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:160)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.call(InterceptorOfASingleElement.java:75)
+	at io.appium.java_client.proxy.Interceptor.intercept(Interceptor.java:78)
+	at org.openqa.selenium.remote.RemoteWebElement$ByteBuddy$Grl4RKBH.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:793)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:786)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	at Pages.Gateway_Feature.createGatewaymethod(Gateway_Feature.java:68)
+	at tests.CreateGatewayTest.testcreategateway(CreateGatewayTest.java:46)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.AssignDeviceToBedTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAssigndevicetobed">
+                  </a> <!-- testAssigndevicetobed -->
+                  <span class="method-name">testAssigndevicetobed</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: &apos;POST /element&apos; cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [f63ec01c-b4a2-404b-8ea8-2678f5f2a2d3, findElement {value=//android.view.ViewGroup[@content-desc=&quot;Asset Center&quot;], using=xpath}]
+Capabilities {appium:adbExecTimeout: 120000, appium:app: D:\itouch-qa\newtechadminap..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {adbExecTimeout: 120000, app: D:\itouch-qa\newtechadminap..., autoGrantPermissions: true, automationName: UiAutomator2, deviceName: emulator-5554, disableWindowAnimation: true, ignoreHiddenApiPolicyError: true, newCommandTimeout: 600, noReset: false, platformName: ANDROID, skipDeviceInitialization: false, skipServerInstallation: false, udid: emulator-5554, uiautomator2ServerInstallTimeout: 120000, uiautomator2ServerLaunchTimeout: 120000, waitForIdleTimeout: 10000}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 600, appium:noReset: false, appium:pixelRatio: 2.625, appium:platformVersion: 13, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:viewportRect: {height: 2337, left: 0, top: 63, width: 1080}, appium:waitForIdleTimeout: 10000, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: f63ec01c-b4a2-404b-8ea8-2678f5f2a2d3
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:53)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$findElement$1(AppiumElementLocator.java:160)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:217)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:210)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:135)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:160)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.call(InterceptorOfASingleElement.java:75)
+	at io.appium.java_client.proxy.Interceptor.intercept(Interceptor.java:78)
+	at org.openqa.selenium.remote.RemoteWebElement$ByteBuddy$Grl4RKBH.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:793)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:786)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	at Pages.DeviceAssignToBed_Feature.AssignDeviceToBedmethod(DeviceAssignToBed_Feature.java:68)
+	at tests.AssignDeviceToBedTest.testAssigndevicetobed(AssignDeviceToBedTest.java:45)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.AssignBedToNurse</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAssignnursetobed">
+                  </a> <!-- testAssignnursetobed -->
+                  <span class="method-name">testAssignnursetobed</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: &apos;POST /element&apos; cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [f63ec01c-b4a2-404b-8ea8-2678f5f2a2d3, findElement {value=//android.view.ViewGroup[@content-desc=&quot;Nurse Center&quot;], using=xpath}]
+Capabilities {appium:adbExecTimeout: 120000, appium:app: D:\itouch-qa\newtechadminap..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {adbExecTimeout: 120000, app: D:\itouch-qa\newtechadminap..., autoGrantPermissions: true, automationName: UiAutomator2, deviceName: emulator-5554, disableWindowAnimation: true, ignoreHiddenApiPolicyError: true, newCommandTimeout: 600, noReset: false, platformName: ANDROID, skipDeviceInitialization: false, skipServerInstallation: false, udid: emulator-5554, uiautomator2ServerInstallTimeout: 120000, uiautomator2ServerLaunchTimeout: 120000, waitForIdleTimeout: 10000}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 600, appium:noReset: false, appium:pixelRatio: 2.625, appium:platformVersion: 13, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:viewportRect: {height: 2337, left: 0, top: 63, width: 1080}, appium:waitForIdleTimeout: 10000, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: f63ec01c-b4a2-404b-8ea8-2678f5f2a2d3
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:53)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$findElement$1(AppiumElementLocator.java:160)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:217)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:210)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:135)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:160)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.call(InterceptorOfASingleElement.java:75)
+	at io.appium.java_client.proxy.Interceptor.intercept(Interceptor.java:78)
+	at org.openqa.selenium.remote.RemoteWebElement$ByteBuddy$Grl4RKBH.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:793)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:786)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	at Pages.NurseAssignToBed_Feature.AssignNurseToBedmethod(NurseAssignToBed_Feature.java:63)
+	at tests.AssignBedToNurse.testAssignnursetobed(AssignBedToNurse.java:46)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.AssignDoctorToShiftTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAssigndoctortoshift">
+                  </a> <!-- testAssigndoctortoshift -->
+                  <span class="method-name">testAssigndoctortoshift</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: &apos;POST /element&apos; cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [f63ec01c-b4a2-404b-8ea8-2678f5f2a2d3, findElement {value=//android.view.ViewGroup[@content-desc=&quot;Doctor Center&quot;], using=xpath}]
+Capabilities {appium:adbExecTimeout: 120000, appium:app: D:\itouch-qa\newtechadminap..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {adbExecTimeout: 120000, app: D:\itouch-qa\newtechadminap..., autoGrantPermissions: true, automationName: UiAutomator2, deviceName: emulator-5554, disableWindowAnimation: true, ignoreHiddenApiPolicyError: true, newCommandTimeout: 600, noReset: false, platformName: ANDROID, skipDeviceInitialization: false, skipServerInstallation: false, udid: emulator-5554, uiautomator2ServerInstallTimeout: 120000, uiautomator2ServerLaunchTimeout: 120000, waitForIdleTimeout: 10000}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 600, appium:noReset: false, appium:pixelRatio: 2.625, appium:platformVersion: 13, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:viewportRect: {height: 2337, left: 0, top: 63, width: 1080}, appium:waitForIdleTimeout: 10000, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: f63ec01c-b4a2-404b-8ea8-2678f5f2a2d3
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:53)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$findElement$1(AppiumElementLocator.java:160)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:217)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:210)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:135)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:160)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.call(InterceptorOfASingleElement.java:75)
+	at io.appium.java_client.proxy.Interceptor.intercept(Interceptor.java:78)
+	at org.openqa.selenium.remote.RemoteWebElement$ByteBuddy$Grl4RKBH.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:793)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:786)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	at Pages.DoctorAssignToShift.AssignDoctorToShiftmethod(DoctorAssignToShift.java:63)
+	at tests.AssignDoctorToShiftTest.testAssigndoctortoshift(AssignDoctorToShiftTest.java:47)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
               <span class="class-name">tests.CreateDeviceTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -346,6 +540,153 @@ Session ID: e8bf98fe-59f2-47a1-b776-537f42451509
                   <a name="testcreatedevice">
                   </a> <!-- testcreatedevice -->
                   <span class="method-name">testcreatedevice</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: &apos;POST /element&apos; cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [f63ec01c-b4a2-404b-8ea8-2678f5f2a2d3, findElement {value=//android.view.ViewGroup[@content-desc=&quot;Asset Center&quot;], using=xpath}]
+Capabilities {appium:adbExecTimeout: 120000, appium:app: D:\itouch-qa\newtechadminap..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {adbExecTimeout: 120000, app: D:\itouch-qa\newtechadminap..., autoGrantPermissions: true, automationName: UiAutomator2, deviceName: emulator-5554, disableWindowAnimation: true, ignoreHiddenApiPolicyError: true, newCommandTimeout: 600, noReset: false, platformName: ANDROID, skipDeviceInitialization: false, skipServerInstallation: false, udid: emulator-5554, uiautomator2ServerInstallTimeout: 120000, uiautomator2ServerLaunchTimeout: 120000, waitForIdleTimeout: 10000}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 600, appium:noReset: false, appium:pixelRatio: 2.625, appium:platformVersion: 13, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:viewportRect: {height: 2337, left: 0, top: 63, width: 1080}, appium:waitForIdleTimeout: 10000, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: f63ec01c-b4a2-404b-8ea8-2678f5f2a2d3
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:53)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$findElement$1(AppiumElementLocator.java:160)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:217)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:210)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:135)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:160)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.call(InterceptorOfASingleElement.java:75)
+	at io.appium.java_client.proxy.Interceptor.intercept(Interceptor.java:78)
+	at org.openqa.selenium.remote.RemoteWebElement$ByteBuddy$Grl4RKBH.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:793)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:786)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	at Pages.Device_Feature.createDevicemethod(Device_Feature.java:79)
+	at tests.CreateDeviceTest.testcreatedevice(CreateDeviceTest.java:38)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.OTP_Test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="enterOTPTest">
+                  </a> <!-- enterOTPTest -->
+                  <span class="method-name">enterOTPTest</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: &apos;POST /element&apos; cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [f63ec01c-b4a2-404b-8ea8-2678f5f2a2d3, findElement {value=//android.view.ViewGroup[@content-desc=&quot;Verify OTP&quot;], using=xpath}]
+Capabilities {appium:adbExecTimeout: 120000, appium:app: D:\itouch-qa\newtechadminap..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {adbExecTimeout: 120000, app: D:\itouch-qa\newtechadminap..., autoGrantPermissions: true, automationName: UiAutomator2, deviceName: emulator-5554, disableWindowAnimation: true, ignoreHiddenApiPolicyError: true, newCommandTimeout: 600, noReset: false, platformName: ANDROID, skipDeviceInitialization: false, skipServerInstallation: false, udid: emulator-5554, uiautomator2ServerInstallTimeout: 120000, uiautomator2ServerLaunchTimeout: 120000, waitForIdleTimeout: 10000}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 600, appium:noReset: false, appium:pixelRatio: 2.625, appium:platformVersion: 13, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:viewportRect: {height: 2337, left: 0, top: 63, width: 1080}, appium:waitForIdleTimeout: 10000, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: f63ec01c-b4a2-404b-8ea8-2678f5f2a2d3
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:756)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:749)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	at tests.OTP_Test.enterOTPTest(OTP_Test.java:58)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.AssignNurseToShift</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAssignnursetoshift">
+                  </a> <!-- testAssignnursetoshift -->
+                  <span class="method-name">testAssignnursetoshift</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: &apos;POST /element&apos; cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [f63ec01c-b4a2-404b-8ea8-2678f5f2a2d3, findElement {value=//android.view.ViewGroup[@content-desc=&quot;Nurse Center&quot;], using=xpath}]
+Capabilities {appium:adbExecTimeout: 120000, appium:app: D:\itouch-qa\newtechadminap..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {adbExecTimeout: 120000, app: D:\itouch-qa\newtechadminap..., autoGrantPermissions: true, automationName: UiAutomator2, deviceName: emulator-5554, disableWindowAnimation: true, ignoreHiddenApiPolicyError: true, newCommandTimeout: 600, noReset: false, platformName: ANDROID, skipDeviceInitialization: false, skipServerInstallation: false, udid: emulator-5554, uiautomator2ServerInstallTimeout: 120000, uiautomator2ServerLaunchTimeout: 120000, waitForIdleTimeout: 10000}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 600, appium:noReset: false, appium:pixelRatio: 2.625, appium:platformVersion: 13, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:viewportRect: {height: 2337, left: 0, top: 63, width: 1080}, appium:waitForIdleTimeout: 10000, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: f63ec01c-b4a2-404b-8ea8-2678f5f2a2d3
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:53)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$findElement$1(AppiumElementLocator.java:160)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:217)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:210)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:135)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:160)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.call(InterceptorOfASingleElement.java:75)
+	at io.appium.java_client.proxy.Interceptor.intercept(Interceptor.java:78)
+	at org.openqa.selenium.remote.RemoteWebElement$ByteBuddy$Grl4RKBH.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:793)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:786)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	at Pages.NurseAssignToShift.AssignNurseToShiftmethod(NurseAssignToShift.java:55)
+	at tests.AssignNurseToShift.testAssignnursetoshift(AssignNurseToShift.java:47)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.CreateDoctorTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testcreatedoctor">
+                  </a> <!-- testcreatedoctor -->
+                  <span class="method-name">testcreatedoctor</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -368,14 +709,29 @@ Session ID: e8bf98fe-59f2-47a1-b776-537f42451509
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">tests.AssignDoctorToShiftTest</span>
+              <span class="class-name">tests.CreateShiftTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testAssigndoctortoshift">
-                  </a> <!-- testAssigndoctortoshift -->
-                  <span class="method-name">testAssigndoctortoshift</span>
+                  <a name="testcreateshift">
+                  </a> <!-- testcreateshift -->
+                  <span class="method-name">testcreateshift</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.AdmitPatientTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testadmitpatient">
+                  </a> <!-- testadmitpatient -->
+                  <span class="method-name">testadmitpatient</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -398,14 +754,14 @@ Session ID: e8bf98fe-59f2-47a1-b776-537f42451509
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">tests.CreateShiftTest</span>
+              <span class="class-name">tests.CreatePatientTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testcreateshift">
-                  </a> <!-- testcreateshift -->
-                  <span class="method-name">testcreateshift</span>
+                  <a name="testcreatepatient">
+                  </a> <!-- testcreatepatient -->
+                  <span class="method-name">testcreatepatient</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -413,44 +769,14 @@ Session ID: e8bf98fe-59f2-47a1-b776-537f42451509
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">tests.CreateGatewayTest</span>
+              <span class="class-name">tests.CreateNurseTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testcreategateway">
-                  </a> <!-- testcreategateway -->
-                  <span class="method-name">testcreategateway</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">tests.OTP_Test</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="enterOTPTest">
-                  </a> <!-- enterOTPTest -->
-                  <span class="method-name">enterOTPTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">tests.AdmitPatientTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testadmitpatient">
-                  </a> <!-- testadmitpatient -->
-                  <span class="method-name">testadmitpatient</span>
+                  <a name="testcreatenurse">
+                  </a> <!-- testcreatenurse -->
+                  <span class="method-name">testcreatenurse</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -472,6 +798,9 @@ Session ID: e8bf98fe-59f2-47a1-b776-537f42451509
     &lt;classes&gt;
       &lt;class name=&quot;tests.NewLoginTest&quot;/&gt;
       &lt;class name=&quot;tests.OTP_Test&quot;/&gt;
+      &lt;class name=&quot;tests.CreateDoctorTest&quot;/&gt;
+      &lt;class name=&quot;tests.CreatePatientTest&quot;/&gt;
+      &lt;class name=&quot;tests.CreateNurseTest&quot;/&gt;
       &lt;class name=&quot;tests.CreateDeviceTest&quot;/&gt;
       &lt;class name=&quot;tests.CreateWardTest&quot;/&gt;
       &lt;class name=&quot;tests.CreateGatewayTest&quot;/&gt;
@@ -496,7 +825,7 @@ Session ID: e8bf98fe-59f2-47a1-b776-537f42451509
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Master.test (13 classes)</span>
+                <span class="test-name">Master.test (16 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -530,64 +859,76 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(13);
+data.addRows(16);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testcreateshift')
-data.setCell(0, 2, 'tests.CreateShiftTest')
-data.setCell(0, 3, 36449);
+data.setCell(0, 1, 'enterOTPTest')
+data.setCell(0, 2, 'tests.OTP_Test')
+data.setCell(0, 3, 13583);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testcreatebed')
-data.setCell(1, 2, 'tests.CreateBedTest')
-data.setCell(1, 3, 28786);
+data.setCell(1, 1, 'testValidLogin')
+data.setCell(1, 2, 'tests.NewLoginTest')
+data.setCell(1, 3, 5391);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testAssigndevicetobed')
-data.setCell(2, 2, 'tests.AssignDeviceToBedTest')
-data.setCell(2, 3, 25148);
+data.setCell(2, 1, 'testcreateward')
+data.setCell(2, 2, 'tests.CreateWardTest')
+data.setCell(2, 3, 2029);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testadmitpatient')
-data.setCell(3, 2, 'tests.AdmitPatientTest')
-data.setCell(3, 3, 22342);
+data.setCell(3, 1, 'testcreatedoctor')
+data.setCell(3, 2, 'tests.CreateDoctorTest')
+data.setCell(3, 3, 37);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testdeviceconfig')
-data.setCell(4, 2, 'tests.DeviceConfigTest')
-data.setCell(4, 3, 20722);
+data.setCell(4, 1, 'testcreatedevice')
+data.setCell(4, 2, 'tests.CreateDeviceTest')
+data.setCell(4, 3, 34);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'testAssignnursetobed')
-data.setCell(5, 2, 'tests.AssignBedToNurse')
-data.setCell(5, 3, 20220);
+data.setCell(5, 1, 'testcreatepatient')
+data.setCell(5, 2, 'tests.CreatePatientTest')
+data.setCell(5, 3, 29);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'enterOTPTest')
-data.setCell(6, 2, 'tests.OTP_Test')
-data.setCell(6, 3, 19024);
+data.setCell(6, 1, 'testcreatenurse')
+data.setCell(6, 2, 'tests.CreateNurseTest')
+data.setCell(6, 3, 26);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'testAssignnursetoshift')
-data.setCell(7, 2, 'tests.AssignNurseToShift')
-data.setCell(7, 3, 17094);
+data.setCell(7, 1, 'testadmitpatient')
+data.setCell(7, 2, 'tests.AdmitPatientTest')
+data.setCell(7, 3, 25);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'testcreatedevice')
-data.setCell(8, 2, 'tests.CreateDeviceTest')
-data.setCell(8, 3, 14730);
+data.setCell(8, 1, 'testcreateshift')
+data.setCell(8, 2, 'tests.CreateShiftTest')
+data.setCell(8, 3, 23);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'testcreateward')
-data.setCell(9, 2, 'tests.CreateWardTest')
-data.setCell(9, 3, 11156);
+data.setCell(9, 1, 'testAssignnursetobed')
+data.setCell(9, 2, 'tests.AssignBedToNurse')
+data.setCell(9, 3, 19);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'testcreategateway')
-data.setCell(10, 2, 'tests.CreateGatewayTest')
-data.setCell(10, 3, 8564);
+data.setCell(10, 1, 'testAssigndoctortoshift')
+data.setCell(10, 2, 'tests.AssignDoctorToShiftTest')
+data.setCell(10, 3, 17);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'testAssigndoctortoshift')
-data.setCell(11, 2, 'tests.AssignDoctorToShiftTest')
-data.setCell(11, 3, 7479);
+data.setCell(11, 1, 'testAssigndevicetobed')
+data.setCell(11, 2, 'tests.AssignDeviceToBedTest')
+data.setCell(11, 3, 14);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'testValidLogin')
-data.setCell(12, 2, 'tests.NewLoginTest')
-data.setCell(12, 3, 3716);
+data.setCell(12, 1, 'testcreatebed')
+data.setCell(12, 2, 'tests.CreateBedTest')
+data.setCell(12, 3, 13);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'testcreategateway')
+data.setCell(13, 2, 'tests.CreateGatewayTest')
+data.setCell(13, 3, 12);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'testdeviceconfig')
+data.setCell(14, 2, 'tests.DeviceConfigTest')
+data.setCell(14, 3, 12);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'testAssignnursetoshift')
+data.setCell(15, 2, 'tests.AssignNurseToShift')
+data.setCell(15, 3, 11);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 minutes</span>
+              <span class="suite-total-time">Total running time: 21 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -602,67 +943,11 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">12 ignored methods</span>
+            <span class="header-content">15 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">tests.AssignNurseToShift</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">setup</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">tests.CreateDeviceTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">setup</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">tests.AssignDoctorToShiftTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">setup</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">tests.AssignDeviceToBedTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">setup</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
               <span class="ignored-class-name">tests.DeviceConfigTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">setup</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">tests.AssignBedToNurse</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">setup</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">tests.CreateBedTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">setup</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">tests.CreateShiftTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">setup</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">tests.CreateWardTest</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">setup</span>
                 <br/>
@@ -676,7 +961,21 @@ return data;
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">tests.OTP_Test</span>
+              <span class="ignored-class-name">tests.AssignDeviceToBedTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setup</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.AssignBedToNurse</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setup</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.CreateShiftTest</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">setup</span>
                 <br/>
@@ -684,6 +983,69 @@ return data;
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
               <span class="ignored-class-name">tests.AdmitPatientTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setup</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.CreateDeviceTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setup</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.CreateNurseTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setup</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.AssignNurseToShift</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setup</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.CreateBedTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setup</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.CreateDoctorTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setup</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.AssignDoctorToShiftTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setup</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.CreateWardTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setup</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.CreatePatientTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setup</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.OTP_Test</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">setup</span>
                 <br/>
@@ -707,156 +1069,197 @@ return data;
               <div class="chronological-class-name">tests.OTP_Test</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">initTestReport</span>
-                <span class="method-start">4395 ms</span>
+                <span class="method-start">6748 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.NewLoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">initPage</span>
-                <span class="method-start">4428 ms</span>
+                <span class="method-start">6784 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testValidLogin</span>
-                <span class="method-start">4850 ms</span>
+                <span class="method-start">7284 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.OTP_Test</div> <!-- chronological-class-name -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">enterOTPTest</span>
-                <span class="method-start">8581 ms</span>
+                <span class="method-start">12683 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.CreateDoctorTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">initPage</span>
+                <span class="method-start">26282 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testcreatedoctor</span>
+                <span class="method-start">26288 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.CreatePatientTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">initPage</span>
+                <span class="method-start">26331 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testcreatepatient</span>
+                <span class="method-start">26337 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.CreateNurseTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">initPage</span>
+                <span class="method-start">26371 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testcreatenurse</span>
+                <span class="method-start">26377 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.CreateDeviceTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">initPage</span>
-                <span class="method-start">27608 ms</span>
+                <span class="method-start">26408 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">testcreatedevice</span>
-                <span class="method-start">27612 ms</span>
+                <span class="method-start">26415 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.CreateWardTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">initwardpage</span>
-                <span class="method-start">42348 ms</span>
+                <span class="method-start">26477 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testcreateward</span>
-                <span class="method-start">42350 ms</span>
+                <span class="method-start">26483 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.CreateGatewayTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">initPage</span>
-                <span class="method-start">53510 ms</span>
+                <span class="method-start">28515 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">testcreategateway</span>
-                <span class="method-start">53512 ms</span>
+                <span class="method-start">28517 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.CreateShiftTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">initshiftpage</span>
-                <span class="method-start">62079 ms</span>
+                <span class="method-start">28539 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testcreateshift</span>
-                <span class="method-start">62126 ms</span>
+                <span class="method-start">28568 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.CreateBedTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">initPage(public void tests.CreateBedTest.testcreatebed())</span>
-                <span class="method-start">98578 ms</span>
+                <span class="method-start">28594 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testcreatebed</span>
-                <span class="method-start">98582 ms</span>
+                <span class="method-start">28597 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.AssignDoctorToShiftTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">iniassigndocgtortoshiftpage</span>
-                <span class="method-start">127794 ms</span>
+                <span class="method-start">28617 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">testAssigndoctortoshift</span>
-                <span class="method-start">127797 ms</span>
+                <span class="method-start">28621 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.AssignBedToNurse</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">iniassignnursetobedpage</span>
-                <span class="method-start">135280 ms</span>
+                <span class="method-start">28645 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testAssignnursetobed</span>
-                <span class="method-start">135284 ms</span>
+                <span class="method-start">28647 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.AssignNurseToShift</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">iniassignnursetoshiftpage</span>
-                <span class="method-start">155923 ms</span>
+                <span class="method-start">28676 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testAssignnursetoshift</span>
-                <span class="method-start">155927 ms</span>
+                <span class="method-start">28678 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.DeviceConfigTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">initPage</span>
-                <span class="method-start">173414 ms</span>
+                <span class="method-start">28695 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testdeviceconfig</span>
-                <span class="method-start">173416 ms</span>
+                <span class="method-start">28698 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.AssignDeviceToBedTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">iniassigndocgtortoshiftpage</span>
-                <span class="method-start">194504 ms</span>
+                <span class="method-start">28718 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testAssigndevicetobed</span>
-                <span class="method-start">194508 ms</span>
+                <span class="method-start">28721 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.AdmitPatientTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">initPage</span>
-                <span class="method-start">220017 ms</span>
+                <span class="method-start">28745 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testadmitpatient</span>
-                <span class="method-start">220019 ms</span>
+                <span class="method-start">28747 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

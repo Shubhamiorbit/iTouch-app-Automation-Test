@@ -62,7 +62,7 @@ public class Patient_Admit_Feature extends BaseClass{
 	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"Admit\"]")
 	public WebElement Admit;
 
-	  @FindBy(xpath="//android.widget.Button[@resource-id=\"android:id/button1\"]")
+	  @FindBy(xpath="//android.view.ViewGroup[@content-desc=\"Ok\"]")
 	   public  WebElement OkButton;
 	   @FindBy(xpath="//android.widget.FrameLayout[@resource-id=\"android:id/content\"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.ImageView")
 	    public WebElement BackToDashboard;

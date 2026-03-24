@@ -32,7 +32,7 @@ import com.aventstack.extentreports.ExtentTest;
 		            "tests.NewLoginTest.testValidLogin",
 		            "tests.OTP_Test.enterOTPTest"
 		    })
-		public void testAssignnursetobed() {
+		public void testAssignnursetobed() throws Exception {
 			
 			 String nursecode = Utility.getNurseCode();
 

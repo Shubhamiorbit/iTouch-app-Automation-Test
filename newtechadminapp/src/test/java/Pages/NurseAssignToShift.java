@@ -38,16 +38,8 @@ public class NurseAssignToShift extends  BaseClass{
 
 	    @FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"Assign\"]")
 	    public WebElement AssignButton;
-
-	   
-
-	   
-
-	   
-
 	  
-
-	    @FindBy(xpath="//android.widget.Button[@resource-id=\"android:id/button1\"]")
+	    @FindBy(xpath="//android.view.ViewGroup[@content-desc=\"OK\"]")
 	   public  WebElement OkButton;
 	    
 	   

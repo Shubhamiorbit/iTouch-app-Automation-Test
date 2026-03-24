@@ -44,23 +44,11 @@ public class DeviceAssignToBed_Feature extends  BaseClass{
 	    public WebElement DeviceCode;
 
 	    
-	    
-	   
-
-	    
 
 	    @FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"Assign Device\"]")
-	    public WebElement AssignButton;
+	    public WebElement AssignButton;  
 
-	   
-
-	   
-
-	   
-
-	  
-
-	    @FindBy(xpath="//android.widget.Button[@resource-id=\"android:id/button1\"]")
+	    @FindBy(xpath="//android.view.ViewGroup[@content-desc=\"Ok\"]")
 	   public  WebElement OkButton;
 	    @FindBy(xpath="//android.widget.ImageView")
 	    public WebElement BackNavigationToDashboard;
