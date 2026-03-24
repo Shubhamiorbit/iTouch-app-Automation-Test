@@ -50,11 +50,11 @@ public class Patient_Admit_Feature extends BaseClass{
 	@FindBy(xpath="//android.widget.FrameLayout[@resource-id=\"android:id/content\"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.widget.EditText[2]")
 	public WebElement AdmissionReason;
 
-	@FindBy(xpath="//android.widget.EditText[@text=\"Auto suggested\"]")
+	@FindBy(xpath="//android.widget.EditText[@text=\"Search Ward\"]")
 	public WebElement WardCode;
 	
 
-	@FindBy(xpath="//android.widget.EditText[@text=\"Auto suggest\"]")
+	@FindBy(xpath="//android.widget.EditText[@text=\"Search Bed\"]")
 	public WebElement BedCode;
 	
 	
@@ -64,11 +64,7 @@ public class Patient_Admit_Feature extends BaseClass{
 
 	  @FindBy(xpath="//android.view.ViewGroup[@content-desc=\"Ok\"]")
 	   public  WebElement OkButton;
-	   @FindBy(xpath="//android.widget.FrameLayout[@resource-id=\"android:id/content\"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.ImageView")
-	    public WebElement BackToDashboard;
-	    
-
-    
+	      
 
 	public void admitpatient(String patientcode, String medicalhistroy,String admissionreason, 
 			String wardcode, String bedcode) {
@@ -96,10 +92,9 @@ public class Patient_Admit_Feature extends BaseClass{
 	        	    ".scrollToEnd(10)"
 	        	));
 
-			wait.until(ExpectedConditions.visibilityOf(WardCode)).clear();
+			wait.until(ExpectedConditions.visibilityOf(WardCode));
 			WardCode.sendKeys(wardcode);
-			
-			wait.until(ExpectedConditions.visibilityOf(BedCode)).clear();
+			wait.until(ExpectedConditions.visibilityOf(BedCode));
 			BedCode.sendKeys(bedcode);
 			 
 			driver.findElement(AppiumBy.androidUIAutomator(
@@ -108,13 +103,8 @@ public class Patient_Admit_Feature extends BaseClass{
 	        	));
 
 			wait.until(ExpectedConditions.visibilityOf(Admit)).click();
-			
-
-			
-
-			
+		
 			wait.until(ExpectedConditions.elementToBeClickable(OkButton)).click();
-			wait.until(ExpectedConditions.elementToBeClickable(BackToDashboard)).click();
 
 		}catch (Exception e) {
 			System.out.println("Patient admit failed: " + e.getMessage());

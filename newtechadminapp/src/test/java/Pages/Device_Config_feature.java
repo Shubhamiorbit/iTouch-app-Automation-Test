@@ -103,7 +103,6 @@ public class Device_Config_feature extends  BaseClass{
 		            wait.until(ExpectedConditions.elementToBeClickable(AssignDevice)).click();
 		            wait.until(ExpectedConditions.elementToBeClickable(OkButton)).click();
 		            wait.until(ExpectedConditions.elementToBeClickable(CancelButton)).click();
-		            wait.until(ExpectedConditions.elementToBeClickable(BackToDashboard)).click();
 
 		            System.out.println("Device Configured successfully");
 		        } catch (Exception e) {
