@@ -147,9 +147,9 @@ public WebElement SelectBloodGroup;
 			
 			driver.findElement(By.xpath("//android.widget.EditText[@content-desc=\"birthDateInput\"]")).click();
 			
-			Thread.sleep(5000);
+			Thread.sleep(3000);
 			driver.findElement(By.xpath("//android.widget.TextView[@resource-id=\"android:id/date_picker_header_year\"]")).click();
-			Thread.sleep(5000);
+			Thread.sleep(3000);
 			Random randomyear = new Random();
 			int patdobyear = randomyear.nextInt(13) + 1992;
 			By yearLocator = By.xpath("//android.widget.TextView[@text='"+patdobyear+"']");

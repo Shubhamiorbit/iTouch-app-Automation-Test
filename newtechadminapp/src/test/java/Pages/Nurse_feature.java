@@ -134,9 +134,9 @@ public class Nurse_feature extends BaseClass{
 
 
 	        driver.findElement(By.xpath("//android.view.ViewGroup[@content-desc=\"Birth Date*\"]/android.widget.EditText")).click();
-	        Thread.sleep(5000);
+	        Thread.sleep(3000);
 			driver.findElement(By.xpath("//android.widget.TextView[@resource-id=\"android:id/date_picker_header_year\"]")).click();
-			Thread.sleep(5000);
+			Thread.sleep(3000);
 			Random random = new Random();
 			int nursedobyear = random.nextInt(11)+ 1975;
 			By yearLocator = By.xpath("//android.widget.TextView[@text='"+nursedobyear+"']");
