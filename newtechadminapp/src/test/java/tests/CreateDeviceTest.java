@@ -27,8 +27,8 @@ public class CreateDeviceTest extends BaseClass{
 	    })
 	    	public void testcreatedevice() {
 		 	Calendar calendar = Calendar.getInstance();
-	        int seconds = calendar.get(Calendar.SECOND);
-	        String secStr = String.format("%04d", seconds);
+	        int seconds = calendar.get(Calendar.MILLISECOND);
+	        String secStr = String.format("%06d", seconds);
 	        Random random = new Random();
 		
 		 String devicetype="Contec";

@@ -39,20 +39,11 @@ public class DoctorAssignToShift extends  BaseClass{
 	    @FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"Assign\"]")
 	    public WebElement AssignButton;
 
-	   
-
-	   
-
-	   
-
-	  
 
 	    @FindBy(xpath="//android.view.ViewGroup[@content-desc=\"Ok\"]")
 	   public  WebElement OkButton;
 	    
-	   
-
-
+ 
 	    public void AssignDoctorToShiftmethod(
 	            String doctorcode,
 	            String wardcode,

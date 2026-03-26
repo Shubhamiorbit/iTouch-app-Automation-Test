@@ -33,7 +33,7 @@ public class DeviceConfigTest extends BaseClass{
 	    })
 	    	public void testdeviceconfig() {
 		 	Calendar calendar = Calendar.getInstance();
-	        int seconds = calendar.get(Calendar.SECOND);
+	        int seconds = calendar.get(Calendar.MILLISECOND);
 	        String secStr = String.format("%03d", seconds);
 		
 		 String configurevalue="8"+secStr;

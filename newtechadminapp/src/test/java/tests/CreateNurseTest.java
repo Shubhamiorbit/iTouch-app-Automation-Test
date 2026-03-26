@@ -17,7 +17,7 @@ import java.util.Random;
 
 public class CreateNurseTest extends BaseClass{
 	 static Calendar calendar = Calendar.getInstance();
-	    static int seconds = calendar.get(Calendar.SECOND);
+	    static int seconds = calendar.get(Calendar.MILLISECOND);
         static String secStr = String.valueOf(System.currentTimeMillis() % 100000);
 	    public static String nurseCode = "Nurse" + secStr;
 	    

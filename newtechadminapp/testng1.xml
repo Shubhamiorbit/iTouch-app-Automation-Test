@@ -4,8 +4,7 @@
     <classes>
       <class name="tests.NewLoginTest"/>
       <class name="tests.OTP_Test"/>
-      <class name="tests.CreatePatientTest"/>
-      <class name="tests.AdmitPatientTest"/>
+      <class name="tests.CreateDeviceTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

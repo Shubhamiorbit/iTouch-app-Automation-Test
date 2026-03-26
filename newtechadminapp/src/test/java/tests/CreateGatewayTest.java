@@ -22,7 +22,7 @@ import com.aventstack.extentreports.Status;
 public class CreateGatewayTest extends BaseClass{
 	Calendar calendar = Calendar.getInstance();
     int seconds = calendar.get(Calendar.SECOND);
-    String secStr = String.format("%04d", seconds);
+    String secStr = String.format("%05d", seconds);
 
 	Gateway_Feature gateway_feature;
 	public static String devicecode;

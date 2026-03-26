@@ -17,7 +17,7 @@ import java.util.Calendar;
 
 public class CreateBedTest extends BaseClass {
 	static Calendar calendar = Calendar.getInstance();
-    static int seconds = calendar.get(Calendar.SECOND);
+    static int seconds = calendar.get(Calendar.MILLISECOND);
     static String secStr = String.format("%04d", seconds);
     public static String bedCode = "Bed" + secStr;
 

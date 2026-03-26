@@ -30,7 +30,7 @@ public class CreatePatientTest extends BaseClass{
 	public void testcreatepatient() {
 	    
 		Calendar calendar = Calendar.getInstance();
-        int seconds = calendar.get(Calendar.SECOND);
+        int seconds = calendar.get(Calendar.MILLISECOND);
         Random random = new Random();
 		 String patientcode ="Patient"+secStr;
 		 String patientname="pallavi gowda";

@@ -30,7 +30,7 @@ public class CreateShiftTest extends BaseClass{
     }) 
 	public void testcreateshift() {
 		Calendar calendar = Calendar.getInstance();
-        int seconds = calendar.get(Calendar.SECOND);
+        int seconds = calendar.get(Calendar.MILLISECOND);
 		String shiftname= "Morning Shift";
 		String shiftcode= "Shift"+secStr;
 		 String wardcode = Utility.getWardCode();

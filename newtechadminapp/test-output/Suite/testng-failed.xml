@@ -55,6 +55,13 @@
           <include name="setup"/>
         </methods>
       </class> <!-- tests.AssignBedToNurse -->
+      <class name="tests.CreateDeviceTest">
+        <methods>
+          <include name="initPage"/>
+          <include name="testcreatedevice"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.CreateDeviceTest -->
       <class name="tests.OTP_Test">
         <methods>
           <include name="initTestReport"/>
