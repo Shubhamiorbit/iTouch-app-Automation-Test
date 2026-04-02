@@ -31,16 +31,17 @@ public class BaseClass {
         File file = new File("D:\\itouch-qa\\newtechadminapp\\Apps\\iTouch-AdminApp-release.apk");
         System.out.println(file.exists());
 
-        File app = new File("D:\\itouch-qa\\newtechadminapp\\Apps\\iTouch-AdminApp-release.apk");
-
+        File app1 = new File("D:\\itouch-qa\\newtechadminapp\\Apps\\iTouch-AdminApp-release.apk");
+        File app2 = new File("D:\\itouch-qa\\newtechadminapp\\Apps\\iTouch-NurseApp-release.apk");
 
         UiAutomator2Options options = new UiAutomator2Options();
 
         options.setPlatformName("Android");
         options.setAutomationName("UiAutomator2");
-        options.setDeviceName("22JUL32E02785");
-        options.setUdid("22JUL32E02785");
-        options.setApp(app.getAbsolutePath());
+        options.setDeviceName("emulator-5554");
+        options.setUdid("emulator-5554");
+        options.setApp(app1.getAbsolutePath());
+        options.setOtherApps(app2.getAbsolutePath());
        // options.setAppPackage("com.itouchtechadminapp");
        // options.setAppActivity("com.itouchtechadminapp.MainActivity");
        
