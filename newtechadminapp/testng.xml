@@ -2,9 +2,10 @@
 <suite name="Suite">
 <listeners>
 <listener class-name="utilities.ExtentReportManager"/>
-        
-
+<listener class-name="utilities.RetryTransformer"/>
+       
 </listeners>
+
   <test thread-count="5" name="Master.test">
     <classes>
     <class name="tests.NewLoginTest"/>

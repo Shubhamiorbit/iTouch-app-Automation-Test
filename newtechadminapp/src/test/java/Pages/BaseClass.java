@@ -38,15 +38,15 @@ public class BaseClass {
 
         options.setPlatformName("Android");
         options.setAutomationName("UiAutomator2");
-        options.setDeviceName("emulator-5554");
-        options.setUdid("emulator-5554");
+        options.setDeviceName("22JUL32E02785");
+        options.setUdid("22JUL32E02785");
         options.setApp(app.getAbsolutePath());
        // options.setAppPackage("com.itouchtechadminapp");
        // options.setAppActivity("com.itouchtechadminapp.MainActivity");
        
         
         options.setAutoGrantPermissions(true);
-        options.setNoReset(false); 
+        options.setNoReset(true); 
         options.setDisableWindowAnimation(true);
 
         options.setNewCommandTimeout(Duration.ofSeconds(600));

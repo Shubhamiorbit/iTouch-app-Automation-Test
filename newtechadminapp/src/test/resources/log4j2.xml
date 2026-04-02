@@ -1,6 +1,6 @@
 <Configuration status="WARN">
   <Properties>
-    <Property name="basepath">/home/virupaksha/eclipse-workspace/AppiumDemoProject/Logs</Property>
+    <Property name="basepath">D:/techadminlogs/Logs</Property>
     <Property name="timestamp">${date:yyyy-MM-dd_HH-mm-ss}</Property>
   </Properties>
 
