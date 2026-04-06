@@ -28,6 +28,7 @@ public class BaseClass {
         ExtentSparkReporter spark = new ExtentSparkReporter("target/ExtentReport.html");
         extent = new ExtentReports();
         extent.attachReporter(spark);
+        DeviceUtils deviceutils = new DeviceUtils();
         File file = new File("D:\\itouch-qa\\newtechadminapp\\Apps\\iTouch-AdminApp-release.apk");
         System.out.println(file.exists());
 
@@ -36,10 +37,25 @@ public class BaseClass {
 
         UiAutomator2Options options = new UiAutomator2Options();
 
+        // 🔥 Dynamic values
+        String deviceName = System.getProperty("deviceName");
+        String udid = System.getProperty("udid");
+        String platformVersion = System.getProperty("platformVersion");
+
+        // 👉 Fallback if nothing passed
+        if (udid == null) {
+            udid = deviceutils.getConnectedDevice();
+        }
+
+        if (deviceName == null) {
+            deviceName = udid; // simple fallback
+        }
+
         options.setPlatformName("Android");
         options.setAutomationName("UiAutomator2");
-        options.setDeviceName("emulator-5554");
-        options.setUdid("emulator-5554");
+        options.setDeviceName(deviceName);
+        options.setUdid(udid);
+        options.setPlatformVersion(platformVersion);
         options.setApp(app1.getAbsolutePath());
         options.setOtherApps(app2.getAbsolutePath());
        // options.setAppPackage("com.itouchtechadminapp");
