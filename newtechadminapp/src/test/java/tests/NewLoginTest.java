@@ -28,6 +28,8 @@ public class NewLoginTest extends BaseClass{
 	        try {
 	            loginPage.login(username, password);         
 	            System.out.println("Login successful for user: " + username);
+	            driver.activateApp("com.itouchnurseapp");
+	            System.out.println("Switched to second app");
 	        } catch (Exception e) {
 	        	 System.out.println("Login test failed: " + e.getMessage());
 	            Assert.fail("Exception occurred: " + e.getMessage());

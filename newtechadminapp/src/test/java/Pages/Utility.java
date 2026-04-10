@@ -17,6 +17,8 @@ public class Utility {
            BASE_PATH+"ward.properties";
     private static final String NURSE_FILE =
             BASE_PATH+"nurse.properties";
+    private static final String Nurseemailaddress = 
+    		BASE_PATH+"nurseemail.properties";
     
     private static final String GATEWAY_FILE =
             BASE_PATH+ "gateway.properties";
@@ -56,6 +58,14 @@ public class Utility {
 
     public static String getNurseCode() {
         return getProperty(NURSE_FILE, "nursecode");
+    }
+    
+    public static void saveNurseEmail(String nursecontactemail) {
+        saveProperty(NURSE_FILE, "nursecontactemail", nursecontactemail, "Nurse Test Data");
+    }
+
+    public static String getNurseEmail() {
+        return getProperty(NURSE_FILE, "nursecontactemail");
     }
     
     public static void saveGatewayCode(String gatewayCode) {

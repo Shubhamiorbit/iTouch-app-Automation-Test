@@ -33,23 +33,20 @@ public class BaseClass {
         System.out.println(file.exists());
 
         File app1 = new File("D:\\itouch-qa\\newtechadminapp\\Apps\\iTouch-AdminApp-release.apk");
-        File app2 = new File("D:\\itouch-qa\\newtechadminapp\\Apps\\iTouch-NurseApp-release.apk");
+        //File app2 = new File("D:\\itouch-qa\\newtechadminapp\\Apps\\iTouch-NurseApp-release.apk");
 
         UiAutomator2Options options = new UiAutomator2Options();
-
-        // 🔥 Dynamic values
+  
         String deviceName = System.getProperty("deviceName");
         String udid = System.getProperty("udid");
         String platformVersion = System.getProperty("platformVersion");
-
-        // 👉 Fallback if nothing passed
+       
         if (udid == null) {
             udid = deviceutils.getConnectedDevice();
         }
 
         if (deviceName == null) {
-            deviceName = udid; // simple fallback
-        }
+            deviceName = udid; 
 
         options.setPlatformName("Android");
         options.setAutomationName("UiAutomator2");
@@ -57,13 +54,12 @@ public class BaseClass {
         options.setUdid(udid);
         options.setPlatformVersion(platformVersion);
         options.setApp(app1.getAbsolutePath());
-        options.setOtherApps(app2.getAbsolutePath());
-       // options.setAppPackage("com.itouchtechadminapp");
-       // options.setAppActivity("com.itouchtechadminapp.MainActivity");
-       
-        
+        //options.setOtherApps(app2.getAbsolutePath());
+       //options.setAppPackage("com.itouchtechadminapp");
+       //options.setAppActivity("com.itouchtechadminapp.MainActivity");
+            // options.setAppPackage("com.itouchnurseapp");  
         options.setAutoGrantPermissions(true);
-        options.setNoReset(true); 
+        options.setNoReset(false); 
         options.setDisableWindowAnimation(true);
 
         options.setNewCommandTimeout(Duration.ofSeconds(600));
@@ -71,20 +67,14 @@ public class BaseClass {
         options.setUiautomator2ServerInstallTimeout(Duration.ofSeconds(120));
         options.setUiautomator2ServerLaunchTimeout(Duration.ofSeconds(120));
 
-        // 
         options.setIgnoreHiddenApiPolicyError(true);
         options.setSkipDeviceInitialization(false);
         options.setSkipServerInstallation(false);
 
         options.setCapability("waitForIdleTimeout", 10000);
 
-
-
-
         driver = new AndroidDriver(
-        	    new URL("http://127.0.0.1:4723"), 
-        	    options
-        	);
+        	    new URL("http://127.0.0.1:4723"),options);}
         	
     }
 

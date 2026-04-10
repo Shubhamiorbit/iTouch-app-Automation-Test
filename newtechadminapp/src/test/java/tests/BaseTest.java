@@ -15,7 +15,7 @@ public class BaseTest {
 
     @BeforeSuite
     public void setupReport() {
-        ExtentSparkReporter reporter = new ExtentSparkReporter("test-output/extent-report.html");
+        ExtentSparkReporter reporter = new ExtentSparkReporter("extent");
         extent = new ExtentReports();
         extent.attachReporter(reporter);
     }

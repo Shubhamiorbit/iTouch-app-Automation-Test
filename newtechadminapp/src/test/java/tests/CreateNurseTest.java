@@ -42,19 +42,19 @@ public class CreateNurseTest extends BaseClass{
 		 String speciality="Cardiac Care Nurse,Surgical ICU Nurse";
 		 String experince= "5";
 		 String sharedphonenumber = "+9190" + String.format("%08d", random.nextInt(100000000));		 
-		 String contactname="pallavi";
+		 String nursecontactname="pallavi";
 		 
-			String contactphone = "+9190" + String.format("%08d", random.nextInt(100000000));
+			String nursecontactphone = "+9190" + String.format("%08d", random.nextInt(100000000));
 
 			
-		 String contactemail=nursecode+"@iorbitteam398185.testinator.email";
+		 String nursecontactemail=nursecode+"@iorbitteam813038.testinator.email";
 		 String street="karve";
 		 String city="pune";
 		 String pincode="585221";
 		 String state="MH";
 		 String country="IN";
 		 
-			 nurse_feature.createnursemethod(nursecode,  firstname,  lastname, speciality,  experince,  sharedphonenumber,  contactname,  contactphone,  contactemail,  street,  city,  pincode,  state,  country);
+			 nurse_feature.createnursemethod(nursecode,  firstname,  lastname, speciality,  experince,  sharedphonenumber,  nursecontactname,  nursecontactphone,  nursecontactemail,  street,  city,  pincode,  state,  country);
 		 
 			 boolean isNurseCreated = nurse_feature.isNurseCreated(nursecode);
 		        Assert.assertTrue(isNurseCreated, "Nurse creation FAILED for code: " + nursecode);

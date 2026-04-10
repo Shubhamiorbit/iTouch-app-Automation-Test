@@ -118,9 +118,9 @@ public class Doctor_feature extends BaseClass {
 			String pincode,
 			String state,
 			String country,
-			String contactname,
-			String contactphone,
-			String contactemail
+			String doctorcontactname,
+			String docotrcontactphone,
+			String doctorcontactemail
 			) {
 		try {
 			wait.until(ExpectedConditions.elementToBeClickable(DoctorCenter)).click();
@@ -214,9 +214,9 @@ public class Doctor_feature extends BaseClass {
 					));
 			wait.until(ExpectedConditions.elementToBeClickable(State)).sendKeys(state);
 			wait.until(ExpectedConditions.elementToBeClickable(Country)).sendKeys(country);
-			wait.until(ExpectedConditions.elementToBeClickable(ContactName)).sendKeys(contactname);
-			wait.until(ExpectedConditions.elementToBeClickable(ContactPhone)).sendKeys(contactphone);
-			wait.until(ExpectedConditions.elementToBeClickable(ContactEmail)).sendKeys(contactemail);
+			wait.until(ExpectedConditions.elementToBeClickable(ContactName)).sendKeys(doctorcontactname);
+			wait.until(ExpectedConditions.elementToBeClickable(ContactPhone)).sendKeys(docotrcontactphone);
+			wait.until(ExpectedConditions.elementToBeClickable(ContactEmail)).sendKeys(doctorcontactemail);
 			wait.until(ExpectedConditions.elementToBeClickable(SaveButton)).click();
 			wait.until(ExpectedConditions.elementToBeClickable(OkButton)).click();
 

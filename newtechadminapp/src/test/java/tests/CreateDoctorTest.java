@@ -51,9 +51,9 @@ public class CreateDoctorTest extends BaseClass {
         String pincode = "585221";
         String state = "MH";
         String country = "IN";
-        String contactname = "sahana";
-		String contactphone = "+9190" + String.format("%08d", random.nextInt(100000000));
-        String contactemail = firstname+doctorcode+"@iorbitteam398185.testinator.email";
+        String doctorcontactname = "sahana";
+		String doctorcontactphone = "+9190" + String.format("%08d", random.nextInt(100000000));
+        String doctorcontactemail = doctorcode+"@iorbitteam813038.testinator.email";
 
         try {
 
@@ -69,9 +69,9 @@ public class CreateDoctorTest extends BaseClass {
                     pincode,
                     state,
                     country,
-                    contactname,
-                    contactphone,
-                    contactemail
+                    doctorcontactname,
+                    doctorcontactphone,
+                    doctorcontactemail
             );
 
 

@@ -194,14 +194,14 @@ public class Nurse_feature extends BaseClass{
 	        wait.until(ExpectedConditions.visibilityOf(SelectGender)).click();
 	        wait.until(ExpectedConditions.visibilityOf(SharedPhoneNumber));
 	        SharedPhoneNumber.sendKeys(sharedphonenumber);
-	        
+	        driver.findElement(AppiumBy.androidUIAutomator(
+				    "new UiScrollable(new UiSelector().scrollable(true))" +
+				    ".scrollIntoView(new UiSelector().textContains(\"Contact Details\"));"
+				));
 	      
 	        wait.until(ExpectedConditions.visibilityOf(Street));
 	        Street.sendKeys(street);	
-	        driver.findElement(AppiumBy.androidUIAutomator(
-				    "new UiScrollable(new UiSelector().scrollable(true))" +
-				    ".scrollIntoView(new UiSelector().textContains(\"Save Nurse\"));"
-				));
+	      
 
 	        wait.until(ExpectedConditions.visibilityOf(City));
 	        City.sendKeys(city);
@@ -214,7 +214,11 @@ public class Nurse_feature extends BaseClass{
 
 	        wait.until(ExpectedConditions.visibilityOf(Country));
 	        Country.sendKeys(country);
-
+	        
+	        driver.findElement(AppiumBy.androidUIAutomator(
+				    "new UiScrollable(new UiSelector().scrollable(true))" +
+				    ".scrollIntoView(new UiSelector().textContains(\"Save Nurse\"));"
+				));
 	        wait.until(ExpectedConditions.visibilityOf(ContactName)).clear();
 	        ContactName.sendKeys(contactname);
 	        Thread.sleep(1500);
