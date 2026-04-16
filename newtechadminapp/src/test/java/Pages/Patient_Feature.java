@@ -214,9 +214,9 @@ public WebElement SelectBloodGroup;
 			ContactEmail.sendKeys(contactemail);
 			Thread.sleep(3000);
 			driver.findElement(AppiumBy.androidUIAutomator(
-					"new UiScrollable(new UiSelector().scrollable(true))" +
-							".scrollIntoView(new UiSelector().textContains(\"Country\"));"
-					));
+				    "new UiScrollable(new UiSelector().scrollable(true))" +
+				    ".scrollIntoView(new UiSelector().description(\"countryInput\"))"
+				));
 
 			wait.until(ExpectedConditions.visibilityOf(Street));
 			Street.sendKeys(street);
@@ -240,12 +240,13 @@ public WebElement SelectBloodGroup;
 
 			wait.until(ExpectedConditions.visibilityOf(Weight));
 			Weight.sendKeys(weight);
+			
 			Thread.sleep(5000);
 			
 			driver.findElement(AppiumBy.androidUIAutomator(
-					"new UiScrollable(new UiSelector().scrollable(true))" +
-							".scrollIntoView(new UiSelector().textContains(\"Assign Doctor Code*\"));"
-					));
+				    "new UiScrollable(new UiSelector().scrollable(true))" +
+				    ".scrollIntoView(new UiSelector().description(\"addPatientButtonText\"))"
+				));
 
 			wait.until(ExpectedConditions.visibilityOf(AnyAllergies)).clear();
 			AnyAllergies.sendKeys(anyallergies);

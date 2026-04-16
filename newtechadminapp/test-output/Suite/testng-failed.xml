@@ -8,9 +8,9 @@
     <classes>
       <class name="tests.NewLoginTest">
         <methods>
-          <include name="initPage"/>
-          <include name="setup"/>
           <include name="testValidLogin"/>
+          <include name="setup"/>
+          <include name="initPage"/>
         </methods>
       </class> <!-- tests.NewLoginTest -->
     </classes>

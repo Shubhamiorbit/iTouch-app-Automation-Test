@@ -22,14 +22,12 @@ public class NewLoginTest extends BaseClass{
 	    @Test( groups = {"login"})
 	    public void testValidLogin() {
 	    	
-	        String username = "autoqa@iorbitteam813038.testinator.email";
-	        String password = "464819967";
+	        String username = "auotqa@iorbitteam813038.testinator.email";
+	        String password = "986542671";
 
 	        try {
 	            loginPage.login(username, password);         
 	            System.out.println("Login successful for user: " + username);
-	            driver.activateApp("com.itouchnurseapp");
-	            System.out.println("Switched to second app");
 	        } catch (Exception e) {
 	        	 System.out.println("Login test failed: " + e.getMessage());
 	            Assert.fail("Exception occurred: " + e.getMessage());

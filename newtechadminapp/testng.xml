@@ -13,7 +13,7 @@
      <class name="tests.CreateDoctorTest"/>
      <class name="tests.CreatePatientTest"/>
      <class name="tests.CreateNurseTest"/>
-       <class name="tests.CreateDeviceTest"/>
+     <class name="tests.CreateDeviceTest"/>
        
        <class name="tests.CreateWardTest"/>
        <class name="tests.CreateGatewayTest"/>
@@ -23,7 +23,7 @@
        <class name="tests.AssignDoctorToShiftTest"/>
        <class name="tests.AssignBedToNurse"/>
        <class name="tests.AssignNurseToShift"/>
-        <class name="tests.DeviceConfigTest"/>
+       <class name="tests.DeviceConfigTest"/>
        <class name="tests.AssignDeviceToBedTest"/>
        <class name="tests.AdmitPatientTest"/>
     

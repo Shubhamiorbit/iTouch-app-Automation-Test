@@ -29,11 +29,10 @@ public class BaseClass {
         extent = new ExtentReports();
         extent.attachReporter(spark);
         DeviceUtils deviceutils = new DeviceUtils();
-        File file = new File("D:\\itouch-qa\\newtechadminapp\\Apps\\iTouch-AdminApp-release.apk");
+        File file = new File("D:\\itouch-qa\\newtechadminapp\\Apps\\iTouchTechAdminApp-release.apk");
         System.out.println(file.exists());
 
-        File app1 = new File("D:\\itouch-qa\\newtechadminapp\\Apps\\iTouch-AdminApp-release.apk");
-        //File app2 = new File("D:\\itouch-qa\\newtechadminapp\\Apps\\iTouch-NurseApp-release.apk");
+        File app1 = new File("D:\\itouch-qa\\newtechadminapp\\Apps\\iTouchTechAdminApp-release.apk");
 
         UiAutomator2Options options = new UiAutomator2Options();
   
@@ -54,10 +53,9 @@ public class BaseClass {
         options.setUdid(udid);
         options.setPlatformVersion(platformVersion);
         options.setApp(app1.getAbsolutePath());
-        //options.setOtherApps(app2.getAbsolutePath());
-       //options.setAppPackage("com.itouchtechadminapp");
-       //options.setAppActivity("com.itouchtechadminapp.MainActivity");
-            // options.setAppPackage("com.itouchnurseapp");  
+       // options.setAppPackage("com.itouchtechadminapp");
+       // options.setAppActivity("com.itouchtechadminapp.MainActivity");
+           
         options.setAutoGrantPermissions(true);
         options.setNoReset(false); 
         options.setDisableWindowAnimation(true);
