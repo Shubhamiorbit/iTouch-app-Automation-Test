@@ -27,7 +27,7 @@ public class CreatePatientTest extends BaseClass{
             "tests.OTP_Test.enterOTPTest"
     })
     
-	public void testcreatepatient() {
+	public void testcreatepatient() throws InterruptedException {
 	    
 		Calendar calendar = Calendar.getInstance();
         int seconds = calendar.get(Calendar.MILLISECOND);
@@ -55,13 +55,14 @@ public class CreatePatientTest extends BaseClass{
 					 mrnumber, contactname,  contactphone,  contactemail,  street, 
 					 city,  pincode,  state,  country,  height,  
 						weight, anyallergies,  pastcomplications, doctorcodeforpatient );
-			
-		 
-			 boolean isPatientCreated =patient_feature.isPatientCreated(patientcode);
-
-		        Assert.assertTrue(isPatientCreated,"Patient creation FAILED for patient code: " + patientcode );
 
 		        Utility.savePatientCode(patientcode);
-		    }
+		  
+	
+	String actualpatientsuccessmessage=patient_feature.getpatientcreationsuccessmessage();
+	String expectedpatientsuccessmessage= "Doctor Information Saved Successfully";
+	boolean isEqual = actualpatientsuccessmessage.equals(expectedpatientsuccessmessage);
+	Assert.assertEquals(actualpatientsuccessmessage, expectedpatientsuccessmessage);
 		}
+}
 

@@ -9,6 +9,7 @@ import Pages.LoginPage;
 
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
+import utilities.assertionsclass;
 
 public class NewLoginTest extends BaseClass{
 	 LoginPage loginPage;
@@ -20,20 +21,15 @@ public class NewLoginTest extends BaseClass{
 	    	test = extent.createTest("Valid Login Test");
 	    }
 	    @Test( groups = {"login"})
-	    public void testValidLogin() {
+	    public void testValidLogin() throws Exception {
 	    	
-	        String username = "auotqa@iorbitteam813038.testinator.email";
-	        String password = "986542671";
-
-	        try {
-	            loginPage.login(username, password);         
-	            System.out.println("Login successful for user: " + username);
-	        } catch (Exception e) {
-	        	 System.out.println("Login test failed: " + e.getMessage());
-	            Assert.fail("Exception occurred: " + e.getMessage());
-	        }
+	        String username = "autoqa@iorbitteam813038.testinator.email";
+	        String password = "091295937";
+	       
+	            loginPage.login(username, password);         	            	          
+	        } 
 	    }		
-}
+
 	
 
 

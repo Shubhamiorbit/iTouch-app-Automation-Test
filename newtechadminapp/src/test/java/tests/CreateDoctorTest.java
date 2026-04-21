@@ -37,9 +37,9 @@ public class CreateDoctorTest extends BaseClass {
     })
     
     
-    public void testcreatedoctor() {
+    public void testcreatedoctor() throws InterruptedException {
     	Random random = new Random();
-        
+    	
         String doctorcode=doctorCode;
         String firstname = "sahana";
         String lastname = "gowda";
@@ -55,39 +55,14 @@ public class CreateDoctorTest extends BaseClass {
 		String doctorcontactphone = "+9190" + String.format("%08d", random.nextInt(100000000));
         String doctorcontactemail = doctorcode+"@iorbitteam813038.testinator.email";
 
-        try {
+     
+            String actualMessage=doctor_feature.createDoctormethod(doctorcode, firstname, lastname,
+speciality, experince,birthdate,street,city,pincode,state,country, doctorcontactname, doctorcontactphone, doctorcontactemail);
 
-            doctor_feature.createDoctormethod(
-                    doctorcode,
-                    firstname,
-                    lastname,
-                    speciality,
-                    experince,
-                   birthdate,
-                    street,
-                    city,
-                    pincode,
-                    state,
-                    country,
-                    doctorcontactname,
-                    doctorcontactphone,
-                    doctorcontactemail
-            );
+         
+           Assert.assertTrue(actualMessage.contains("Doctor Information Saved"),  "Doctor creation failed! Actual: " + actualMessage);
 
 
-            boolean isDoctorCreated = doctor_feature.isDoctorCreated(doctorcode);
-            Assert.assertTrue(isDoctorCreated, "Doctor creation FAILED for code: " + doctorcode);
-
-            // Save doctor code
-            try {
-                Utility.saveDoctorCode(doctorCode);
-            } catch (Exception e) {
-                System.out.println("Failed to save doctor code: " + e.getMessage());
-            }
-
-
-        } catch (Exception e) {
-            Assert.fail("Doctor creation failed: " + e.getMessage());
-        }
+        
     }
 }

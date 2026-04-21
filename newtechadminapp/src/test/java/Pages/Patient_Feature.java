@@ -16,6 +16,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 
 public class Patient_Feature extends BaseClass{
@@ -118,7 +119,8 @@ public WebElement SelectBloodGroup;
 	@FindBy(xpath="//android.view.ViewGroup[@content-desc=\"successOkButton\"]")
 	public WebElement OkButton;
 	
-	
+	@AndroidFindBy(uiAutomator="new UiSelector().resourceId(\"successTitle\")")
+	public WebElement patientsuccessmessage;
 
     
 
@@ -126,8 +128,8 @@ public WebElement SelectBloodGroup;
 			String lastname, String mrnumber, String contactname,
 			String contactphone, String contactemail, String street, String city, 
 			String pincode, String state, String country, String height, String 
-			weight,String anyallergies, String pastcomplications, String doctorcodeforpatient) {
-		try {
+			weight,String anyallergies, String pastcomplications, String doctorcodeforpatient) throws InterruptedException {
+		
 			wait.until(ExpectedConditions.elementToBeClickable(AddPatientinDashboard)).click();
 			wait.until(ExpectedConditions.elementToBeClickable(AddPatient)).click();
 			Thread.sleep(2000);
@@ -265,14 +267,10 @@ public WebElement SelectBloodGroup;
 			wait.until(ExpectedConditions.elementToBeClickable(AddPatientButton)).click();
 			wait.until(ExpectedConditions.elementToBeClickable(OkButton)).click();
 
-		}catch (Exception e) {
-			System.out.println("Patient creation failed: " + e.getMessage());
-		}
-
 	}
 
-	public boolean isPatientCreated(String patientcode2) {
-		return true;
+	public String getpatientcreationsuccessmessage() {
+		return wait.until(ExpectedConditions.visibilityOf(patientsuccessmessage)).getText();
 	}
 }
 

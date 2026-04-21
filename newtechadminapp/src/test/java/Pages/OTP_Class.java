@@ -19,55 +19,6 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class OTP_Class {
-//	String otp;
-//	String otp1;
-//	WebDriver driver2;
-//	public void OTPfrommailinatorpublic() throws InterruptedException 
-//	{
-//	driver2 = new ChromeDriver();
-//	WebDriverWait wait = new WebDriverWait(driver2,Duration.ofSeconds(10));
-//	WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@class=\"inbox-link\"]")));
-//	element.click();
-////	driver2.findElement(By.xpath("//a[@class=\"inbox-link\"]")).click();
-//	driver2.findElement(By.id("inbox_field")).sendKeys("ethix");
-//	driver2.findElement(By.className("primary-btn")).click();
-//	Thread.sleep(3000);
-//	driver2.findElement(By.xpath("(//*[contains(text(),'2-factor authentication Email')])[1]")).click();
-//	Thread.sleep(2000);
-//	try {
-//		WebElement iframeElement = driver2.findElement(By.xpath("html/body/div/main/div/div/div[3]/div/div[2]/iframe"));
-//		driver2.switchTo().frame(iframeElement);
-//		WebElement otpElement = driver2.findElement(By.xpath("//body[contains(text(), 'OTP')]"));
-//		String otpText = otpElement.getText();
-//
-//       
-//        Pattern pattern = Pattern.compile("\\d{6}");
-//        Matcher matcher = pattern.matcher(otpText);
-//
-//        if (matcher.find()) {
-//             otp = matcher.group(0);
-//            System.out.println("Extracted OTP: " + otp);
-//        } else {
-//            System.out.println("OTP not found in the email.");
-//        }
-//
-//    }  catch (NoSuchElementException n) {
-//        System.out.println("Email containing OTP not found.");
-//    } 
-//	
-//	System.out.println("Stored OTP: " + otp);
-//	driver2.close();
-//	  otp1 = otp;
-//
-//		driver2.findElement(By.xpath("//android.widget.FrameLayout[@resource-id=\"android:id/content\"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.widget.EditText[1]")).sendKeys(otp1.substring(0, 1));
-//		driver2.findElement(By.xpath("//android.widget.FrameLayout[@resource-id=\"android:id/content\"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.widget.EditText[2]")).sendKeys(otp1.substring(1, 2));
-//		driver2.findElement(By.xpath("//android.widget.FrameLayout[@resource-id=\"android:id/content\"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.widget.EditText[3]")).sendKeys(otp1.substring(2, 3));
-//		driver2.findElement(By.xpath("//android.widget.FrameLayout[@resource-id=\"android:id/content\"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.widget.EditText[4]")).sendKeys(otp1.substring(3, 4));
-//		driver2.findElement(By.xpath("//android.widget.FrameLayout[@resource-id=\"android:id/content\"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.widget.EditText[5]")).sendKeys(otp1.substring(4, 5));
-//		driver2.findElement(By.xpath("//android.widget.FrameLayout[@resource-id=\"android:id/content\"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.widget.EditText[6]")).sendKeys(otp1.substring(5, 6));
-//		Thread.sleep(2000);
-//		driver2.findElement(By.xpath("//android.view.ViewGroup[@content-desc=\"Submit\"]")).click();
-//}
 
     private static final String API_TOKEN = "7d51e00aa4de43ebb373c10b50d33994";
     private static final String DOMAIN = "private";
@@ -75,7 +26,7 @@ public class OTP_Class {
 
     //it will wait 20 seconds for getting the latest OTP
     public static String fetchLatestOTP() throws Exception {
-        String inboxName = "auotqa";
+        String inboxName = "autoqa";
         long latestSeenTime = 0;
         String otp = null;
 
@@ -86,7 +37,7 @@ public class OTP_Class {
             latestSeenTime = latestMsg.optLong("time", 0);
         }
 
-        System.out.println("Initial message timestamp: " + latestSeenTime);
+        //System.out.println("Initial message timestamp: " + latestSeenTime);
 
         int totalWaitTime = 20000;
         int pollInterval = 2000;

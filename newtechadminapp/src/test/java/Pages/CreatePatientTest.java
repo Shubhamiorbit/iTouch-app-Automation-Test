@@ -29,7 +29,7 @@ public class CreatePatientTest extends BaseClass{
             "tests.OTP_Test.enterOTPTest"
     })
     
-	public void testcreatepatient() {
+	public void testcreatepatient() throws InterruptedException {
 	    
 		Calendar calendar = Calendar.getInstance();
         int seconds = calendar.get(Calendar.SECOND);

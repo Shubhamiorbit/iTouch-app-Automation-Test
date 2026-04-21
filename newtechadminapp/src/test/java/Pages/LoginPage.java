@@ -9,6 +9,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.HidesKeyboard;
@@ -34,13 +35,16 @@ public class LoginPage extends BaseClass {
 
     @FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"Get OTP\"]")
     public WebElement loginButton;
+    
+    @FindBy(xpath="//android.widget.TextView[@text=\"AutoQA\"]")
+    public WebElement techadminid;
 
     public void login(String user, String pass) throws Exception {
        
         	wait.until(ExpectedConditions.visibilityOf(loginwithemailaddress));
         	loginwithemailaddress.click();
         
-    	try {
+    	
             wait.until(ExpectedConditions.visibilityOf(username));
 //            username.click();
 //            username.clear();
@@ -59,15 +63,10 @@ public class LoginPage extends BaseClass {
 
 
             wait.until(ExpectedConditions.elementToBeClickable(loginButton)).click();
-        } catch (Exception e) {
-            System.out.println("Login failed: " + e.getMessage());
-            throw e;
-        }
-    
-    
-
-    
-
-    
-        }         
-}
+         
+            
+        } 
+    public String getAdminId() {
+        return wait.until(ExpectedConditions.visibilityOf(techadminid)).getText();
+    }
+}         

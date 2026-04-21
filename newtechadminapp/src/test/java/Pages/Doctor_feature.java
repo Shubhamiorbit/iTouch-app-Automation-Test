@@ -16,6 +16,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 
 public class Doctor_feature extends BaseClass {
@@ -104,9 +105,12 @@ public class Doctor_feature extends BaseClass {
 
 	@FindBy(xpath="//android.view.ViewGroup[@content-desc=\"Ok\"]")
 	public WebElement OkButton;
+	
+	@FindBy(xpath="//android.widget.TextView[@text=\"Doctor Information Saved successfully!\"]")
+	public WebElement doctorcreationsuccesspopup;
 
 
-	public void createDoctormethod(
+	public String createDoctormethod(
 			String doctorcode,
 			String firstname,
 			String lastname,
@@ -121,8 +125,8 @@ public class Doctor_feature extends BaseClass {
 			String doctorcontactname,
 			String docotrcontactphone,
 			String doctorcontactemail
-			) {
-		try {
+			) throws InterruptedException {
+		
 			wait.until(ExpectedConditions.elementToBeClickable(DoctorCenter)).click();
 			wait.until(ExpectedConditions.elementToBeClickable(AddDoctor)).click();
 
@@ -218,16 +222,13 @@ public class Doctor_feature extends BaseClass {
 			wait.until(ExpectedConditions.elementToBeClickable(ContactPhone)).sendKeys(docotrcontactphone);
 			wait.until(ExpectedConditions.elementToBeClickable(ContactEmail)).sendKeys(doctorcontactemail);
 			wait.until(ExpectedConditions.elementToBeClickable(SaveButton)).click();
+			
+			String doctorpopotext=doctorcreationsuccesspopup.getText();
+			System.out.println(doctorpopotext);
+			Thread.sleep(5000);
 			wait.until(ExpectedConditions.elementToBeClickable(OkButton)).click();
-
-			System.out.println("Doctor created successfully");
-		} catch (Exception e) {
-			System.out.println("Doctor creation failed: " + e.getMessage());
+			
+			Utility.saveDoctorCode(doctorcode);
+			return doctorpopotext;
 		}
-	}
-
-
-	public boolean isDoctorCreated(String doctorcode2) {
-		return true;
-	}
 }

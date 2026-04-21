@@ -1,18 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]">
-  <listeners>
-    <listener class-name="utilities.ExtentReportManager"/>
-  </listeners>
-  <test thread-count="5" name="Master.test(failed)">
+  <test thread-count="5" name="Test(failed)">
     <classes>
+      <class name="tests.OTP_Test">
+        <methods>
+          <include name="initTestReport"/>
+          <include name="enterOTPTest"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.OTP_Test -->
       <class name="tests.NewLoginTest">
         <methods>
           <include name="testValidLogin"/>
-          <include name="setup"/>
           <include name="initPage"/>
+          <include name="setup"/>
         </methods>
       </class> <!-- tests.NewLoginTest -->
+      <class name="tests.CreateDoctorTest">
+        <methods>
+          <include name="testcreatedoctor"/>
+          <include name="initPage"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.CreateDoctorTest -->
     </classes>
-  </test> <!-- Master.test(failed) -->
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -21,7 +21,7 @@ import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
+import Pages.LoginPage;
 public class OTP_Test extends BaseClass {
 
     @BeforeTest
@@ -34,6 +34,7 @@ public class OTP_Test extends BaseClass {
 //    	OTP_Class otpclass = new OTP_Class();
 //    	otpclass.OTPfrommailinatorpublic();
         // Fetch OTP
+    	LoginPage loginPage = new LoginPage(BaseClass.driver);
         String otp = OTP_Class.fetchLatestOTP();
         Assert.assertNotNull(otp, "OTP should not be null.");
         test.log(Status.INFO, "Latest OTP fetched: " + otp);
@@ -60,6 +61,13 @@ public class OTP_Test extends BaseClass {
         );
         submitBtn.click();
         System.out.println("OTP submitted successfully.");
+        
+        
+        String actualadminid=loginPage.getAdminId();
+		String expectedadminid= "AutoQA";
+		boolean isEqual = actualadminid.equals(expectedadminid);
+		System.out.println("Does the techadminid exists with the entered adminid code?" + isEqual);
+		Assert.assertEquals(actualadminid, expectedadminid);
     }
 }
 
