@@ -1,48 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-20T16:19:20 IST" name="Suite" finished-at="2026-04-20T16:20:39 IST" duration-ms="79922">
+  <suite started-at="2026-04-24T16:23:18 IST" name="Suite" finished-at="2026-04-24T16:24:57 IST" duration-ms="98461">
     <groups>
-      <group name="login">
-        <method signature="NewLoginTest.testValidLogin()[pri:0, instance:tests.NewLoginTest@2df3b89c]" name="testValidLogin" class="tests.NewLoginTest"/>
-      </group> <!-- login -->
     </groups>
-    <test started-at="2026-04-20T16:19:20 IST" name="Test" finished-at="2026-04-20T16:20:39 IST" duration-ms="79922">
-      <class name="tests.OTP_Test">
-        <test-method is-config="true" signature="initTestReport()[pri:0, instance:tests.OTP_Test@707194ba]" started-at="2026-04-20T16:19:24 IST" name="initTestReport" finished-at="2026-04-20T16:19:24 IST" depends-on-methods="Pages.BaseClass.setup" duration-ms="4" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initTestReport -->
-        <test-method signature="enterOTPTest()[pri:0, instance:tests.OTP_Test@707194ba]" started-at="2026-04-20T16:19:28 IST" name="enterOTPTest" finished-at="2026-04-20T16:19:41 IST" depends-on-methods="tests.NewLoginTest.testValidLogin" duration-ms="12251" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- enterOTPTest -->
-      </class> <!-- tests.OTP_Test -->
-      <class name="tests.CreateDoctorTest">
-        <test-method is-config="true" signature="initPage()[pri:0, instance:tests.CreateDoctorTest@192c3f1e]" started-at="2026-04-20T16:19:41 IST" name="initPage" finished-at="2026-04-20T16:19:41 IST" duration-ms="4" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initPage -->
-        <test-method signature="testcreatedoctor()[pri:0, instance:tests.CreateDoctorTest@192c3f1e]" started-at="2026-04-20T16:19:41 IST" name="testcreatedoctor" finished-at="2026-04-20T16:20:39 IST" depends-on-methods="tests.NewLoginTest.testValidLogin, tests.OTP_Test.enterOTPTest" duration-ms="58753" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testcreatedoctor -->
-      </class> <!-- tests.CreateDoctorTest -->
-      <class name="tests.NewLoginTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.NewLoginTest@2df3b89c]" started-at="2026-04-20T16:19:20 IST" name="setup" finished-at="2026-04-20T16:19:24 IST" duration-ms="4442" status="PASS">
+    <test started-at="2026-04-24T16:23:18 IST" name="Test" finished-at="2026-04-24T16:24:57 IST" duration-ms="98461">
+      <class name="tests.selectsensortest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.selectsensortest@43c1b556]" started-at="2026-04-24T16:23:18 IST" name="setup" finished-at="2026-04-24T16:24:51 IST" duration-ms="93027" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="initPage()[pri:0, instance:tests.NewLoginTest@2df3b89c]" started-at="2026-04-20T16:19:24 IST" name="initPage" finished-at="2026-04-20T16:19:24 IST" duration-ms="459" status="PASS">
+        <test-method is-config="true" signature="initPage(java.lang.reflect.Method)[pri:0, instance:tests.selectsensortest@43c1b556]" started-at="2026-04-24T16:24:51 IST" name="initPage" finished-at="2026-04-24T16:24:51 IST" duration-ms="383" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.selectsensortest.selectingthedisplayedsensor() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initPage -->
-        <test-method signature="testValidLogin()[pri:0, instance:tests.NewLoginTest@2df3b89c]" started-at="2026-04-20T16:19:24 IST" name="testValidLogin" finished-at="2026-04-20T16:19:28 IST" duration-ms="3964" status="PASS">
+        <test-method signature="selectingthedisplayedsensor()[pri:0, instance:tests.selectsensortest@43c1b556]" started-at="2026-04-24T16:24:51 IST" name="selectingthedisplayedsensor" finished-at="2026-04-24T16:24:56 IST" duration-ms="5012" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "Pages.selectSensor.selectavailableSensor()" because "this.selectonceavailable" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "Pages.selectSensor.selectavailableSensor()" because "this.selectonceavailable" is null
+at tests.selectsensortest.selectingthedisplayedsensor(selectsensortest.java:25)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testValidLogin -->
-      </class> <!-- tests.NewLoginTest -->
+        </test-method> <!-- selectingthedisplayedsensor -->
+      </class> <!-- tests.selectsensortest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
