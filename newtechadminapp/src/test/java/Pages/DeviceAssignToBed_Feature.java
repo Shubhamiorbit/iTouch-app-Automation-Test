@@ -30,23 +30,26 @@ public class DeviceAssignToBed_Feature extends  BaseClass{
 	    @FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"Assign Device to Bed\"]")
 	    public WebElement AssignDeviceToBed;
 	    
-	    @FindBy(xpath = "//android.widget.FrameLayout[@resource-id=\"android:id/content\"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.widget.EditText[1]")
+	    @FindBy(xpath = "//android.widget.FrameLayout[@resource-id=\"android:id/content\"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.widget.EditText[1]")
 	    public WebElement WardCode;
 	    
-	    @FindBy(xpath = "//android.widget.FrameLayout[@resource-id=\"android:id/content\"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.widget.EditText[2]")
+	    @FindBy(xpath = "//android.widget.FrameLayout[@resource-id=\"android:id/content\"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.widget.EditText[2]")
 	    public WebElement BedCode;
 	    
 	    
-	  @FindBy(xpath = "//android.widget.FrameLayout[@resource-id=\"android:id/content\"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.widget.EditText[3]")
+	  @FindBy(xpath = "//android.widget.FrameLayout[@resource-id=\"android:id/content\"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.widget.EditText[3]")
 	    public WebElement GatewayCode;
 	  
-	  @FindBy(xpath = "//android.widget.FrameLayout[@resource-id=\"android:id/content\"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.widget.EditText[4]")
+	  @FindBy(xpath = "//android.widget.FrameLayout[@resource-id=\"android:id/content\"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.widget.EditText[4]")
 	    public WebElement DeviceCode;
 
 	    
 
 	    @FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"Assign Device\"]")
-	    public WebElement AssignButton;  
+	    public WebElement AssignButton; 
+	    
+	    @FindBy(xpath="//android.widget.TextView[@text=\"Device assigned successfully!\"]")
+	    public WebElement deviceassigntobedpopup;
 
 	    @FindBy(xpath="//android.view.ViewGroup[@content-desc=\"Ok\"]")
 	   public  WebElement OkButton;
@@ -56,15 +59,15 @@ public class DeviceAssignToBed_Feature extends  BaseClass{
 	   
 
 
-	    public void AssignDeviceToBedmethod(
+	    public String AssignDeviceToBedmethod(
 	            String wardcode,
 	            String bedcode,
 	            String gatewaycode,
 	            String shiftcode,
 	            String  devicecode
 	           
-	    ) {
-	        try {
+	    ) throws InterruptedException {
+	        
 	            wait.until(ExpectedConditions.elementToBeClickable(AssetCenter)).click();
 	            wait.until(ExpectedConditions.elementToBeClickable(ManageDevice)).click();
 	            wait.until(ExpectedConditions.elementToBeClickable(AssignDeviceToBed)).click();
@@ -91,27 +94,20 @@ public class DeviceAssignToBed_Feature extends  BaseClass{
 	            
 	            
 	            wait.until(ExpectedConditions.elementToBeClickable(AssignButton)).click();
+	            String deviceassigntobedpopuptext=deviceassigntobedpopup.getText();
+				System.out.println(deviceassigntobedpopuptext);
+				Thread.sleep(5000);
 	            wait.until(ExpectedConditions.elementToBeClickable(OkButton)).click();
 	            wait.until(ExpectedConditions.elementToBeClickable(BackNavigationToDashboard)).click();
 
 
-	            System.out.println("Assigned the Device to bed successfully");
-	        } catch (Exception e) {
-	            System.out.println("Assigned the Device to bed failed: " + e.getMessage());
-	            throw e;
-	        }
+	            return deviceassigntobedpopuptext;
+	       
 	    
 
 		
 			
 			
-		}
-
-
-
-
-		public boolean isDeviceAssignedToBed(String devicecode2, String bedcode2) {
-			return true;
 		}
 	}
 

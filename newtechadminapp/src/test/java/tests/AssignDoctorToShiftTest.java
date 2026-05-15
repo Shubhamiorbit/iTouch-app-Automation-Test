@@ -37,22 +37,16 @@ import com.aventstack.extentreports.Status;
 		            "tests.NewLoginTest.testValidLogin",
 		            "tests.OTP_Test.enterOTPTest"
 		    })
-		public void testAssigndoctortoshift() {
+		public void testAssigndoctortoshift() throws InterruptedException {
 			
 	
 			 String wardcode = Utility.getWardCode();
 			 String shiftcode = Utility.getShiftCode();
 			 String doctorcode = Utility.getDoctorCode();
 
-			 doctorassigntoshift.AssignDoctorToShiftmethod(doctorcode,wardcode, shiftcode);
+			 String actualMessage= doctorassigntoshift.AssignDoctorToShiftmethod(doctorcode,wardcode, shiftcode);
 
-			 boolean isAssigned = doctorassigntoshift.isDoctorAssignedToShift(doctorcode, wardcode, shiftcode);
-
-		        Assert.assertTrue(
-		            isAssigned,
-		            "Doctor assignment FAILED for doctor code: " + doctorcode +
-		            " to shift: " + shiftcode + " in ward: " + wardcode
-		        );	           
+			 Assert.assertTrue(actualMessage.contains("Doctor assigned successfully!!"),  "Doctor assignment failed! Actual: " + actualMessage);	           
 	               
 	            }
 

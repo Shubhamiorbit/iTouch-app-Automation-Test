@@ -23,8 +23,8 @@ public class NewLoginTest extends BaseClass{
 	    @Test( groups = {"login"})
 	    public void testValidLogin() throws Exception {
 	    	
-	        String username = "autoqa@iorbitteam813038.testinator.email";
-	        String password = "091295937";
+	        String username = "autoqa1@iorbitteam813038.testinator.email";
+	        String password = "821439923";
 	       
 	            loginPage.login(username, password);         	            	          
 	        } 

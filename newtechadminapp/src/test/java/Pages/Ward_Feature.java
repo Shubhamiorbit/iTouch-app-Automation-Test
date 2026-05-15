@@ -28,10 +28,10 @@ public class Ward_Feature {
     @FindBy(xpath = "//android.view.ViewGroup[@content-desc='Add Ward']")
     public WebElement AddWard;
 
-	@FindBy(xpath = "//android.widget.FrameLayout[@resource-id=\"android:id/content\"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.widget.EditText[1]")
+	@FindBy(xpath = "//android.widget.FrameLayout[@resource-id=\"android:id/content\"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.widget.EditText[1]")
 	public WebElement WardCode;
 
-	@FindBy(xpath = "//android.widget.FrameLayout[@resource-id=\"android:id/content\"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.widget.EditText[2]")
+	@FindBy(xpath = "//android.widget.FrameLayout[@resource-id=\"android:id/content\"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.widget.EditText[2]")
 	public WebElement WardName;
 
 	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"Select Ward Type\"]")
@@ -45,13 +45,16 @@ public class Ward_Feature {
 	
 	@FindBy(xpath="//android.view.ViewGroup[@content-desc=\"Ok\"]")
 	   public  WebElement OkButton;
-	@FindBy(xpath="//android.widget.ImageView")
-	public WebElement BackNavigation;
+	@FindBy(xpath="//android.view.ViewGroup[@content-desc=\"Cancel\"]")
+	public WebElement cancelbutton;
 	
 	@FindBy(xpath = "//android.widget.Button[@resource-id=\"android:id/button1\"]")
 	private WebElement successMessage;
-	public void createward(String wardcode, String wardname, String wardtype) {
-		try {
+	
+	@FindBy(xpath="//android.widget.TextView[@resource-id=\"android:id/message\"]")
+	public WebElement wardcreationsuccesspopup;
+	public String createward(String wardcode, String wardname, String wardtype) throws InterruptedException {
+		
 			wait.until(ExpectedConditions.elementToBeClickable(AssetCenter)).click();
 			wait.until(ExpectedConditions.elementToBeClickable(ManageWard)).click();
 			wait.until(ExpectedConditions.elementToBeClickable(AddWard)).click();			
@@ -62,17 +65,15 @@ public class Ward_Feature {
 			wait.until(ExpectedConditions.visibilityOf(WardType)).click();
 			wait.until(ExpectedConditions.elementToBeClickable(SelectWardType)).click();
 			wait.until(ExpectedConditions.elementToBeClickable(AddWardButton)).click();
+			String wardpopuptext=wardcreationsuccesspopup.getText();
+			System.out.println(wardpopuptext);
+			Thread.sleep(5000);
             wait.until(ExpectedConditions.elementToBeClickable(successMessage)).click();
             
-            wait.until(ExpectedConditions.elementToBeClickable(BackNavigation)).click();
+            wait.until(ExpectedConditions.elementToBeClickable(cancelbutton)).click();
+            Utility.saveWardCode(wardcode);
+            return wardpopuptext;
 
-		}catch (Exception e) {
-	        System.out.println("Ward creation failed: " + e.getMessage());
 		}
-		
-	}
 
-	public boolean isWardCreated(String wardcode) {
-		return true;
-	}
 }

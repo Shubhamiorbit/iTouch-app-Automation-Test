@@ -6,8 +6,8 @@
       <class name="tests.NewLoginTest">
         <methods>
           <include name="initPage"/>
-          <include name="setup"/>
           <include name="testValidLogin"/>
+          <include name="setup"/>
         </methods>
       </class> <!-- tests.NewLoginTest -->
     </classes>

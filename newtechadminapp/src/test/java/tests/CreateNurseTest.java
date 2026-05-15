@@ -32,7 +32,7 @@ public class CreateNurseTest extends BaseClass{
 	 @Test(dependsOnMethods = {
 	            "tests.NewLoginTest.testValidLogin",
 	            "tests.OTP_Test.enterOTPTest"
-	    })	public void testcreatenurse() {
+	    })	public void testcreatenurse() throws InterruptedException {
 		 
 	Random random=new Random();
 		    
@@ -46,7 +46,6 @@ public class CreateNurseTest extends BaseClass{
 		 
 			String nursecontactphone = "+9190" + String.format("%08d", random.nextInt(100000000));
 
-			
 		 String nursecontactemail=nursecode+"@iorbitteam813038.testinator.email";
 		 String street="karve";
 		 String city="pune";
@@ -54,18 +53,8 @@ public class CreateNurseTest extends BaseClass{
 		 String state="MH";
 		 String country="IN";
 		 
-			 nurse_feature.createnursemethod(nursecode,  firstname,  lastname, speciality,  experince,  sharedphonenumber,  nursecontactname,  nursecontactphone,  nursecontactemail,  street,  city,  pincode,  state,  country);
+			 String actualMessage=nurse_feature.createnursemethod(nursecode,  firstname,  lastname, speciality,  experince,  sharedphonenumber,  nursecontactname,  nursecontactphone,  nursecontactemail,  street,  city,  pincode,  state,  country);
 		 
-			 boolean isNurseCreated = nurse_feature.isNurseCreated(nursecode);
-		        Assert.assertTrue(isNurseCreated, "Nurse creation FAILED for code: " + nursecode);
-
-		        // Save nurse code
-		        try {
-		            Utility.saveNurseCode(nursecode);
-		        } catch (Exception e) {
-		            System.out.println("Failed to save Nurse code: " + e.getMessage());
-		        }
-
-		        System.out.println("Nurse Added Successfully: " + nursecode);
+	           Assert.assertTrue(actualMessage.contains("Nurse Information Saved"),  "Doctor creation failed! Actual: " + actualMessage);
 		    }
 		}

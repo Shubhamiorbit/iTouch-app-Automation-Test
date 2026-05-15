@@ -29,10 +29,10 @@ public class BaseClass {
         extent = new ExtentReports();
         extent.attachReporter(spark);
         DeviceUtils deviceutils = new DeviceUtils();
-        File file = new File("D:\\itouch-qa\\newtechadminapp\\Apps\\152-debug.apk");
+        File file = new File("C:\\Users\\Adesh S\\Downloads\\V1.29\\V1.29\\iTouchTechAdminApp-release.apk");
         System.out.println(file.exists());
 
-        File app1 = new File("D:\\itouch-qa\\newtechadminapp\\Apps\\152-debug.apk");
+        File app1 = new File ("C:\\Users\\Adesh S\\Downloads\\V1.29\\V1.29\\iTouchTechAdminApp-release.apk");
 
         UiAutomator2Options options = new UiAutomator2Options();
   
@@ -53,9 +53,9 @@ public class BaseClass {
         options.setUdid(udid);
         options.setPlatformVersion(platformVersion);
         options.setApp(app1.getAbsolutePath());
-        options.setAppPackage("com.iorbit.ibsm");
-        options.setAppActivity(".activities.WifiConfigActivity");
-        options.setAppWaitActivity("com.iorbit.ibsm.*");
+//        options.setAppPackage("com.iorbit.ibsm");
+//        options.setAppActivity(".activities.WifiConfigActivity");
+//        options.setAppWaitActivity("com.iorbit.ibsm.*");
         options.setAutoGrantPermissions(true);
         options.setNoReset(false); 
         options.setDisableWindowAnimation(true);

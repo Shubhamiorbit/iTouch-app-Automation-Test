@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Apr 24 16:23:18 IST 2026</td>
+<td>Started on:</td><td>Thu May 14 12:22:04 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>98 seconds (98461 ms)</td>
+<tr><td>Total time:</td><td>31 seconds (31473 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,13 +76,62 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.selectsensortest.selectingthedisplayedsensor()'><b>selectingthedisplayedsensor</b><br>Test class: tests.selectsensortest</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;Pages.selectSensor.selectavailableSensor()&quot; because &quot;this.selectonceavailable&quot; is null
-	at tests.selectsensortest.selectingthedisplayedsensor(selectsensortest.java:25)
+<td title='tests.AssignDoctorToShiftTest.testAssigndoctortoshift()'><b>testAssigndoctortoshift</b><br>Test class: tests.AssignDoctorToShiftTest</td>
+<td><div><pre>org.openqa.selenium.InvalidElementStateException: Cannot set the element to &apos;Shift95555&apos;. Did you interact with the correct element?
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [81796110-0a3a-4179-863f-93292fabe459, sendKeysToElement {id=00000000-0000-005b-ffff-ffff000000b8, value=[Ljava.lang.CharSequence;@1945113f}]
+Capabilities {appium:adbExecTimeout: 120000, appium:app: C:\Users\Adesh S\Downloads\..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {adbExecTimeout: 120000, app: C:\Users\Adesh S\Downloads\..., autoGrantPermissions: true, automationName: UiAutomator2, deviceName: emulator-5554, disableWindowAnimation: true, ignoreHiddenApiPolicyError: true, newCommandTimeout: 600, noReset: false, platformName: ANDROID, skipDeviceInitialization: false, skipServerInstallation: false, udid: emulator-5554, uiautomator2ServerInstallTimeout: 120000, uiautomator2ServerLaunchTimeout: 120000, waitForIdleTimeout: 10000}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 600, appium:noReset: false, appium:pixelRatio: 2.625, appium:platformVersion: 13, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:viewportRect: {height: 2337, left: 0, top: 63, width: 1080}, appium:waitForIdleTimeout: 10000, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Element: [[AndroidDriver:  on ANDROID (81796110-0a3a-4179-863f-93292fabe459)] -&gt; xpath: //android.widget.FrameLayout[@resource-id=&quot;android:id/content&quot;]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.widget.EditText[3]]
+Session ID: 81796110-0a3a-4179-863f-93292fabe459
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at io.appium.java_client.pagefactory.ElementInterceptor.getObject(ElementInterceptor.java:42)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.call(InterceptorOfASingleElement.java:79)
+	at io.appium.java_client.proxy.Interceptor.intercept(Interceptor.java:78)
+	at org.openqa.selenium.remote.RemoteWebElement$ByteBuddy$VDVI48Ag.sendKeys(Unknown Source)
+	at Pages.DoctorAssignToShift.AssignDoctorToShiftmethod(DoctorAssignToShift.java:65)
+	at tests.AssignDoctorToShiftTest.testAssigndoctortoshift(AssignDoctorToShiftTest.java:47)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace537524656", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace537524656'><pre>java.lang.NullPointerException: Cannot invoke &quot;Pages.selectSensor.selectavailableSensor()&quot; because &quot;this.selectonceavailable&quot; is null
-	at tests.selectsensortest.selectingthedisplayedsensor(selectsensortest.java:25)
+... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2142581334", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2142581334'><pre>org.openqa.selenium.InvalidElementStateException: Cannot set the element to &apos;Shift95555&apos;. Did you interact with the correct element?
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [81796110-0a3a-4179-863f-93292fabe459, sendKeysToElement {id=00000000-0000-005b-ffff-ffff000000b8, value=[Ljava.lang.CharSequence;@1945113f}]
+Capabilities {appium:adbExecTimeout: 120000, appium:app: C:\Users\Adesh S\Downloads\..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {adbExecTimeout: 120000, app: C:\Users\Adesh S\Downloads\..., autoGrantPermissions: true, automationName: UiAutomator2, deviceName: emulator-5554, disableWindowAnimation: true, ignoreHiddenApiPolicyError: true, newCommandTimeout: 600, noReset: false, platformName: ANDROID, skipDeviceInitialization: false, skipServerInstallation: false, udid: emulator-5554, uiautomator2ServerInstallTimeout: 120000, uiautomator2ServerLaunchTimeout: 120000, waitForIdleTimeout: 10000}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 600, appium:noReset: false, appium:pixelRatio: 2.625, appium:platformVersion: 13, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:viewportRect: {height: 2337, left: 0, top: 63, width: 1080}, appium:waitForIdleTimeout: 10000, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Element: [[AndroidDriver:  on ANDROID (81796110-0a3a-4179-863f-93292fabe459)] -&gt; xpath: //android.widget.FrameLayout[@resource-id=&quot;android:id/content&quot;]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.widget.EditText[3]]
+Session ID: 81796110-0a3a-4179-863f-93292fabe459
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.appium.java_client.pagefactory.ElementInterceptor.getObject(ElementInterceptor.java:42)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.call(InterceptorOfASingleElement.java:79)
+	at io.appium.java_client.proxy.Interceptor.intercept(Interceptor.java:78)
+	at org.openqa.selenium.remote.RemoteWebElement$ByteBuddy$VDVI48Ag.sendKeys(Unknown Source)
+	at Pages.DoctorAssignToShift.AssignDoctorToShiftmethod(DoctorAssignToShift.java:65)
+	at tests.AssignDoctorToShiftTest.testAssigndoctortoshift(AssignDoctorToShiftTest.java:47)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -113,7 +162,26 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>5</td>
-<td>tests.selectsensortest@43c1b556</td></tr>
+<td>tests.AssignDoctorToShiftTest@37271612</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.NewLoginTest.testValidLogin()'><b>testValidLogin</b><br>Test class: tests.NewLoginTest</td>
+<td></td>
+<td>4</td>
+<td>tests.NewLoginTest@23348b5d</td></tr>
+<tr>
+<td title='tests.OTP_Test.enterOTPTest()'><b>enterOTPTest</b><br>Test class: tests.OTP_Test</td>
+<td></td>
+<td>15</td>
+<td>tests.OTP_Test@1190200a</td></tr>
 </table><p>
 </body>
 </html>

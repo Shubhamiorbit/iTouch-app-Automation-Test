@@ -121,10 +121,13 @@ public WebElement SelectBloodGroup;
 	
 	@AndroidFindBy(uiAutomator="new UiSelector().resourceId(\"successTitle\")")
 	public WebElement patientsuccessmessage;
+	
+	@FindBy(xpath="//android.widget.TextView[@content-desc=\"successTitle\"]")
+	public WebElement patientcreationsuccesspopup;
 
     
 
-	public void createpatient(String patientcode, String patientname,String firstname, 
+	public String createpatient(String patientcode, String patientname,String firstname, 
 			String lastname, String mrnumber, String contactname,
 			String contactphone, String contactemail, String street, String city, 
 			String pincode, String state, String country, String height, String 
@@ -265,13 +268,16 @@ public WebElement SelectBloodGroup;
 			
 
 			wait.until(ExpectedConditions.elementToBeClickable(AddPatientButton)).click();
+			String patientpopuptext=patientcreationsuccesspopup.getText();
+			System.out.println(patientpopuptext);
+			Thread.sleep(5000);
 			wait.until(ExpectedConditions.elementToBeClickable(OkButton)).click();
+			
+			Utility.savePatientCode(patientcode);
+			return patientpopuptext;
 
 	}
 
-	public String getpatientcreationsuccessmessage() {
-		return wait.until(ExpectedConditions.visibilityOf(patientsuccessmessage)).getText();
-	}
 }
 
 

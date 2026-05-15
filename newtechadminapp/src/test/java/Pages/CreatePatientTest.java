@@ -54,22 +54,15 @@ public class CreatePatientTest extends BaseClass{
 		 String pastcomplications="no";
 		 String doctorcodeforpatient = Utility.getDoctorCode();
 		
-			 patient_feature.createpatient(patientcode,patientname,  firstname,  lastname, 
+			 String actualMessage=patient_feature.createpatient(patientcode,patientname,  firstname,  lastname, 
 					 mrnumber, contactname,  contactphone,  contactemail,  street, 
 					 city,  pincode,  state,  country,  height,  
 						weight, anyallergies,  pastcomplications, doctorcodeforpatient );
 			
-		 
-		     test.log(Status.PASS, "Patient Added Sucussfully");
-	            try {
-	            	
-					Utility.savePatientCode(patientcode);
-	                test.log(Status.INFO, "patient code saved to file: " + patientcode);
-	            } catch (Exception e) {
-	                test.log(Status.WARNING, "Failed to save patient code: " + e.getMessage());
-	            }
+	           Assert.assertTrue(actualMessage.contains("Patient Information Saved"),  "Patient creation failed! Actual: " + actualMessage);
 
-	        
+		     test.log(Status.PASS, "Patient Added Sucussfully");
+        
 	    }
 	}
 	

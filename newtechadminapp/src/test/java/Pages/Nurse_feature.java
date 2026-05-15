@@ -107,9 +107,26 @@ public class Nurse_feature extends BaseClass{
 	
 	@FindBy(xpath="//android.view.ViewGroup[@content-desc=\"Ok\"]")
 	public WebElement OkButton;
+	
+	@FindBy(xpath="//android.widget.TextView[@text=\"Nurse Information Saved Successfully!\"]")
+	public WebElement nursecreationsuccesspopup;
 
-	public void createnursemethod(String nursecode, String firstname, String lastname, String speciality, String experince,    String sharedphonenumber, String contactname, String contactphone, String contactemail, String street, String city, String pincode, String state, String country) {
-	    try {
+	public String createnursemethod(
+			String nursecode, 
+			String firstname, 
+			String lastname, 
+			String speciality, 
+			String experince,    
+			String sharedphonenumber, 
+			String contactname, 
+			String contactphone, 
+			String contactemail, 
+			String street, 
+			String city, 
+			String pincode, 
+			String state, 
+			String country) throws InterruptedException {
+	    
 	        wait.until(ExpectedConditions.elementToBeClickable(NurseCenter)).click();
 	        wait.until(ExpectedConditions.elementToBeClickable(AddNurse)).click();
 
@@ -232,15 +249,13 @@ public class Nurse_feature extends BaseClass{
 
 	       
 	        wait.until(ExpectedConditions.elementToBeClickable(CreateNurseButton)).click();
+	        String nursepopuptext=nursecreationsuccesspopup.getText();
+			System.out.println(nursepopuptext);
+			Thread.sleep(5000);
 			wait.until(ExpectedConditions.elementToBeClickable(OkButton)).click();
+			Utility.saveNurseCode(nursecode);
+			return nursepopuptext;
 
-	        System.out.println(" Nurse created successfully");
+	    }
 
-	    } catch (Exception e) {
-	        System.out.println("Nurse creation failed: " + e.getMessage());
-	    
-	}}
-
-	public boolean isNurseCreated(String nursecode2) {
-		return true;
-	}}
+	}

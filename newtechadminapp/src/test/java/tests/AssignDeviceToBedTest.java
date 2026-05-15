@@ -33,7 +33,7 @@ public class AssignDeviceToBedTest extends BaseClass{
 			"tests.NewLoginTest.testValidLogin",
 			"tests.OTP_Test.enterOTPTest"
 	})
-	public void testAssigndevicetobed() {
+	public void testAssigndevicetobed() throws InterruptedException {
 
 
 		String wardcode = Utility.getWardCode();
@@ -42,19 +42,15 @@ public class AssignDeviceToBedTest extends BaseClass{
 		String shiftcode = Utility.getShiftCode();
 		String devicecode=Utility.getDeviceCode();
 
-		deviceassigntobed.AssignDeviceToBedmethod( wardcode,
+		String actualMessage= deviceassigntobed.AssignDeviceToBedmethod( wardcode,
 				bedcode,
 				gatewaycode,
 				shiftcode,
 				devicecode
 				);
 
-		boolean isDeviceAssigned = deviceassigntobed.isDeviceAssignedToBed(devicecode, bedcode);
 
-        Assert.assertTrue(
-            isDeviceAssigned,
-            "Device assignment FAILED for device code: " + devicecode + " to bed: " + bedcode
-        );
+        Assert.assertTrue(actualMessage.contains("Device assigned successfully!"), "Device assignement failed: " + actualMessage);
    
 
 	}

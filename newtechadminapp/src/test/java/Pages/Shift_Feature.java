@@ -30,7 +30,6 @@ public class Shift_Feature {
 	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"Add Shift\"]")
 	public WebElement AddShift;
 
-
 	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"Select Shift Name\"]")
 	public WebElement ShiftName;
 	@FindBy(xpath="//android.widget.TextView[@text=\"Morning Shift\"]")
@@ -38,8 +37,6 @@ public class Shift_Feature {
 
 	@FindBy(xpath = "//android.widget.EditText[@resource-id=\"input-shift-code\"]")
 	public WebElement ShiftCode;
-
-
 
 	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"Select start date & time\"]")
 	public WebElement StartTime;
@@ -52,11 +49,17 @@ public class Shift_Feature {
 
 	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"Select end date & time\"]")
 	public WebElement EndTime;
-
-	@FindBy(xpath = "//android.widget.ImageButton[@content-desc=\"Next month\"]")
-	public WebElement NextMonth;
 	
-	@AndroidFindBy(uiAutomator = "new UiSelector().text(\"30\")")
+	@FindBy(xpath = "//android.widget.ImageButton[@content-desc=\"Switch to text input mode for the time input.\"]")
+	public WebElement keyboardbuttonfortime;
+	
+	@FindBy(xpath="//android.widget.EditText[@resource-id=\"android:id/input_hour\"]")
+	public WebElement hourinputforshiftend;
+	
+	@FindBy(xpath="//android.widget.EditText[@resource-id=\"android:id/input_minute\"]")
+	public WebElement minutesinputforshiftend;
+	
+	@AndroidFindBy(uiAutomator = "new UiSelector().text(\"28\")")
 	public WebElement SelectDate;
 	
 	@FindBy(xpath = "//android.widget.Button[@resource-id=\"android:id/button1\"]")
@@ -92,13 +95,15 @@ public class Shift_Feature {
 
 			wait.until(ExpectedConditions.elementToBeClickable(EndTime)).click();
 
-			wait.until(ExpectedConditions.elementToBeClickable(NextMonth)).click();
-			Thread.sleep(1000);
-			wait.until(ExpectedConditions.elementToBeClickable(SelectDate)).click();
-			Thread.sleep(1000);
 			wait.until(ExpectedConditions.elementToBeClickable(OkButtonforCalendarInEndTime)).click();
+			Thread.sleep(1000);
+			wait.until(ExpectedConditions.elementToBeClickable(keyboardbuttonfortime)).click();
+			Thread.sleep(1000);
+			wait.until(ExpectedConditions.elementToBeClickable(hourinputforshiftend)).sendKeys("11");
+			Thread.sleep(1000);
+			wait.until(ExpectedConditions.elementToBeClickable(minutesinputforshiftend)).sendKeys("59");
+			
 			wait.until(ExpectedConditions.elementToBeClickable(OkButtonforTimeInEndTime)).click();
-
 
 			wait.until(ExpectedConditions.visibilityOf(WardCode)).clear();
 			WardCode.sendKeys(wardcode);			

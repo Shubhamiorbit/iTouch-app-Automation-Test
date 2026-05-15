@@ -35,7 +35,7 @@ public class Gateway_Feature extends BaseClass{
 		    @FindBy(xpath = "//android.widget.EditText[@resource-id=\"input-gateway-code\"]")
 		    public WebElement GatewayCode;
 
-		    @FindBy(xpath = "//android.view.ViewGroup[@resource-id=\"dropdown-os\"]")
+		    @FindBy(xpath = "//android.view.ViewGroup[@resource-id=\"dropdown-os\"]/android.widget.TextView")
 		    public WebElement OS;
 		    
 		    @FindBy(xpath="//android.widget.TextView[@text=\"Android\"]")

@@ -37,13 +37,13 @@ public class Doctor_feature extends BaseClass {
 	@FindBy(xpath = "//android.view.ViewGroup[@content-desc='Add Doctor']")
 	public WebElement AddDoctor;
 
-	@FindBy(xpath = "//android.widget.FrameLayout[@resource-id=\"android:id/content\"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.widget.EditText[1]")
+	@FindBy(xpath = "//android.widget.EditText[@resource-id=\"input-doctorCode\"]")
 	public WebElement DoctorCode;
 
-	@FindBy(xpath = "//android.widget.EditText[2]")
+	@FindBy(xpath = "//android.widget.EditText[@resource-id=\"input-firstName\"]")
 	public WebElement FirstName;
 
-	@FindBy(xpath = "//android.widget.EditText[3]")
+	@FindBy(xpath = "//android.widget.EditText[@resource-id=\"input-lastName\"]")
 	public WebElement LastName;
 
 	@FindBy(xpath = "//android.view.ViewGroup[@content-desc='Doctor Speciality*']")
@@ -223,12 +223,12 @@ public class Doctor_feature extends BaseClass {
 			wait.until(ExpectedConditions.elementToBeClickable(ContactEmail)).sendKeys(doctorcontactemail);
 			wait.until(ExpectedConditions.elementToBeClickable(SaveButton)).click();
 			
-			String doctorpopotext=doctorcreationsuccesspopup.getText();
-			System.out.println(doctorpopotext);
+			String doctorpopuptext=doctorcreationsuccesspopup.getText();
+			System.out.println(doctorpopuptext);
 			Thread.sleep(5000);
 			wait.until(ExpectedConditions.elementToBeClickable(OkButton)).click();
 			
 			Utility.saveDoctorCode(doctorcode);
-			return doctorpopotext;
+			return doctorpopuptext;
 		}
 }

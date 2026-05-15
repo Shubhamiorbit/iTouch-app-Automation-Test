@@ -27,16 +27,16 @@ public class NurseAssignToBed_Feature extends  BaseClass{
 	    @FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"Assign Nurse to Bed\"]")
 	    public WebElement AssignDoctorToBed;
 
-	  @FindBy(xpath = "//android.widget.FrameLayout[@resource-id=\"android:id/content\"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.widget.EditText[1]")
+	  @FindBy(xpath = "//android.widget.EditText[@resource-id=\"input-nurse-code\"]")
 	    public WebElement NurseCode;
 	  
-	  @FindBy(xpath = "//android.widget.FrameLayout[@resource-id=\"android:id/content\"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.widget.EditText[2]")
+	  @FindBy(xpath = "//android.widget.EditText[@resource-id=\"input-shift-code\"]")
 	    public WebElement ShiftCode;
 
-	    @FindBy(xpath = "//android.widget.FrameLayout[@resource-id=\"android:id/content\"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.widget.EditText[3]")
+	    @FindBy(xpath = "//android.widget.EditText[@resource-id=\"input-ward-code\"]")
 	    public WebElement WardCode;
 	    
-	    @FindBy(xpath = "//android.widget.FrameLayout[@resource-id=\"android:id/content\"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.widget.EditText[4]")
+	    @FindBy(xpath = "//android.widget.EditText[@resource-id=\"input-bed-code\"]")
 	    public WebElement BedCode;
 
 	    
@@ -63,15 +63,13 @@ public class NurseAssignToBed_Feature extends  BaseClass{
 	            wait.until(ExpectedConditions.elementToBeClickable(AssetCenter)).click();
 	            wait.until(ExpectedConditions.elementToBeClickable(AssignDoctorToBed)).click();
 	            wait.until(ExpectedConditions.visibilityOf(NurseCode)).clear();
-	            NurseCode.sendKeys(nursecode);
-	            wait.until(ExpectedConditions.visibilityOf(ShiftCode)).clear();
-	            ShiftCode.sendKeys(shiftcode);
-	            
+	            NurseCode.sendKeys(nursecode);	            
 	            wait.until(ExpectedConditions.visibilityOf(WardCode)).clear();
 	            WardCode.sendKeys(wardcode);
 	            wait.until(ExpectedConditions.visibilityOf(BedCode)).clear();
 	            BedCode.sendKeys(bedcode);
-	            
+	            wait.until(ExpectedConditions.visibilityOf(ShiftCode)).clear();
+	            ShiftCode.sendKeys(shiftcode);
 	            wait.until(ExpectedConditions.elementToBeClickable(AssignButton)).click();
 	            Thread.sleep(2000);
 	            wait.until(ExpectedConditions.elementToBeClickable(OkButton)).click();

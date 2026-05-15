@@ -30,27 +30,27 @@ public class Device_Feature extends  BaseClass{
 @FindBy(xpath="//android.view.ViewGroup[@content-desc=\"Add Device\"]")
 public WebElement AddDevice;
 
-@FindBy(xpath = "//android.widget.FrameLayout[@resource-id=\"android:id/content\"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.EditText[1]")
+@FindBy(xpath = "//android.widget.FrameLayout[@resource-id=\"android:id/content\"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.EditText[1]")
 public WebElement DeviceCode;
 
-@FindBy(xpath = "//android.widget.FrameLayout[@resource-id=\"android:id/content\"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.EditText[2]")
+@FindBy(xpath = "//android.widget.FrameLayout[@resource-id=\"android:id/content\"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.EditText[2]")
 public WebElement DeviceType;
 
 
 
-@FindBy(xpath = "//android.widget.FrameLayout[@resource-id=\"android:id/content\"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup[3]/android.widget.TextView")
+@FindBy(xpath = "//android.widget.FrameLayout[@resource-id=\"android:id/content\"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup[3]/android.widget.TextView")
 public WebElement UsageType;
 
 @FindBy(xpath="//android.widget.TextView[@text=\"fixed\"]")
 public WebElement fixedusagetype;
 
-@FindBy(xpath = "//android.widget.FrameLayout[@resource-id=\"android:id/content\"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup[4]/android.widget.TextView")
+@FindBy(xpath = "//android.widget.FrameLayout[@resource-id=\"android:id/content\"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup[4]/android.widget.TextView")
 public WebElement VerifyWith;
 
 @FindBy(xpath="//android.view.ViewGroup[@content-desc=\"SERIALNO\"]")
 public WebElement Serialno;
 
-@FindBy(xpath = "//android.widget.FrameLayout[@resource-id=\"android:id/content\"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup[5]/android.widget.TextView")
+@FindBy(xpath = "//android.widget.FrameLayout[@resource-id=\"android:id/content\"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup[5]/android.widget.TextView")
 public WebElement Protocol;
 
 @FindBy(xpath="//android.widget.TextView[@text=\"HL7\"]")
@@ -65,17 +65,20 @@ public  WebElement OkButton;
  @FindBy(xpath="//android.view.ViewGroup[@content-desc=\"Cancel\"]")
  public WebElement CancelButton;
 
+ 
+ @FindBy(xpath="//android.widget.TextView[@text=\"Device added successfully!\"]")
+ public WebElement devicecreationsuccesspopup;
 
 
 
-public void createDevicemethod(
+public String createDevicemethod(
         String  devicecode,
 		String devicetype
     
 
        
-) {
-    try {
+) throws InterruptedException {
+   
         wait.until(ExpectedConditions.elementToBeClickable(AssetCenter)).click();
         wait.until(ExpectedConditions.elementToBeClickable(ManageDevice)).click();
         wait.until(ExpectedConditions.elementToBeClickable(AddDevice)).click();
@@ -106,27 +109,19 @@ public void createDevicemethod(
         
         
         wait.until(ExpectedConditions.elementToBeClickable(AddDeviceButton)).click();
+        String devicepopuptext=devicecreationsuccesspopup.getText();
+		System.out.println(devicepopuptext);
+		Thread.sleep(5000);
         wait.until(ExpectedConditions.elementToBeClickable(OkButton)).click();
+        
         wait.until(ExpectedConditions.elementToBeClickable(CancelButton)).click();
+        
+        Utility.saveDeviceCode(devicecode);
+		return devicepopuptext;
 
 
-        System.out.println("Device Create successfully");
-    } catch (Exception e) {
-        System.out.println("Device created failed: " + e.getMessage());
-        throw e;
+        
+    
     }
-
-
-
-	
-	
-}
-
-
-
-
-public boolean isDeviceCreated(String devicecode) {
-	return true;
-}
 }
 

@@ -27,13 +27,13 @@ public class NurseAssignToShift extends  BaseClass{
 	    @FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"Assign Nurse to Shift\"]")
 	    public WebElement AssignDoctorToShift;
 
-	  @FindBy(xpath = "//android.widget.FrameLayout[@resource-id=\"android:id/content\"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.widget.EditText[1]")
+	  @FindBy(xpath = "//android.widget.EditText[@resource-id=\"input-nurse-code\"]")
 	    public WebElement NurseCode;
 
-	    @FindBy(xpath = "//android.widget.FrameLayout[@resource-id=\"android:id/content\"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.widget.EditText[2]")
+	    @FindBy(xpath = "//android.widget.EditText[@resource-id=\"input-ward-code\"]")
 	    public WebElement WardCode;
 
-	    @FindBy(xpath = "//android.widget.FrameLayout[@resource-id=\"android:id/content\"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.widget.EditText[3]")
+	    @FindBy(xpath = "//android.widget.EditText[@resource-id=\"input-shift-code\"]")
 	    public WebElement ShiftCode;
 
 	    @FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"Assign\"]")

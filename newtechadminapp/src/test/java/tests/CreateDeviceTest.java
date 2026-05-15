@@ -25,7 +25,7 @@ public class CreateDeviceTest extends BaseClass{
 	            "tests.NewLoginTest.testValidLogin",
 	            "tests.OTP_Test.enterOTPTest"
 	    })
-	    	public void testcreatedevice() {
+	    	public void testcreatedevice() throws InterruptedException {
 		 	Calendar calendar = Calendar.getInstance();
 	        int seconds = calendar.get(Calendar.MILLISECOND);
 	        String secStr = String.format("%06d", seconds);
@@ -35,18 +35,10 @@ public class CreateDeviceTest extends BaseClass{
 		 String devicecode= devicetype+ secStr;
 		 
 		 
-			 device_feature.createDevicemethod(devicecode,  devicetype);
+			 String actualMessage=device_feature.createDevicemethod(devicecode,  devicetype);
 		 
-			 boolean isDeviceCreated = device_feature.isDeviceCreated(devicecode);
-		        Assert.assertTrue(isDeviceCreated, "Device creation FAILED for code: " + devicecode);
-
-		        // Save the device code for later tests
-		        try {
-		            Utility.saveDeviceCode(devicecode);
-		        } catch (Exception e) {
-		            System.out.println("Failed to save device code: " + e.getMessage());
-		        }
-
-		        System.out.println("Device Added Successfully: " + devicecode);
+Assert.assertTrue(actualMessage.contains("Device added Successfully"),  "Device creation failed! Actual: " + actualMessage);
+	       
+		    
 		    }
 		}

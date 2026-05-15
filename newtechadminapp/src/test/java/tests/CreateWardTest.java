@@ -36,17 +36,11 @@ public class CreateWardTest extends BaseClass {
         String wardtype = "general";
 
       
-            ward_feature.createward(wardcode, wardname, wardtype);
-            
-            
+            String actualMessage=ward_feature.createward(wardcode, wardname, wardtype);
            
-            
-            boolean isWardCreated = ward_feature.isWardCreated(wardcode);
-            
-            Assert.assertTrue(isWardCreated,"Ward creation FAILED for code: " + wardcode);
-            Thread.sleep(2000);
+            Assert.assertTrue(actualMessage.contains("Ward added successfully!"),  "Ward creation failed! Actual: " + actualMessage);
 
-            Utility.saveWardCode(wardcode);
+            
 
             
 

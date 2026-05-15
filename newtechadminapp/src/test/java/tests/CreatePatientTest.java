@@ -6,6 +6,7 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.Status;
 
 import Pages.Patient_Feature;
 import Pages.Utility;
@@ -51,18 +52,14 @@ public class CreatePatientTest extends BaseClass{
 		 String pastcomplications="no";
 		 String doctorcodeforpatient = Utility.getDoctorCode();
 		
-			 patient_feature.createpatient(patientcode,patientname,  firstname,  lastname, 
-					 mrnumber, contactname,  contactphone,  contactemail,  street, 
-					 city,  pincode,  state,  country,  height,  
-						weight, anyallergies,  pastcomplications, doctorcodeforpatient );
+		 String actualMessage=patient_feature.createpatient(patientcode,patientname,  firstname,  lastname, 
+				 mrnumber, contactname,  contactphone,  contactemail,  street, 
+				 city,  pincode,  state,  country,  height,  
+					weight, anyallergies,  pastcomplications, doctorcodeforpatient );
+		
+           Assert.assertTrue(actualMessage.contains("Patient Information Saved"),  "Patient creation failed! Actual: " + actualMessage);
 
-		        Utility.savePatientCode(patientcode);
-		  
-	
-	String actualpatientsuccessmessage=patient_feature.getpatientcreationsuccessmessage();
-	String expectedpatientsuccessmessage= "Doctor Information Saved Successfully";
-	boolean isEqual = actualpatientsuccessmessage.equals(expectedpatientsuccessmessage);
-	Assert.assertEquals(actualpatientsuccessmessage, expectedpatientsuccessmessage);
+	     test.log(Status.PASS, "Patient Added Sucussfully");
 		}
 }
 
