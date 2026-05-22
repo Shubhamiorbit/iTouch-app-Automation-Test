@@ -48,10 +48,12 @@ public class NurseAssignToBed_Feature extends  BaseClass{
 	    @FindBy(xpath="//android.view.ViewGroup[@content-desc=\"OK\"]")
 	   public  WebElement OkButton;
 	    
+	    @FindBy(xpath="//android.widget.TextView[@text=\"Nurse assigned to bed successfully!\"]")
+	    public WebElement nursetobedpopup;
 	   
 
 
-	    public void AssignNurseToBedmethod(
+	    public String AssignNurseToBedmethod(
 	            String nursecode,
 	            String wardcode,
 	            String shiftcode,
@@ -59,7 +61,7 @@ public class NurseAssignToBed_Feature extends  BaseClass{
 
 	           
 	    ) throws Exception {
-	        try {
+	        
 	            wait.until(ExpectedConditions.elementToBeClickable(AssetCenter)).click();
 	            wait.until(ExpectedConditions.elementToBeClickable(AssignDoctorToBed)).click();
 	            wait.until(ExpectedConditions.visibilityOf(NurseCode)).clear();
@@ -71,26 +73,13 @@ public class NurseAssignToBed_Feature extends  BaseClass{
 	            wait.until(ExpectedConditions.visibilityOf(ShiftCode)).clear();
 	            ShiftCode.sendKeys(shiftcode);
 	            wait.until(ExpectedConditions.elementToBeClickable(AssignButton)).click();
+	            String nursetobedpopuptext=nursetobedpopup.getText();
 	            Thread.sleep(2000);
 	            wait.until(ExpectedConditions.elementToBeClickable(OkButton)).click();
 
-	            System.out.println("Assigned the Nurse to Bed successfully");
-	        } catch (Exception e) {
-	            System.out.println("Assigned the Nurse to Bed failed: " + e.getMessage());
-	            throw e;
-	        }
-	    
+	            return nursetobedpopuptext;
+	        } 
 
-		
-			
 			
 		}
-
-
-
-
-		public boolean isNurseAssignedToBed(String nursecode2, String bedcode2) {
-			return true;
-		}
-	}
 

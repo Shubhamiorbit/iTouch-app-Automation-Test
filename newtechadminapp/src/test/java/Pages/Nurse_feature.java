@@ -17,6 +17,7 @@ import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import utilities.ExcelUtility;
 public class Nurse_feature extends BaseClass{
 
 	AppiumDriver driver;
@@ -254,6 +255,7 @@ public class Nurse_feature extends BaseClass{
 			Thread.sleep(5000);
 			wait.until(ExpectedConditions.elementToBeClickable(OkButton)).click();
 			Utility.saveNurseCode(nursecode);
+			ExcelUtility.writeData("Nurse Code",nursecode);
 			return nursepopuptext;
 
 	    }

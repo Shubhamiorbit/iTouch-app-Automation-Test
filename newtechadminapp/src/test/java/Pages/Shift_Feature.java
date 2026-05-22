@@ -12,6 +12,7 @@ import io.appium.java_client.AppiumBy;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import utilities.ExcelUtility;
 
 public class Shift_Feature {
 
@@ -76,9 +77,12 @@ public class Shift_Feature {
 	
 	@FindBy(xpath="//android.view.ViewGroup[@content-desc=\"Ok\"]")
 	public WebElement Okbutton;
+	
+	@FindBy(xpath="//android.widget.TextView[@text=\"Shift created successfully!\"]")
+	public WebElement shiftcreationsuccesspopup;
 
-	public void createshift(String shiftname, String shiftcode, String wardcode) {
-		try {
+	public String createshift(String shiftname, String shiftcode, String wardcode) throws InterruptedException {
+		
 			wait.until(ExpectedConditions.elementToBeClickable(ShiftCenter)).click();
 			wait.until(ExpectedConditions.elementToBeClickable(AddShift)).click();
 
@@ -108,17 +112,16 @@ public class Shift_Feature {
 			wait.until(ExpectedConditions.visibilityOf(WardCode)).clear();
 			WardCode.sendKeys(wardcode);			
 			wait.until(ExpectedConditions.elementToBeClickable(CreateShift)).click();
+			String shiftpopuptext=shiftcreationsuccesspopup.getText();
+			System.out.println(shiftpopuptext);
+			Thread.sleep(5000);
 			wait.until(ExpectedConditions.elementToBeClickable(Okbutton)).click();
 
 			System.out.println("Shift created successfully.");
-
-		} catch (Exception e) {
-			System.out.println("Shift creation failed: " + e.getMessage());
-			e.printStackTrace();
+			Utility.saveShiftCode(shiftcode);
+			ExcelUtility.writeData("Shift Code",shiftcode);
+			
+			return shiftpopuptext;
 		}
+		
 	}
-
-	public boolean isShiftCreated(String shiftcode2) {
-		return true;
-	}
-}

@@ -46,7 +46,7 @@ import com.aventstack.extentreports.Status;
 
 			 String actualMessage= doctorassigntoshift.AssignDoctorToShiftmethod(doctorcode,wardcode, shiftcode);
 
-			 Assert.assertTrue(actualMessage.contains("Doctor assigned successfully!!"),  "Doctor assignment failed! Actual: " + actualMessage);	           
+			 Assert.assertTrue(actualMessage.contains("Doctor assigned successfully!"),  "Doctor assignment failed! Actual: " + actualMessage);	           
 	               
 	            }
 

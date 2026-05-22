@@ -40,7 +40,7 @@ public class CreatePatientTest extends BaseClass{
 		 String mrnumber=secStr;
 		 String contactname="pallavi gowda";
 		String contactphone = "90" + String.format("%08d", random.nextInt(100000000));
-        String contactemail = patientcode+"@mailinator.com";
+        String contactemail = patientcode+"@dqwdteam.testinator.email";
 		 String street="karve";
 		 String city="pune";
 		 String pincode="585221";

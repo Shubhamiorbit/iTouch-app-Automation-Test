@@ -20,13 +20,13 @@ import java.util.regex.Pattern;
 
 public class OTP_Class {
 
-    private static final String API_TOKEN = "7d51e00aa4de43ebb373c10b50d33994";
+    private static final String API_TOKEN = "65d29ded1f324ddebc7abc78d73150f3";
     private static final String DOMAIN = "private";
     private static final OkHttpClient client = new OkHttpClient();
 
     //it will wait 20 seconds for getting the latest OTP
     public static String fetchLatestOTP() throws Exception {
-        String inboxName = "autoqa1";
+        String inboxName = "autoqa2";
         long latestSeenTime = 0;
         String otp = null;
 

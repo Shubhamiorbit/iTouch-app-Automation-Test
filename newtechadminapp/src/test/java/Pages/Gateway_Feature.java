@@ -9,6 +9,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import utilities.ExcelUtility;
 public class Gateway_Feature extends BaseClass{
 	
 	                                 
@@ -25,9 +26,7 @@ public class Gateway_Feature extends BaseClass{
 		    public WebElement AssetCenter;
 
 		    @FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"Create Gateway\"]")
-		    public WebElement ManageGateway;
-
-		 
+		    public WebElement ManageGateway;		 
 
 		    @FindBy(xpath = "//android.widget.EditText[@resource-id=\"input-gateway-type\"]")
 		    public WebElement GatewayType;
@@ -44,27 +43,22 @@ public class Gateway_Feature extends BaseClass{
 		    @FindBy(xpath = "//android.widget.EditText[@resource-id=\"input-communication-config\"]")
 		    public WebElement CommunicationConfig;
 
-		    
-		   
-
-		   
-
 		    @FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"Create\"]")
 		    public WebElement CreateButton;
 
 		    @FindBy(xpath="//android.view.ViewGroup[@content-desc=\"Ok\"]")
 		   public  WebElement OkButton;
 		    
+		    @FindBy(xpath="//android.widget.TextView[@text=\"Gateway created successfully!\"]")
+		    public WebElement gatewaypopup;
+		    
 
 
-		    public void createGatewaymethod(
+		    public String createGatewaymethod(
 		            String gatewaytype,
 		            String gatewaycode,
-		            String communicationconfig
-		           
-		            
-		    ) {
-		        try {
+		            String communicationconfig) {
+		        
 		            wait.until(ExpectedConditions.elementToBeClickable(AssetCenter)).click();
 		            wait.until(ExpectedConditions.elementToBeClickable(ManageGateway)).click();
 		            wait.until(ExpectedConditions.elementToBeClickable(GatewayType)).clear();
@@ -81,25 +75,15 @@ public class Gateway_Feature extends BaseClass{
 		            wait.until(ExpectedConditions.visibilityOf(CommunicationConfig)).clear();
 		            CommunicationConfig.sendKeys(communicationconfig);
 		            wait.until(ExpectedConditions.elementToBeClickable(CreateButton)).click();
+		            String gatewaypopuptext=gatewaypopup.getText();
 		            wait.until(ExpectedConditions.elementToBeClickable(OkButton)).click();
+		            
+		            Utility.saveGatewayCode(gatewaycode);
+		            ExcelUtility.writeData("Gateway Code", gatewaycode);
 
-		            System.out.println("Gateway created successfully");
-		        } catch (Exception e) {
-		            System.out.println("Gateway creation failed: " + e.getMessage());
-		            throw e;
-		        }
-		    
+		            return gatewaypopuptext;
+		        } 
 
-			
-				
-				
-			}
-
-
-
-			public boolean isGatewayCreated(String gatewaycode2) {
-				return true;
-			}
 		}
 
 

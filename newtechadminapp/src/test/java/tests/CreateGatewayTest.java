@@ -43,18 +43,8 @@ public class CreateGatewayTest extends BaseClass{
 		 String communicationconfig= "WI-FI";
 		 
 		
-			  gateway_feature.createGatewaymethod(gatewaytype,  gatewaycode,  communicationconfig);
-
-			  boolean isGatewayCreated = gateway_feature.isGatewayCreated(gatewaycode);
-		        Assert.assertTrue(isGatewayCreated, "Gateway creation FAILED for code: " + gatewaycode);
-
-		        // Save gateway code
-		        try {
-		            Utility.saveGatewayCode(gatewaycode);
-		        } catch (Exception e) {
-		            System.out.println("Failed to save gateway code: " + e.getMessage());
-		        }
-
-		        System.out.println("Gateway Added Successfully: " + gatewaycode);
-		    }
+			  String actualMessage=gateway_feature.createGatewaymethod(gatewaytype,  gatewaycode,  communicationconfig);
+			  
+			  Assert.assertTrue(actualMessage.contains("Gateway created successfully!"),  "Gateway creation failed! Actual: " + actualMessage);
+	 }
 		}

@@ -11,6 +11,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import utilities.ExcelUtility;
                                  
 public class Device_Feature extends  BaseClass{
 	AppiumDriver driver;
@@ -117,6 +118,7 @@ public String createDevicemethod(
         wait.until(ExpectedConditions.elementToBeClickable(CancelButton)).click();
         
         Utility.saveDeviceCode(devicecode);
+        ExcelUtility.writeData("Device Code", devicecode);
 		return devicepopuptext;
 
 

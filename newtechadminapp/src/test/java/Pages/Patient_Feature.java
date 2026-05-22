@@ -18,6 +18,7 @@ import io.appium.java_client.AppiumBy;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import utilities.ExcelUtility;
 
 public class Patient_Feature extends BaseClass{
 	AppiumDriver driver;
@@ -274,6 +275,7 @@ public WebElement SelectBloodGroup;
 			wait.until(ExpectedConditions.elementToBeClickable(OkButton)).click();
 			
 			Utility.savePatientCode(patientcode);
+			ExcelUtility.writeData("Patient Code", patientcode);
 			return patientpopuptext;
 
 	}

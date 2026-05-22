@@ -43,16 +43,9 @@ import com.aventstack.extentreports.ExtentTest;
 			 
 
 
-			 assignbedtonurse.AssignNurseToBedmethod(nursecode, wardcode, shiftcode, bedcode);
+			 String actualMessage=assignbedtonurse.AssignNurseToBedmethod(nursecode, wardcode, shiftcode, bedcode);
 
-			 boolean isAssigned = assignbedtonurse.isNurseAssignedToBed(
-			            nursecode, bedcode
-			        );
-
-			        Assert.assertTrue(
-			            isAssigned,
-			            "Nurse was NOT assigned to the bed"
-			        );
+			        Assert.assertTrue(actualMessage.contains("Nurse assigned to bed successfully!"),  "Nurse to bed assignment failed! Actual: " + actualMessage);
 			    }
 				           
 	               

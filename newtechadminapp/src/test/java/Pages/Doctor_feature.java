@@ -18,6 +18,8 @@ import io.appium.java_client.AppiumBy;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import utilities.ExcelUtility;
+
 
 public class Doctor_feature extends BaseClass {
 
@@ -229,6 +231,7 @@ public class Doctor_feature extends BaseClass {
 			wait.until(ExpectedConditions.elementToBeClickable(OkButton)).click();
 			
 			Utility.saveDoctorCode(doctorcode);
+			ExcelUtility.writeData("Doctor Code",doctorcode);
 			return doctorpopuptext;
 		}
 }

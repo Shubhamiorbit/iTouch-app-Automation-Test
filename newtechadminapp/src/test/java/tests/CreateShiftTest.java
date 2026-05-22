@@ -28,7 +28,7 @@ public class CreateShiftTest extends BaseClass{
             "tests.NewLoginTest.testValidLogin",
             "tests.OTP_Test.enterOTPTest"
     }) 
-	public void testcreateshift() {
+	public void testcreateshift() throws InterruptedException {
 		Calendar calendar = Calendar.getInstance();
         int seconds = calendar.get(Calendar.MILLISECOND);
 		String shiftname= "Morning Shift";
@@ -37,19 +37,11 @@ public class CreateShiftTest extends BaseClass{
 
 
 
-			shift_feature.createshift(shiftname, shiftcode, wardcode);
-			boolean isShiftCreated = shift_feature.isShiftCreated(shiftcode);
-	        Assert.assertTrue(isShiftCreated, "Shift creation FAILED for code: " + shiftcode);
-
-	        // Save shift code
-	        try {
-	            Utility.saveShiftCode(shiftcode);
-	            System.out.println("Shift code saved to file: " + shiftcode);
-	        } catch (Exception e) {
-	            System.out.println("Failed to save shift code: " + e.getMessage());
-	        }
-
-	        System.out.println("Shift Created Successfully: " + shiftcode);
+			String actualMessage=shift_feature.createshift(shiftname, shiftcode, wardcode);
+			
+			Assert.assertTrue(actualMessage.contains("Shift created successfully!"),  "Shift creation failed! Actual: " + actualMessage);
+	      
+	       
 	    }
 	}
 

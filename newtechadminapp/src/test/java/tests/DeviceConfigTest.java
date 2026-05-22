@@ -41,12 +41,10 @@ public class DeviceConfigTest extends BaseClass{
 		 String devicecode= Utility.getDeviceCode();
 		 String configurename ="port";
 		 
-		 device_config_feature.Deviceconfigmethod(devicetype, devicecode, configurename, configurevalue);
+		String actualMessage= device_config_feature.Deviceconfigmethod(devicetype, devicecode, configurename, configurevalue);
 		 
-		 boolean isConfigured = device_config_feature.isDeviceConfigured(devicetype, devicecode, configurename, configurevalue);
-	        Assert.assertTrue(isConfigured, "Device configuration FAILED for device: " + devicecode);
-
-	        System.out.println("Device configured Successfully: " + devicecode);
+		Assert.assertTrue(actualMessage.contains("Device configured successfully!"),  "Device Configuration failed! Actual: " + actualMessage);
+		 
 	    }
 	}
 

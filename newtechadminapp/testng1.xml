@@ -4,8 +4,9 @@
     <classes>
       <class name="tests.NewLoginTest"/>
       <class name="tests.OTP_Test"/>
-      <class name="tests.AssignDoctorToShiftTest"/>
-      
+      <class name="tests.CreateDoctorTest"/>
+     <class name="tests.AssignDoctorToShiftTest"/>
+     
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

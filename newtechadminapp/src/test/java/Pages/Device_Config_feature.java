@@ -62,9 +62,10 @@ public class Device_Config_feature extends  BaseClass{
 		    @FindBy(xpath="//android.widget.ImageView")
 		    public WebElement BackToDashboard;
 		    
+		    @FindBy(xpath="//android.widget.TextView[@text=\"Device configured successfully!\"]")
+		    public WebElement deviceconfigpopup;
 
-
-		    public void Deviceconfigmethod(
+		    public String Deviceconfigmethod(
 		            String devicetype,
 		            String devicecode,
 
@@ -72,7 +73,6 @@ public class Device_Config_feature extends  BaseClass{
 		            String configurevalue
 		            
 		    ) {
-		        try {
 		            wait.until(ExpectedConditions.elementToBeClickable(AssetCenter)).click();
 		            wait.until(ExpectedConditions.elementToBeClickable(ManageDevice)).click();
 		            wait.until(ExpectedConditions.elementToBeClickable(ConfigureDevice)).click();
@@ -101,20 +101,13 @@ public class Device_Config_feature extends  BaseClass{
 
 		            
 		            wait.until(ExpectedConditions.elementToBeClickable(AssignDevice)).click();
+		            String deviceconfigpopuptext=deviceconfigpopup.getText();
 		            wait.until(ExpectedConditions.elementToBeClickable(OkButton)).click();
 		            wait.until(ExpectedConditions.elementToBeClickable(CancelButton)).click();
 
-		            System.out.println("Device Configured successfully");
-		        } catch (Exception e) {
-		            System.out.println("Device Configured failed: " + e.getMessage());
-		            throw e;
-		        }
+		            return deviceconfigpopuptext;
+		      
+		    }
 		    }
 
-
-
-			public boolean isDeviceConfigured(String devicetype2, String devicecode2, String configurename2,
-					String configurevalue2) {
-				return true;
-			}
-		}
+	

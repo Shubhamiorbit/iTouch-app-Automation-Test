@@ -34,7 +34,7 @@ public class CreateBedTest extends BaseClass {
 			 
             "tests.NewLoginTest.testValidLogin",
             "tests.OTP_Test.enterOTPTest"
-    })    public void testcreatebed() {
+    })    public void testcreatebed() throws InterruptedException {
     	
     	
         String wardcode = Utility.getWardCode();
@@ -43,19 +43,10 @@ public class CreateBedTest extends BaseClass {
 
 
 
-            createbed_feature.createBedMethod(wardcode,bedcode, gatewaycode);
-            boolean isBedCreated = createbed_feature.isBedCreated(wardcode, bedcode, gatewaycode);
-            Assert.assertTrue(
-                isBedCreated,
-                "Bed creation FAILED for bed code: " + bedcode+
-                " in ward: " + wardcode + " with gateway: " + gatewaycode
-            );
+           String actualMessage= createbed_feature.createBedMethod(wardcode,bedcode, gatewaycode);
+            
+           Assert.assertTrue(actualMessage.contains("Bed created successfully!"),  "Bed creation failed! Actual: " + actualMessage);
 
-            // Save the bed code for later tests
-            try {
-                Utility.saveBedCode(bedcode);
-            } catch (Exception e) {
-                System.out.println("Failed to save bed code: " + e.getMessage());
-            }
+            
         }
     }

@@ -37,7 +37,7 @@ public class CreateDeviceTest extends BaseClass{
 		 
 			 String actualMessage=device_feature.createDevicemethod(devicecode,  devicetype);
 		 
-Assert.assertTrue(actualMessage.contains("Device added Successfully"),  "Device creation failed! Actual: " + actualMessage);
+Assert.assertTrue(actualMessage.contains("Device added successfully"),  "Device creation failed! Actual: " + actualMessage);
 	       
 		    
 		    }

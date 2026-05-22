@@ -15,6 +15,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import utilities.ExcelUtility;
 
 public class CreateBed_Feature extends BaseClass {
     AppiumDriver driver;
@@ -49,10 +50,11 @@ public class CreateBed_Feature extends BaseClass {
     @FindBy(xpath="//android.view.ViewGroup[@content-desc=\"Ok\"]")
 	   public  WebElement OkButton;
 
-  
+  @FindBy(xpath="//android.widget.TextView[@text=\"Bed created successfully!\"]")
+  public WebElement bedcreationsuccesspopup;
    
-    public void createBedMethod(String wardcode, String bedcode, String gatewaycode) {
-        try {
+    public String createBedMethod(String wardcode, String bedcode, String gatewaycode) throws InterruptedException {
+        
             
             wait.until(ExpectedConditions.elementToBeClickable(AssetinDashboard)).click();
             wait.until(ExpectedConditions.elementToBeClickable(AddBedinAsset)).click();
@@ -67,23 +69,15 @@ public class CreateBed_Feature extends BaseClass {
             wait.until(ExpectedConditions.elementToBeClickable(GatewayCode)).clear();
             GatewayCode.sendKeys(gatewaycode);
 
-         
-
-
-
             wait.until(ExpectedConditions.elementToBeClickable(CreateBedButton)).click();
+            String bedpopuptext=bedcreationsuccesspopup.getText();
+			System.out.println(bedpopuptext);
+			Thread.sleep(5000);
 
             wait.until(ExpectedConditions.elementToBeClickable(OkButton)).click();
-
-        } catch (Exception e) {
-            System.out.println("Bed creation failed: " + e.getMessage());
-            throw new RuntimeException("Bed creation failed", e);
-        }
+            
+            Utility.saveBedCode(bedcode);
+            ExcelUtility.writeData("Bed Code",bedcode);
+            return bedpopuptext;
+        } 
     }
-
-
-
-	public boolean isBedCreated(String wardcode2, String bedcode2, String gatewaycode2) {
-		return true;
-	}
-}

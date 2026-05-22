@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Master.test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>9/7/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>12/4/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu May 14 17:59:59 IST 2026</td>
+<td>Started on:</td><td>Mon May 18 18:14:29 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>281 seconds (281155 ms)</td>
+<tr><td>Total time:</td><td>386 seconds (386989 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,16 +76,31 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.CreateDeviceTest.testcreatedevice()'><b>testcreatedevice</b><br>Test class: tests.CreateDeviceTest</td>
-<td><div><pre>java.lang.AssertionError: Device creation failed! Actual: Device added successfully! expected [true] but found [false]
-	at tests.CreateDeviceTest.testcreatedevice(CreateDeviceTest.java:40)
+<td title='tests.AssignDeviceToBedTest.testAssigndevicetobed()'><b>testAssigndevicetobed</b><br>Test class: tests.AssignDeviceToBedTest</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable, but the element was not found: org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.xpath: //android.view.ViewGroup[@content-desc=&quot;Asset Center&quot;].
+(tried for 10 seconds with 500 milliseconds interval)
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:adbExecTimeout: 120000, appium:app: C:\Users\Adesh S\Downloads\..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {adbExecTimeout: 120000, app: C:\Users\Adesh S\Downloads\..., autoGrantPermissions: true, automationName: UiAutomator2, deviceName: emulator-5554, disableWindowAnimation: true, ignoreHiddenApiPolicyError: true, newCommandTimeout: 600, noReset: false, platformName: ANDROID, skipDeviceInitialization: false, skipServerInstallation: false, udid: emulator-5554, uiautomator2ServerInstallTimeout: 120000, uiautomator2ServerLaunchTimeout: 120000, waitForIdleTimeout: 10000}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 600, appium:noReset: false, appium:pixelRatio: 2.625, appium:platformVersion: 13, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:viewportRect: {height: 2337, left: 0, top: 63, width: 1080}, appium:waitForIdleTimeout: 10000, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 9ba47dc9-07b2-43a3-9783-a95d48d0b534
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at Pages.DeviceAssignToBed_Feature.AssignDeviceToBedmethod(DeviceAssignToBed_Feature.java:71)
+	at tests.AssignDeviceToBedTest.testAssigndevicetobed(AssignDeviceToBedTest.java:45)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1789791855", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1789791855'><pre>java.lang.AssertionError: Device creation failed! Actual: Device added successfully! expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1590)
-	at org.testng.Assert.assertTrue(Assert.java:57)
-	at tests.CreateDeviceTest.testcreatedevice(CreateDeviceTest.java:40)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace596403167", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace596403167'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable, but the element was not found: org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.xpath: //android.view.ViewGroup[@content-desc=&quot;Asset Center&quot;].
+(tried for 10 seconds with 500 milliseconds interval)
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:adbExecTimeout: 120000, appium:app: C:\Users\Adesh S\Downloads\..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {adbExecTimeout: 120000, app: C:\Users\Adesh S\Downloads\..., autoGrantPermissions: true, automationName: UiAutomator2, deviceName: emulator-5554, disableWindowAnimation: true, ignoreHiddenApiPolicyError: true, newCommandTimeout: 600, noReset: false, platformName: ANDROID, skipDeviceInitialization: false, skipServerInstallation: false, udid: emulator-5554, uiautomator2ServerInstallTimeout: 120000, uiautomator2ServerLaunchTimeout: 120000, waitForIdleTimeout: 10000}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 600, appium:noReset: false, appium:pixelRatio: 2.625, appium:platformVersion: 13, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:viewportRect: {height: 2337, left: 0, top: 63, width: 1080}, appium:waitForIdleTimeout: 10000, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 9ba47dc9-07b2-43a3-9783-a95d48d0b534
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at Pages.DeviceAssignToBed_Feature.AssignDeviceToBedmethod(DeviceAssignToBed_Feature.java:71)
+	at tests.AssignDeviceToBedTest.testAssigndevicetobed(AssignDeviceToBedTest.java:45)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -115,8 +130,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>22</td>
-<td>tests.CreateDeviceTest@6db9f5a4</td></tr>
+<td>10</td>
+<td>tests.AssignDeviceToBedTest@7748410a</td></tr>
 <tr>
 <td title='tests.DeviceConfigTest.testdeviceconfig()'><b>testdeviceconfig</b><br>Test class: tests.DeviceConfigTest</td>
 <td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable, but the element was not found: org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.xpath: //android.view.ViewGroup[@content-desc=&quot;Asset Center&quot;].
@@ -125,20 +140,20 @@ Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {appium:adbExecTimeout: 120000, appium:app: C:\Users\Adesh S\Downloads\..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {adbExecTimeout: 120000, app: C:\Users\Adesh S\Downloads\..., autoGrantPermissions: true, automationName: UiAutomator2, deviceName: emulator-5554, disableWindowAnimation: true, ignoreHiddenApiPolicyError: true, newCommandTimeout: 600, noReset: false, platformName: ANDROID, skipDeviceInitialization: false, skipServerInstallation: false, udid: emulator-5554, uiautomator2ServerInstallTimeout: 120000, uiautomator2ServerLaunchTimeout: 120000, waitForIdleTimeout: 10000}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 600, appium:noReset: false, appium:pixelRatio: 2.625, appium:platformVersion: 13, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:viewportRect: {height: 2337, left: 0, top: 63, width: 1080}, appium:waitForIdleTimeout: 10000, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: a74ba2d6-2334-40c5-9a9c-6fa37b1cdfbd
+Session ID: 9ba47dc9-07b2-43a3-9783-a95d48d0b534
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
 	at Pages.Device_Config_feature.Deviceconfigmethod(Device_Config_feature.java:76)
 	at tests.DeviceConfigTest.testdeviceconfig(DeviceConfigTest.java:44)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1486273013", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1486273013'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable, but the element was not found: org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.xpath: //android.view.ViewGroup[@content-desc=&quot;Asset Center&quot;].
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace752686443", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace752686443'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable, but the element was not found: org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.xpath: //android.view.ViewGroup[@content-desc=&quot;Asset Center&quot;].
 (tried for 10 seconds with 500 milliseconds interval)
 Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {appium:adbExecTimeout: 120000, appium:app: C:\Users\Adesh S\Downloads\..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {adbExecTimeout: 120000, app: C:\Users\Adesh S\Downloads\..., autoGrantPermissions: true, automationName: UiAutomator2, deviceName: emulator-5554, disableWindowAnimation: true, ignoreHiddenApiPolicyError: true, newCommandTimeout: 600, noReset: false, platformName: ANDROID, skipDeviceInitialization: false, skipServerInstallation: false, udid: emulator-5554, uiautomator2ServerInstallTimeout: 120000, uiautomator2ServerLaunchTimeout: 120000, waitForIdleTimeout: 10000}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 600, appium:noReset: false, appium:pixelRatio: 2.625, appium:platformVersion: 13, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:viewportRect: {height: 2337, left: 0, top: 63, width: 1080}, appium:waitForIdleTimeout: 10000, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: a74ba2d6-2334-40c5-9a9c-6fa37b1cdfbd
+Session ID: 9ba47dc9-07b2-43a3-9783-a95d48d0b534
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
 	at Pages.Device_Config_feature.Deviceconfigmethod(Device_Config_feature.java:76)
@@ -173,255 +188,33 @@ Session ID: a74ba2d6-2334-40c5-9a9c-6fa37b1cdfbd
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>10</td>
-<td>tests.DeviceConfigTest@6a03bcb1</td></tr>
+<td>tests.DeviceConfigTest@7c83dc97</td></tr>
 <tr>
-<td title='tests.CreateDoctorTest.testcreatedoctor()'><b>testcreatedoctor</b><br>Test class: tests.CreateDoctorTest</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.xpath: //android.widget.TextView[@text=&quot;Doctor Information Saved successfully!&quot;]
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:166)
-	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.call(InterceptorOfASingleElement.java:75)
-	at io.appium.java_client.proxy.Interceptor.intercept(Interceptor.java:78)
-	at org.openqa.selenium.remote.RemoteWebElement$ByteBuddy$Jnza4x70.getText(Unknown Source)
-	at Pages.Doctor_feature.createDoctormethod(Doctor_feature.java:226)
-	at tests.CreateDoctorTest.testcreatedoctor(CreateDoctorTest.java:59)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@2213639b
-(tried for 10 seconds with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:279)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:135)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:160)
-	... 33 more
-Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [a74ba2d6-2334-40c5-9a9c-6fa37b1cdfbd, findElement {using=xpath, value=//android.widget.TextView[@text=&quot;Doctor Information Saved successfully!&quot;]}]
-Capabilities {appium:adbExecTimeout: 120000, appium:app: C:\Users\Adesh S\Downloads\..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {adbExecTimeout: 120000, app: C:\Users\Adesh S\Downloads\..., autoGrantPermissions: true, automationName: UiAutomator2, deviceName: emulator-5554, disableWindowAnimation: true, ignoreHiddenApiPolicyError: true, newCommandTimeout: 600, noReset: false, platformName: ANDROID, skipDeviceInitialization: false, skipServerInstallation: false, udid: emulator-5554, uiautomator2ServerInstallTimeout: 120000, uiautomator2ServerLaunchTimeout: 120000, waitForIdleTimeout: 10000}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 600, appium:noReset: false, appium:pixelRatio: 2.625, appium:platformVersion: 13, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:viewportRect: {height: 2337, left: 0, top: 63, width: 1080}, appium:waitForIdleTimeout: 10000, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: a74ba2d6-2334-40c5-9a9c-6fa37b1cdfbd
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
-	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:53)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$findElement$1(AppiumElementLocator.java:160)
-	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:217)
-	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:210)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:210)
-	... 35 more
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace822815599", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace822815599'><pre>org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.xpath: //android.widget.TextView[@text=&quot;Doctor Information Saved successfully!&quot;]
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:166)
-	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.call(InterceptorOfASingleElement.java:75)
-	at io.appium.java_client.proxy.Interceptor.intercept(Interceptor.java:78)
-	at org.openqa.selenium.remote.RemoteWebElement$ByteBuddy$Jnza4x70.getText(Unknown Source)
-	at Pages.Doctor_feature.createDoctormethod(Doctor_feature.java:226)
-	at tests.CreateDoctorTest.testcreatedoctor(CreateDoctorTest.java:59)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@2213639b
-(tried for 10 seconds with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:279)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:135)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:160)
-	... 33 more
-Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [a74ba2d6-2334-40c5-9a9c-6fa37b1cdfbd, findElement {using=xpath, value=//android.widget.TextView[@text=&quot;Doctor Information Saved successfully!&quot;]}]
-Capabilities {appium:adbExecTimeout: 120000, appium:app: C:\Users\Adesh S\Downloads\..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {adbExecTimeout: 120000, app: C:\Users\Adesh S\Downloads\..., autoGrantPermissions: true, automationName: UiAutomator2, deviceName: emulator-5554, disableWindowAnimation: true, ignoreHiddenApiPolicyError: true, newCommandTimeout: 600, noReset: false, platformName: ANDROID, skipDeviceInitialization: false, skipServerInstallation: false, udid: emulator-5554, uiautomator2ServerInstallTimeout: 120000, uiautomator2ServerLaunchTimeout: 120000, waitForIdleTimeout: 10000}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 600, appium:noReset: false, appium:pixelRatio: 2.625, appium:platformVersion: 13, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:viewportRect: {height: 2337, left: 0, top: 63, width: 1080}, appium:waitForIdleTimeout: 10000, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: a74ba2d6-2334-40c5-9a9c-6fa37b1cdfbd
-	at jdk.internal.reflect.GeneratedConstructorAccessor20.newInstance(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
-	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:53)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$findElement$1(AppiumElementLocator.java:160)
-	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:217)
-	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:210)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:210)
-	... 35 more
-</pre></div></td>
-<td>63</td>
-<td>tests.CreateDoctorTest@424e1977</td></tr>
-<tr>
-<td title='tests.AssignDoctorToShiftTest.testAssigndoctortoshift()'><b>testAssigndoctortoshift</b><br>Test class: tests.AssignDoctorToShiftTest</td>
-<td><div><pre>java.lang.AssertionError: Doctor assignment failed! Actual: Doctor assigned successfully! expected [true] but found [false]
-	at tests.AssignDoctorToShiftTest.testAssigndoctortoshift(AssignDoctorToShiftTest.java:49)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace449611579", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace449611579'><pre>java.lang.AssertionError: Doctor assignment failed! Actual: Doctor assigned successfully! expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1590)
-	at org.testng.Assert.assertTrue(Assert.java:57)
-	at tests.AssignDoctorToShiftTest.testAssigndoctortoshift(AssignDoctorToShiftTest.java:49)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>14</td>
-<td>tests.AssignDoctorToShiftTest@175b9425</td></tr>
-<tr>
-<td title='tests.CreateNurseTest.testcreatenurse()'><b>testcreatenurse</b><br>Test class: tests.CreateNurseTest</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable, but the element was not found: org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.xpath: //android.view.ViewGroup[@content-desc=&quot;Nurse Center&quot;].
-(tried for 10 seconds with 500 milliseconds interval)
-Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {appium:adbExecTimeout: 120000, appium:app: C:\Users\Adesh S\Downloads\..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {adbExecTimeout: 120000, app: C:\Users\Adesh S\Downloads\..., autoGrantPermissions: true, automationName: UiAutomator2, deviceName: emulator-5554, disableWindowAnimation: true, ignoreHiddenApiPolicyError: true, newCommandTimeout: 600, noReset: false, platformName: ANDROID, skipDeviceInitialization: false, skipServerInstallation: false, udid: emulator-5554, uiautomator2ServerInstallTimeout: 120000, uiautomator2ServerLaunchTimeout: 120000, waitForIdleTimeout: 10000}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 600, appium:noReset: false, appium:pixelRatio: 2.625, appium:platformVersion: 13, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:viewportRect: {height: 2337, left: 0, top: 63, width: 1080}, appium:waitForIdleTimeout: 10000, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: a74ba2d6-2334-40c5-9a9c-6fa37b1cdfbd
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
-	at Pages.Nurse_feature.createnursemethod(Nurse_feature.java:130)
-	at tests.CreateNurseTest.testcreatenurse(CreateNurseTest.java:56)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace493519750", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace493519750'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable, but the element was not found: org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.xpath: //android.view.ViewGroup[@content-desc=&quot;Nurse Center&quot;].
-(tried for 10 seconds with 500 milliseconds interval)
-Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {appium:adbExecTimeout: 120000, appium:app: C:\Users\Adesh S\Downloads\..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {adbExecTimeout: 120000, app: C:\Users\Adesh S\Downloads\..., autoGrantPermissions: true, automationName: UiAutomator2, deviceName: emulator-5554, disableWindowAnimation: true, ignoreHiddenApiPolicyError: true, newCommandTimeout: 600, noReset: false, platformName: ANDROID, skipDeviceInitialization: false, skipServerInstallation: false, udid: emulator-5554, uiautomator2ServerInstallTimeout: 120000, uiautomator2ServerLaunchTimeout: 120000, waitForIdleTimeout: 10000}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 600, appium:noReset: false, appium:pixelRatio: 2.625, appium:platformVersion: 13, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:viewportRect: {height: 2337, left: 0, top: 63, width: 1080}, appium:waitForIdleTimeout: 10000, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: a74ba2d6-2334-40c5-9a9c-6fa37b1cdfbd
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
-	at Pages.Nurse_feature.createnursemethod(Nurse_feature.java:130)
-	at tests.CreateNurseTest.testcreatenurse(CreateNurseTest.java:56)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>10</td>
-<td>tests.CreateNurseTest@117e949d</td></tr>
-<tr>
-<td title='tests.CreatePatientTest.testcreatepatient()'><b>testcreatepatient</b><br>Test class: tests.CreatePatientTest</td>
+<td title='tests.AdmitPatientTest.testadmitpatient()'><b>testadmitpatient</b><br>Test class: tests.AdmitPatientTest</td>
 <td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable, but the element was not found: org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.xpath: //android.view.ViewGroup[@content-desc=&apos;Patient Center&apos;].
 (tried for 10 seconds with 500 milliseconds interval)
 Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {appium:adbExecTimeout: 120000, appium:app: C:\Users\Adesh S\Downloads\..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {adbExecTimeout: 120000, app: C:\Users\Adesh S\Downloads\..., autoGrantPermissions: true, automationName: UiAutomator2, deviceName: emulator-5554, disableWindowAnimation: true, ignoreHiddenApiPolicyError: true, newCommandTimeout: 600, noReset: false, platformName: ANDROID, skipDeviceInitialization: false, skipServerInstallation: false, udid: emulator-5554, uiautomator2ServerInstallTimeout: 120000, uiautomator2ServerLaunchTimeout: 120000, waitForIdleTimeout: 10000}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 600, appium:noReset: false, appium:pixelRatio: 2.625, appium:platformVersion: 13, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:viewportRect: {height: 2337, left: 0, top: 63, width: 1080}, appium:waitForIdleTimeout: 10000, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: a74ba2d6-2334-40c5-9a9c-6fa37b1cdfbd
+Session ID: 9ba47dc9-07b2-43a3-9783-a95d48d0b534
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
-	at Pages.Patient_Feature.createpatient(Patient_Feature.java:136)
-	at tests.CreatePatientTest.testcreatepatient(CreatePatientTest.java:55)
+	at Pages.Patient_Admit_Feature.admitpatient(Patient_Admit_Feature.java:66)
+	at tests.AdmitPatientTest.testadmitpatient(AdmitPatientTest.java:37)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1788152379", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1788152379'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable, but the element was not found: org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.xpath: //android.view.ViewGroup[@content-desc=&apos;Patient Center&apos;].
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace783323948", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace783323948'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable, but the element was not found: org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.xpath: //android.view.ViewGroup[@content-desc=&apos;Patient Center&apos;].
 (tried for 10 seconds with 500 milliseconds interval)
 Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {appium:adbExecTimeout: 120000, appium:app: C:\Users\Adesh S\Downloads\..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {adbExecTimeout: 120000, app: C:\Users\Adesh S\Downloads\..., autoGrantPermissions: true, automationName: UiAutomator2, deviceName: emulator-5554, disableWindowAnimation: true, ignoreHiddenApiPolicyError: true, newCommandTimeout: 600, noReset: false, platformName: ANDROID, skipDeviceInitialization: false, skipServerInstallation: false, udid: emulator-5554, uiautomator2ServerInstallTimeout: 120000, uiautomator2ServerLaunchTimeout: 120000, waitForIdleTimeout: 10000}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 600, appium:noReset: false, appium:pixelRatio: 2.625, appium:platformVersion: 13, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:viewportRect: {height: 2337, left: 0, top: 63, width: 1080}, appium:waitForIdleTimeout: 10000, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: a74ba2d6-2334-40c5-9a9c-6fa37b1cdfbd
+Session ID: 9ba47dc9-07b2-43a3-9783-a95d48d0b534
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
-	at Pages.Patient_Feature.createpatient(Patient_Feature.java:136)
-	at tests.CreatePatientTest.testcreatepatient(CreatePatientTest.java:55)
+	at Pages.Patient_Admit_Feature.admitpatient(Patient_Admit_Feature.java:66)
+	at tests.AdmitPatientTest.testadmitpatient(AdmitPatientTest.java:37)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -452,17 +245,17 @@ Session ID: a74ba2d6-2334-40c5-9a9c-6fa37b1cdfbd
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>10</td>
-<td>tests.CreatePatientTest@10d68fcd</td></tr>
+<td>tests.AdmitPatientTest@740773a3</td></tr>
 <tr>
 <td title='tests.AssignNurseToShift.testAssignnursetoshift()'><b>testAssignnursetoshift</b><br>Test class: tests.AssignNurseToShift</td>
-<td><div><pre>org.openqa.selenium.InvalidElementStateException: Cannot set the element to &apos;Shift99508&apos;. Did you interact with the correct element?
+<td><div><pre>org.openqa.selenium.InvalidElementStateException: Cannot set the element to &apos;Shift69083&apos;. Did you interact with the correct element?
 Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [a74ba2d6-2334-40c5-9a9c-6fa37b1cdfbd, sendKeysToElement {id=00000000-0000-013e-ffff-ffff00000529, value=[Ljava.lang.CharSequence;@cb318ac}]
+Command: [9ba47dc9-07b2-43a3-9783-a95d48d0b534, sendKeysToElement {id=00000000-0000-0040-ffff-ffff00000705, value=[Ljava.lang.CharSequence;@6bd8c398}]
 Capabilities {appium:adbExecTimeout: 120000, appium:app: C:\Users\Adesh S\Downloads\..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {adbExecTimeout: 120000, app: C:\Users\Adesh S\Downloads\..., autoGrantPermissions: true, automationName: UiAutomator2, deviceName: emulator-5554, disableWindowAnimation: true, ignoreHiddenApiPolicyError: true, newCommandTimeout: 600, noReset: false, platformName: ANDROID, skipDeviceInitialization: false, skipServerInstallation: false, udid: emulator-5554, uiautomator2ServerInstallTimeout: 120000, uiautomator2ServerLaunchTimeout: 120000, waitForIdleTimeout: 10000}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 600, appium:noReset: false, appium:pixelRatio: 2.625, appium:platformVersion: 13, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:viewportRect: {height: 2337, left: 0, top: 63, width: 1080}, appium:waitForIdleTimeout: 10000, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Element: [[AndroidDriver:  on ANDROID (a74ba2d6-2334-40c5-9a9c-6fa37b1cdfbd)] -&gt; xpath: //android.widget.EditText[@resource-id=&quot;input-shift-code&quot;]]
-Session ID: a74ba2d6-2334-40c5-9a9c-6fa37b1cdfbd
+Element: [[AndroidDriver:  on ANDROID (9ba47dc9-07b2-43a3-9783-a95d48d0b534)] -&gt; xpath: //android.widget.EditText[@resource-id=&quot;input-shift-code&quot;]]
+Session ID: 9ba47dc9-07b2-43a3-9783-a95d48d0b534
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -474,19 +267,19 @@ Session ID: a74ba2d6-2334-40c5-9a9c-6fa37b1cdfbd
 	at io.appium.java_client.pagefactory.ElementInterceptor.getObject(ElementInterceptor.java:42)
 	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.call(InterceptorOfASingleElement.java:79)
 	at io.appium.java_client.proxy.Interceptor.intercept(Interceptor.java:78)
-	at org.openqa.selenium.remote.RemoteWebElement$ByteBuddy$Jnza4x70.sendKeys(Unknown Source)
+	at org.openqa.selenium.remote.RemoteWebElement$ByteBuddy$GuXEI8xh.sendKeys(Unknown Source)
 	at Pages.NurseAssignToShift.AssignNurseToShiftmethod(NurseAssignToShift.java:63)
 	at tests.AssignNurseToShift.testAssignnursetoshift(AssignNurseToShift.java:47)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace554515010", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace554515010'><pre>org.openqa.selenium.InvalidElementStateException: Cannot set the element to &apos;Shift99508&apos;. Did you interact with the correct element?
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace546014245", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace546014245'><pre>org.openqa.selenium.InvalidElementStateException: Cannot set the element to &apos;Shift69083&apos;. Did you interact with the correct element?
 Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [a74ba2d6-2334-40c5-9a9c-6fa37b1cdfbd, sendKeysToElement {id=00000000-0000-013e-ffff-ffff00000529, value=[Ljava.lang.CharSequence;@cb318ac}]
+Command: [9ba47dc9-07b2-43a3-9783-a95d48d0b534, sendKeysToElement {id=00000000-0000-0040-ffff-ffff00000705, value=[Ljava.lang.CharSequence;@6bd8c398}]
 Capabilities {appium:adbExecTimeout: 120000, appium:app: C:\Users\Adesh S\Downloads\..., appium:appActivity: com.itouchtechadminapp.Main..., appium:appPackage: com.itouchtechadminapp, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {adbExecTimeout: 120000, app: C:\Users\Adesh S\Downloads\..., autoGrantPermissions: true, automationName: UiAutomator2, deviceName: emulator-5554, disableWindowAnimation: true, ignoreHiddenApiPolicyError: true, newCommandTimeout: 600, noReset: false, platformName: ANDROID, skipDeviceInitialization: false, skipServerInstallation: false, udid: emulator-5554, uiautomator2ServerInstallTimeout: 120000, uiautomator2ServerLaunchTimeout: 120000, waitForIdleTimeout: 10000}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:disableWindowAnimation: true, appium:ignoreHiddenApiPolicyError: true, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 600, appium:noReset: false, appium:pixelRatio: 2.625, appium:platformVersion: 13, appium:skipDeviceInitialization: false, appium:skipServerInstallation: false, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:uiautomator2ServerInstallTimeout: 120000, appium:uiautomator2ServerLaunchTimeout: 120000, appium:viewportRect: {height: 2337, left: 0, top: 63, width: 1080}, appium:waitForIdleTimeout: 10000, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Element: [[AndroidDriver:  on ANDROID (a74ba2d6-2334-40c5-9a9c-6fa37b1cdfbd)] -&gt; xpath: //android.widget.EditText[@resource-id=&quot;input-shift-code&quot;]]
-Session ID: a74ba2d6-2334-40c5-9a9c-6fa37b1cdfbd
+Element: [[AndroidDriver:  on ANDROID (9ba47dc9-07b2-43a3-9783-a95d48d0b534)] -&gt; xpath: //android.widget.EditText[@resource-id=&quot;input-shift-code&quot;]]
+Session ID: 9ba47dc9-07b2-43a3-9783-a95d48d0b534
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -506,7 +299,7 @@ Session ID: a74ba2d6-2334-40c5-9a9c-6fa37b1cdfbd
 	at io.appium.java_client.pagefactory.ElementInterceptor.getObject(ElementInterceptor.java:42)
 	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.call(InterceptorOfASingleElement.java:79)
 	at io.appium.java_client.proxy.Interceptor.intercept(Interceptor.java:78)
-	at org.openqa.selenium.remote.RemoteWebElement$ByteBuddy$Jnza4x70.sendKeys(Unknown Source)
+	at org.openqa.selenium.remote.RemoteWebElement$ByteBuddy$GuXEI8xh.sendKeys(Unknown Source)
 	at Pages.NurseAssignToShift.AssignNurseToShiftmethod(NurseAssignToShift.java:63)
 	at tests.AssignNurseToShift.testAssignnursetoshift(AssignNurseToShift.java:47)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -539,7 +332,7 @@ Session ID: a74ba2d6-2334-40c5-9a9c-6fa37b1cdfbd
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>5</td>
-<td>tests.AssignNurseToShift@610f7aa</td></tr>
+<td>tests.AssignNurseToShift@4470f8a6</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -550,50 +343,65 @@ Session ID: a74ba2d6-2334-40c5-9a9c-6fa37b1cdfbd
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.CreateShiftTest.testcreateshift()'><b>testcreateshift</b><br>Test class: tests.CreateShiftTest</td>
+<td title='tests.CreateWardTest.testcreateward()'><b>testcreateward</b><br>Test class: tests.CreateWardTest</td>
 <td></td>
-<td>19</td>
-<td>tests.CreateShiftTest@623a8092</td></tr>
+<td>14</td>
+<td>tests.CreateWardTest@6a03bcb1</td></tr>
+<tr>
+<td title='tests.CreateBedTest.testcreatebed()'><b>testcreatebed</b><br>Test class: tests.CreateBedTest</td>
+<td></td>
+<td>14</td>
+<td>tests.CreateBedTest@3571b748</td></tr>
+<tr>
+<td title='tests.AssignBedToNurse.testAssignnursetobed()'><b>testAssignnursetobed</b><br>Test class: tests.AssignBedToNurse</td>
+<td></td>
+<td>13</td>
+<td>tests.AssignBedToNurse@484970b0</td></tr>
 <tr>
 <td title='tests.OTP_Test.enterOTPTest()'><b>enterOTPTest</b><br>Test class: tests.OTP_Test</td>
 <td></td>
-<td>16</td>
-<td>tests.OTP_Test@6ab778a</td></tr>
+<td>13</td>
+<td>tests.OTP_Test@15ca7889</td></tr>
 <tr>
-<td title='tests.AssignDeviceToBedTest.testAssigndevicetobed()'><b>testAssigndevicetobed</b><br>Test class: tests.AssignDeviceToBedTest</td>
+<td title='tests.CreateNurseTest.testcreatenurse()'><b>testcreatenurse</b><br>Test class: tests.CreateNurseTest</td>
+<td></td>
+<td>75</td>
+<td>tests.CreateNurseTest@3098cf3b</td></tr>
+<tr>
+<td title='tests.CreateDeviceTest.testcreatedevice()'><b>testcreatedevice</b><br>Test class: tests.CreateDeviceTest</td>
+<td></td>
+<td>19</td>
+<td>tests.CreateDeviceTest@610f7aa</td></tr>
+<tr>
+<td title='tests.CreatePatientTest.testcreatepatient()'><b>testcreatepatient</b><br>Test class: tests.CreatePatientTest</td>
+<td></td>
+<td>74</td>
+<td>tests.CreatePatientTest@175b9425</td></tr>
+<tr>
+<td title='tests.CreateShiftTest.testcreateshift()'><b>testcreateshift</b><br>Test class: tests.CreateShiftTest</td>
 <td></td>
 <td>24</td>
-<td>tests.AssignDeviceToBedTest@21b2e768</td></tr>
+<td>tests.CreateShiftTest@fd07cbb</td></tr>
+<tr>
+<td title='tests.CreateDoctorTest.testcreatedoctor()'><b>testcreatedoctor</b><br>Test class: tests.CreateDoctorTest</td>
+<td></td>
+<td>60</td>
+<td>tests.CreateDoctorTest@a1cdc6d</td></tr>
+<tr>
+<td title='tests.NewLoginTest.testValidLogin()'><b>testValidLogin</b><br>Test class: tests.NewLoginTest</td>
+<td></td>
+<td>4</td>
+<td>tests.NewLoginTest@192c3f1e</td></tr>
 <tr>
 <td title='tests.CreateGatewayTest.testcreategateway()'><b>testcreategateway</b><br>Test class: tests.CreateGatewayTest</td>
 <td></td>
 <td>10</td>
-<td>tests.CreateGatewayTest@548e6d58</td></tr>
+<td>tests.CreateGatewayTest@2b4bac49</td></tr>
 <tr>
-<td title='tests.AssignBedToNurse.testAssignnursetobed()'><b>testAssignnursetobed</b><br>Test class: tests.AssignBedToNurse</td>
-<td></td>
-<td>12</td>
-<td>tests.AssignBedToNurse@3098cf3b</td></tr>
-<tr>
-<td title='tests.CreateBedTest.testcreatebed()'><b>testcreatebed</b><br>Test class: tests.CreateBedTest</td>
-<td></td>
-<td>9</td>
-<td>tests.CreateBedTest@a1cdc6d</td></tr>
-<tr>
-<td title='tests.AdmitPatientTest.testadmitpatient()'><b>testadmitpatient</b><br>Test class: tests.AdmitPatientTest</td>
-<td></td>
-<td>19</td>
-<td>tests.AdmitPatientTest@57250572</td></tr>
-<tr>
-<td title='tests.NewLoginTest.testValidLogin()'><b>testValidLogin</b><br>Test class: tests.NewLoginTest</td>
-<td></td>
-<td>5</td>
-<td>tests.NewLoginTest@58a9760d</td></tr>
-<tr>
-<td title='tests.CreateWardTest.testcreateward()'><b>testcreateward</b><br>Test class: tests.CreateWardTest</td>
+<td title='tests.AssignDoctorToShiftTest.testAssigndoctortoshift()'><b>testAssigndoctortoshift</b><br>Test class: tests.AssignDoctorToShiftTest</td>
 <td></td>
 <td>15</td>
-<td>tests.CreateWardTest@5f8edcc5</td></tr>
+<td>tests.AssignDoctorToShiftTest@3e96bacf</td></tr>
 </table><p>
 </body>
 </html>

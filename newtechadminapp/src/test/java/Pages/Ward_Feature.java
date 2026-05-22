@@ -9,6 +9,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import utilities.ExcelUtility;
 public class Ward_Feature {
 	AppiumDriver driver;
 	WebDriverWait wait;
@@ -72,6 +73,7 @@ public class Ward_Feature {
             
             wait.until(ExpectedConditions.elementToBeClickable(cancelbutton)).click();
             Utility.saveWardCode(wardcode);
+            ExcelUtility.writeData("Ward Code", wardcode);
             return wardpopuptext;
 
 		}
